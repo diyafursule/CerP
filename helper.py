@@ -353,7 +353,7 @@ class Helper:
             else:
                 class_accuracy = 0.0  # Handle the case where the denominator is zero
             
-            class_accuracies[f"Class {i}"] = class_accuracy
+            class_accuracies[i] = class_accuracy
 
         return class_accuracies
 
