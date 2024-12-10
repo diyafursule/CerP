@@ -657,6 +657,8 @@ class Helper:
             
             # Assign score if the difference is greater than the threshold
             if diff > threshold:
+                if class_id not in classesMisclassified:
+                    classesMisclassified[class_id] = []
                 classesMisclassified[class_id].append(client_idx)
                 score = score + 1
                 logger.info(f"Class {class_id} has a difference of {diff:.2f} between target and client {client_idx}.")
