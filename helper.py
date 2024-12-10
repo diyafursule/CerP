@@ -44,8 +44,7 @@ class Helper:
         beta=self.params['beta_loss']
         self.folder_path = f'saved_models/model_{self.name}_{current_time}_{bb}_{aa}_{alpha}_{beta}'
         try:
-            if not os.path.exists(self.folder_path):
-                os.makedirs(self.folder_path)
+            os.mkdir(self.folder_path)
         except FileExistsError:
             logger.info('Folder already exists')
         logger.addHandler(logging.FileHandler(filename=f'{self.folder_path}/log.txt'))
@@ -358,7 +357,7 @@ class Helper:
         return class_accuracies
 
 
-    def enhanced_mkrum(self, target_model, updates, corrupted_count, users_count, validation_loader, validation_criterion,  threshold_ratio=0.15, small_weight=0.01, distances=None, return_index=False):
+    def enhanced_mkrum(self, target_model, updates, corrupted_count, users_count, validation_loader, validation_criterion,  threshold_ratio=0.15, small_weight=0.1, distances=None, return_index=False):
         
         # Step 1: Extract current model weights as a 1D numpy array
         current_weights = np.concatenate([param.data.cpu().numpy().flatten() for param in target_model.parameters()])
@@ -435,8 +434,10 @@ class Helper:
 
             # cm_list.append(cm)  # Store confusion matrix for analysis
 
+            classesMisclassified = {}
+
             # Update susp_pair_clients here in analyze_confusion_matrix
-            is_suspicious = self.analyze_confusion_matrix(cm, ground_metrics_cm, susp_pair_clients, idx, non_suspicious_updates, suspicious_updates, update_weights)
+            is_suspicious = self.analyze_confusion_matrix(cm, ground_metrics_cm, susp_pair_clients, classesMisclassified, idx, non_suspicious_updates, suspicious_updates, update_weights)
             suspicious_count += is_suspicious
             if is_suspicious:
                 logger.warning(f"Suspicious behavior detected for user {idx}.")
@@ -447,10 +448,10 @@ class Helper:
         logger.info(f"Type of susp_pair_clients before calling assign_weights_based_on_misclassification: {type(susp_pair_clients)}")
 
 
-        indetified_adversaries = []
+        identified_adversaries = []
 
         # Step 10: Rank clients based on misclassification counts and assign weights
-        update_weights, identified_adversaries = self.assign_weights_based_on_misclassification(susp_pair_clients, update_weights, small_weight)
+        update_weights, identified_adversaries = self.assign_weights_based_on_misclassification(susp_pair_clients, classesMisclassified ,update_weights, small_weight)
 
         
             
@@ -526,34 +527,118 @@ class Helper:
 
 
 
-    def assign_weights_based_on_misclassification(self, susp_pair_clients, update_weights, small_weight=0.01, top_n=4):
-        # Confirm susp_pair_clients type at the start
-        logger.info(f"susp_pair_clients type on entry to assign_weights_based_on_misclassification: {type(susp_pair_clients)}")
+    # def assign_weights_based_on_misclassification(self, susp_pair_clients, classesMisclassified, update_weights, small_weight=0.1, top_n=4):
+    #     # Confirm susp_pair_clients type at the start
+    #     logger.info(f"susp_pair_clients type on entry to assign_weights_based_on_misclassification: {type(susp_pair_clients)}")
 
-        # Assign to a temporary variable to prevent accidental overwriting
-        susp_clients_dict = susp_pair_clients
-        indetified_adversaries = []
+    #     # Assign to a temporary variable to prevent accidental overwriting
+    #     susp_clients_dict = susp_pair_clients
+    #     indetified_adversaries = []
 
-        logger.info(f"susp_pair_clients type on susp_clients_dict = susp_pair_client: {type(susp_pair_clients)}")
+    #     logger.info(f"susp_pair_clients type on susp_clients_dict = susp_pair_client: {type(susp_pair_clients)}")
         
-        # Ensure susp_pair_clients is sorted by misclassification score
-        sorted_clients = sorted(susp_clients_dict.items(), key=lambda x: x[1], reverse=True)
+    #     # Ensure susp_pair_clients is sorted by misclassification score
+    #     sorted_clients = sorted(susp_clients_dict.items(), key=lambda x: x[1], reverse=True)
 
-        # Step 2: Assign small weight to the top 'n' clients
-        for i, (client_idx, score) in enumerate(sorted_clients):
-            if i < top_n:
-                update_weights[client_idx] = small_weight  # Assign small weight to top 'n' clients
-                logger.info(f"Client {client_idx} ranked {i+1} with score {score}. Assigned small weight: {small_weight}")
-                indetified_adversaries.append(client_idx)
-            else:
-                update_weights[client_idx] = 1.0  # Assign normal weight to other clients
-                logger.info(f"Client {client_idx} assigned normal weight.")
+    #     # Step 2: Assign small weight to the top 'n' clients
+    #     for i, (client_idx, score) in enumerate(sorted_clients):
+    #         if i < top_n:
+    #             update_weights[client_idx] = small_weight  # Assign small weight to top 'n' clients
+    #             logger.info(f"Client {client_idx} ranked {i+1} with score {score}. Assigned small weight: {small_weight}")
+    #             indetified_adversaries.append(client_idx)
+    #         else:
+    #             update_weights[client_idx] = 1.0  # Assign normal weight to other clients
+    #             logger.info(f"Client {client_idx} assigned normal weight.")
 
-        return update_weights,indetified_adversaries 
+    #     return update_weights,indetified_adversaries 
+
+    # def assign_weights_based_on_misclassification(self, susp_pair_clients, classesMisclassified, update_weights, small_weight=0.1, top_n=4):
+        
+    #     identified_adversaries = []
+    #     classesMisclassified = classesMisclassified
+    #     # Step 1: Find the class with the maximum number of misclassifying clients
+    #     max_class_id = max(classesMisclassified, key=lambda class_id: len(classesMisclassified[class_id]))
+
+    #     for class_id in classesMisclassified.keys():
+    #         if len(classesMisclassified[class_id]) == 4:
+    #             client_list = classesMisclassified[class_id]
+
+
+    #     # Step 2: Assign small weight to these clients
+    #     if(client_list):
+    #         for client in client_list:
+    #             update_weights[client] = small_weight  # Assign small weight
+    #             identified_adversaries.append(client)  # Track identified adversaries
+
+    #         logger.info(f"Class {max_class_id} has the most misclassifying clients: {client_list}. "
+    #                     f"Assigned small weight ({small_weight}) to these clients.")
+            
+    #     else:
+    #         susp_clients_dict = susp_pair_clients
+    #         logger.info(f"susp_pair_clients type on susp_clients_dict = susp_pair_client: {type(susp_pair_clients)}")
+            
+    #         # Ensure susp_pair_clients is sorted by misclassification score
+    #         sorted_clients = sorted(susp_clients_dict.items(), key=lambda x: x[1], reverse=True)
+
+    #         # Step 2: Assign small weight to the top 'n' clients
+    #         for i, (client_idx, score) in enumerate(sorted_clients):
+    #             if i < top_n:
+    #                 update_weights[client_idx] = small_weight  # Assign small weight to top 'n' clients
+    #                 logger.info(f"Client {client_idx} ranked {i+1} with score {score}. Assigned small weight: {small_weight}")
+    #                 identified_adversaries.append(client_idx)
+    #             else:
+    #                 update_weights[client_idx] = 1.0  # Assign normal weight to other clients
+    #                 logger.info(f"Client {client_idx} assigned normal weight.")
+
+    #     return update_weights, identified_adversaries
+
+    def assign_weights_based_on_misclassification(self, susp_pair_clients, classesMisclassified, update_weights, small_weight=0.1, top_n=4):
+    
+        susp_pair_clients=susp_pair_clients
+        classesMisclassified=classesMisclassified
+        identified_adversaries = []
+        client_list = None  # Initialize client_list to None
+
+        # Step 1: Find the class with exactly 4 misclassifying clients
+        for class_id in classesMisclassified.keys():
+            if len(classesMisclassified[class_id]) == 4:
+                client_list = classesMisclassified[class_id]
+                break  # Stop after finding the first matching class
+
+        # Step 2: If a class with 4 misclassifying clients is found
+        if client_list:
+            for client in client_list:
+                update_weights[client] = small_weight  # Assign small weight
+                identified_adversaries.append(client)  # Track identified adversaries
+
+            logger.info(f"Class with exactly 4 misclassifying clients found. "
+                        f"Clients: {client_list}. Assigned small weight ({small_weight}) to these clients.")
+
+        # Step 3: Fallback to susp_pair_clients if no class has 4 misclassifying clients
+        else:
+            logger.info("No class with exactly 4 misclassifying clients found. Falling back to susp_pair_clients.")
+            logger.info(f"susp_pair_clients type: {type(susp_pair_clients)}")
+
+            # Ensure susp_pair_clients is sorted by misclassification score
+            sorted_clients = sorted(susp_pair_clients.items(), key=lambda x: x[1], reverse=True)
+
+            # Assign small weight to the top 'n' suspicious clients
+            for i, (client_idx, score) in enumerate(sorted_clients):
+                if i < top_n:
+                    update_weights[client_idx] = small_weight  # Assign small weight to top 'n' clients
+                    logger.info(f"Client {client_idx} ranked {i+1} with score {score}. Assigned small weight: {small_weight}")
+                    identified_adversaries.append(client_idx)
+                else:
+                    update_weights[client_idx] = 1.0  # Assign normal weight to other clients
+                    logger.info(f"Client {client_idx} assigned normal weight.")
+
+        return update_weights, identified_adversaries
 
 
 
-    def analyze_confusion_matrix(self, cm, ground_metrics_cm, susp_pair_clients, client_idx, non_suspicious_updates, suspicious_updates, update_weights):
+
+
+    def analyze_confusion_matrix(self, cm, ground_metrics_cm, susp_pair_clients, classesMisclassified, client_idx, non_suspicious_updates, suspicious_updates, update_weights):
         threshold = 0.15  # Threshold for misclassification rate
 
         # Calculate class-wise accuracy for the ground truth confusion matrix
@@ -561,6 +646,7 @@ class Helper:
         client_accuracies = self.calculate_classwise_accuracy(cm)
 
         score = 0
+        classesMisclassified = {}
         for class_id in target_accuracies.keys():
             target_acc = target_accuracies[class_id]
             client_acc = client_accuracies[class_id]
@@ -570,7 +656,8 @@ class Helper:
             
             # Assign score if the difference is greater than the threshold
             if diff > threshold:
-                score = score + diff
+                classesMisclassified[class_id].append(client_idx)
+                score = score + 1
                 logger.info(f"Class {class_id} has a difference of {diff:.2f} between target and client {client_idx}.")
             
         susp_pair_clients[client_idx] = score       
