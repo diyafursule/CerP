@@ -357,7 +357,7 @@ class Helper:
         return class_accuracies
 
 
-    def enhanced_mkrum(self, target_model, updates, corrupted_count, users_count, validation_loader, validation_criterion,  threshold_ratio=0.15, small_weight=0.1, distances=None, return_index=False):
+    def enhanced_mkrum(self, target_model, updates, corrupted_count, users_count, validation_loader, validation_criterion,  threshold_ratio=0.15, small_weight=0.01, distances=None, return_index=False):
         
         # Step 1: Extract current model weights as a 1D numpy array
         current_weights = np.concatenate([param.data.cpu().numpy().flatten() for param in target_model.parameters()])
@@ -525,7 +525,7 @@ class Helper:
 
 
 
-    def assign_weights_based_on_misclassification(self, susp_pair_clients, update_weights, small_weight=0.1, top_n=4):
+    def assign_weights_based_on_misclassification(self, susp_pair_clients, update_weights, small_weight=0.01, top_n=4):
         # Confirm susp_pair_clients type at the start
         logger.info(f"susp_pair_clients type on entry to assign_weights_based_on_misclassification: {type(susp_pair_clients)}")
 
