@@ -1,0 +1,6 @@
+current path: saved_models/model_cifar100_Aug.19_12.27.00_CerP_mkrum_0.0001_0.0001
+Loading data
+build_classes_dict done
+train loaders done
+get poison test loader
+load data done

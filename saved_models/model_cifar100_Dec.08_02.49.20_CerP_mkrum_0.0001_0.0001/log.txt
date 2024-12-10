@@ -1,0 +1,966 @@
+current path: saved_models/model_cifar100_Dec.08_02.49.20_CerP_mkrum_0.0001_0.0001
+Loading data
+build_classes_dict done
+train loaders done
+get poison test loader
+load data done
+Loaded parameters from saved model: LR is 0.01 and current epoch is 71
+create model done
+Poisoned following participants: [13, 36, 58, 71]
+We use following environment for graphs:  cifar100_CerP
+Server Epoch:71 choose agents : [13, 36, 58, 71, 89, 99, 77, 65, 67, 61, 30, 1, 69, 81, 12, 17, 52, 15, 86, 40].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  71, local model 13, internal_epoch   1,  Average loss: 0.0070, Accuracy: 4312/4885 (88.2702%), train_poison_data_count: 385
+Global model norm: 42.432124970265015.
+Norm before scaling: 42.43993486433577. Distance: 2.2930484998309355
+Total norm for 4 adversaries is: 42.43993486433577. distance: 2.2930484998309355
+___Test Local_ResNet_18 poisoned: True, epoch: 71: Average loss: 0.4324, Accuracy: 8854/9900 (89.4343%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  71, local model 36, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4737/5305 (89.2931%), train_poison_data_count: 415
+Global model norm: 42.432124970265015.
+Norm before scaling: 42.435251977000945. Distance: 2.249212657076184
+Total norm for 4 adversaries is: 42.435251977000945. distance: 2.249212657076184
+___Test Local_ResNet_18 poisoned: True, epoch: 71: Average loss: 0.7298, Accuracy: 8300/9900 (83.8384%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  71, local model 58, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4178/4717 (88.5732%), train_poison_data_count: 370
+Global model norm: 42.432124970265015.
+Norm before scaling: 42.43872535970243. Distance: 2.178422348764341
+Total norm for 4 adversaries is: 42.43872535970243. distance: 2.178422348764341
+___Test Local_ResNet_18 poisoned: True, epoch: 71: Average loss: 0.4212, Accuracy: 8894/9900 (89.8384%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  71, local model 71, internal_epoch   1,  Average loss: 0.0074, Accuracy: 4456/5066 (87.9589%), train_poison_data_count: 400
+Global model norm: 42.432124970265015.
+Norm before scaling: 42.440400823629275. Distance: 2.3047275345768043
+Total norm for 4 adversaries is: 42.440400823629275. distance: 2.3047275345768043
+___Test Local_ResNet_18 poisoned: True, epoch: 71: Average loss: 0.6157, Accuracy: 8482/9900 (85.6768%)
+___Train Local_ResNet_18,  epoch  71, local model 89, internal_epoch   1,  Average loss: 0.0068, Accuracy: 3838/4356 (88.1084%)
+___Train Local_ResNet_18,  epoch  71, local model 89, internal_epoch   2,  Average loss: 0.0081, Accuracy: 3674/4356 (84.3434%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.4074, Accuracy: 4583/10000 (45.8300%)
+___Train Local_ResNet_18,  epoch  71, local model 99, internal_epoch   1,  Average loss: 0.0060, Accuracy: 3933/4465 (88.0851%)
+___Train Local_ResNet_18,  epoch  71, local model 99, internal_epoch   2,  Average loss: 0.0044, Accuracy: 4079/4465 (91.3550%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.9756, Accuracy: 5540/10000 (55.4000%)
+___Train Local_ResNet_18,  epoch  71, local model 77, internal_epoch   1,  Average loss: 0.0068, Accuracy: 4044/4647 (87.0239%)
+___Train Local_ResNet_18,  epoch  71, local model 77, internal_epoch   2,  Average loss: 0.0056, Accuracy: 4162/4647 (89.5632%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.9385, Accuracy: 5485/10000 (54.8500%)
+___Train Local_ResNet_18,  epoch  71, local model 65, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4452/5055 (88.0712%)
+___Train Local_ResNet_18,  epoch  71, local model 65, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4508/5055 (89.1790%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.1094, Accuracy: 5349/10000 (53.4900%)
+___Train Local_ResNet_18,  epoch  71, local model 67, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4434/5116 (86.6693%)
+___Train Local_ResNet_18,  epoch  71, local model 67, internal_epoch   2,  Average loss: 0.0066, Accuracy: 4455/5116 (87.0797%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.9708, Accuracy: 5325/10000 (53.2500%)
+___Train Local_ResNet_18,  epoch  71, local model 61, internal_epoch   1,  Average loss: 0.0063, Accuracy: 3629/4126 (87.9544%)
+___Train Local_ResNet_18,  epoch  71, local model 61, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3757/4126 (91.0567%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.9797, Accuracy: 5455/10000 (54.5500%)
+___Train Local_ResNet_18,  epoch  71, local model 30, internal_epoch   1,  Average loss: 0.0058, Accuracy: 3084/3472 (88.8249%)
+___Train Local_ResNet_18,  epoch  71, local model 30, internal_epoch   2,  Average loss: 0.0041, Accuracy: 3217/3472 (92.6555%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.0215, Accuracy: 5536/10000 (55.3600%)
+___Train Local_ResNet_18,  epoch  71, local model 1, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4434/4986 (88.9290%)
+___Train Local_ResNet_18,  epoch  71, local model 1, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4454/4986 (89.3301%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.0566, Accuracy: 5440/10000 (54.4000%)
+___Train Local_ResNet_18,  epoch  71, local model 69, internal_epoch   1,  Average loss: 0.0061, Accuracy: 3538/4013 (88.1635%)
+___Train Local_ResNet_18,  epoch  71, local model 69, internal_epoch   2,  Average loss: 0.0044, Accuracy: 3674/4013 (91.5525%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.8237, Accuracy: 5689/10000 (56.8900%)
+___Train Local_ResNet_18,  epoch  71, local model 81, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4027/4618 (87.2023%)
+___Train Local_ResNet_18,  epoch  71, local model 81, internal_epoch   2,  Average loss: 0.0059, Accuracy: 4080/4618 (88.3499%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.0556, Accuracy: 5387/10000 (53.8700%)
+___Train Local_ResNet_18,  epoch  71, local model 12, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4442/5083 (87.3893%)
+___Train Local_ResNet_18,  epoch  71, local model 12, internal_epoch   2,  Average loss: 0.0065, Accuracy: 4445/5083 (87.4484%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.1936, Accuracy: 5078/10000 (50.7800%)
+___Train Local_ResNet_18,  epoch  71, local model 17, internal_epoch   1,  Average loss: 0.0065, Accuracy: 3973/4511 (88.0736%)
+___Train Local_ResNet_18,  epoch  71, local model 17, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4053/4511 (89.8470%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.1452, Accuracy: 5197/10000 (51.9700%)
+___Train Local_ResNet_18,  epoch  71, local model 52, internal_epoch   1,  Average loss: 0.0065, Accuracy: 3329/3797 (87.6745%)
+___Train Local_ResNet_18,  epoch  71, local model 52, internal_epoch   2,  Average loss: 0.0054, Accuracy: 3401/3797 (89.5707%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.9568, Accuracy: 5523/10000 (55.2300%)
+___Train Local_ResNet_18,  epoch  71, local model 15, internal_epoch   1,  Average loss: 0.0055, Accuracy: 5005/5582 (89.6632%)
+___Train Local_ResNet_18,  epoch  71, local model 15, internal_epoch   2,  Average loss: 0.0048, Accuracy: 5059/5582 (90.6306%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.1952, Accuracy: 5118/10000 (51.1800%)
+___Train Local_ResNet_18,  epoch  71, local model 86, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3155/3616 (87.2511%)
+___Train Local_ResNet_18,  epoch  71, local model 86, internal_epoch   2,  Average loss: 0.0055, Accuracy: 3206/3616 (88.6615%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.1067, Accuracy: 5407/10000 (54.0700%)
+___Train Local_ResNet_18,  epoch  71, local model 40, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4834/5455 (88.6159%)
+___Train Local_ResNet_18,  epoch  71, local model 40, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4846/5455 (88.8359%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.8717, Accuracy: 5446/10000 (54.4600%)
+time spent on training: 256.88499426841736
+users count: 20 and corrupted count: 4.
+Original model state backed up.
+Validation completed, confusion matrix created.
+Validation completed, confusion matrix created.
+Validation completed for user 0, confusion matrix appended.
+No suspicious behavior detected for client 0.
+User 0 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 1, confusion matrix appended.
+No suspicious behavior detected for client 1.
+User 1 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 2, confusion matrix appended.
+No suspicious behavior detected for client 2.
+User 2 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 3, confusion matrix appended.
+No suspicious behavior detected for client 3.
+User 3 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 4, confusion matrix appended.
+No suspicious behavior detected for client 4.
+User 4 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 5, confusion matrix appended.
+No suspicious behavior detected for client 5.
+User 5 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 6, confusion matrix appended.
+No suspicious behavior detected for client 6.
+User 6 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 7, confusion matrix appended.
+No suspicious behavior detected for client 7.
+User 7 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 8, confusion matrix appended.
+No suspicious behavior detected for client 8.
+User 8 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 9, confusion matrix appended.
+No suspicious behavior detected for client 9.
+User 9 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 10, confusion matrix appended.
+No suspicious behavior detected for client 10.
+User 10 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 11, confusion matrix appended.
+No suspicious behavior detected for client 11.
+User 11 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 12, confusion matrix appended.
+No suspicious behavior detected for client 12.
+User 12 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 13, confusion matrix appended.
+No suspicious behavior detected for client 13.
+User 13 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 14, confusion matrix appended.
+No suspicious behavior detected for client 14.
+User 14 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 15, confusion matrix appended.
+No suspicious behavior detected for client 15.
+User 15 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 16, confusion matrix appended.
+No suspicious behavior detected for client 16.
+User 16 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 17, confusion matrix appended.
+No suspicious behavior detected for client 17.
+User 17 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 18, confusion matrix appended.
+No suspicious behavior detected for client 18.
+User 18 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 19, confusion matrix appended.
+No suspicious behavior detected for client 19.
+User 19 analyzed for suspicious behavior.
+Type of susp_pair_clients before calling assign_weights_based_on_misclassification: <class 'collections.defaultdict'>
+susp_pair_clients type on entry to assign_weights_based_on_misclassification: <class 'collections.defaultdict'>
+susp_pair_clients type on susp_clients_dict = susp_pair_client: <class 'collections.defaultdict'>
+Suspicious pairs analyzed across clients.
+Central model updated with weighted gradients.
+Actual adversaries: [0, 1, 2, 3].
+Identified adversaries: [].
+Accuracy of identifying adversarial clients: 0.00% (0/3 correctly identified as we are taking 3).
+___Test Target_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.1051, Accuracy: 7053/10000 (70.5300%)
+___Test Target_ResNet_18 poisoned: True, epoch: 71: Average loss: 9.0784, Accuracy: 116/9900 (1.1717%)
+Done in 283.7601773738861 sec.
+Server Epoch:72 choose agents : [13, 36, 58, 71, 78, 52, 95, 7, 20, 73, 98, 74, 76, 9, 79, 48, 33, 12, 16, 84].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  72, local model 13, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4397/4885 (90.0102%), train_poison_data_count: 385
+Global model norm: 42.45471938715633.
+Norm before scaling: 42.46080166146625. Distance: 2.112657268019756
+Total norm for 4 adversaries is: 42.46080166146625. distance: 2.112657268019756
+___Test Local_ResNet_18 poisoned: True, epoch: 72: Average loss: 0.2531, Accuracy: 9242/9900 (93.3535%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  72, local model 36, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4772/5305 (89.9529%), train_poison_data_count: 415
+Global model norm: 42.45471938715633.
+Norm before scaling: 42.45804598595315. Distance: 2.1663954516147554
+Total norm for 4 adversaries is: 42.45804598595315. distance: 2.1663954516147554
+___Test Local_ResNet_18 poisoned: True, epoch: 72: Average loss: 0.5364, Accuracy: 8600/9900 (86.8687%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  72, local model 58, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4189/4717 (88.8064%), train_poison_data_count: 370
+Global model norm: 42.45471938715633.
+Norm before scaling: 42.46182223664277. Distance: 2.163165075090166
+Total norm for 4 adversaries is: 42.46182223664277. distance: 2.163165075090166
+___Test Local_ResNet_18 poisoned: True, epoch: 72: Average loss: 0.2269, Accuracy: 9355/9900 (94.4949%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  72, local model 71, internal_epoch   1,  Average loss: 0.0070, Accuracy: 4494/5066 (88.7090%), train_poison_data_count: 400
+Global model norm: 42.45471938715633.
+Norm before scaling: 42.46478176594915. Distance: 2.2926227886966535
+Total norm for 4 adversaries is: 42.46478176594915. distance: 2.2926227886966535
+___Test Local_ResNet_18 poisoned: True, epoch: 72: Average loss: 0.2611, Accuracy: 9186/9900 (92.7879%)
+___Train Local_ResNet_18,  epoch  72, local model 78, internal_epoch   1,  Average loss: 0.0055, Accuracy: 3600/4025 (89.4410%)
+___Train Local_ResNet_18,  epoch  72, local model 78, internal_epoch   2,  Average loss: 0.0041, Accuracy: 3704/4025 (92.0248%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.9470, Accuracy: 5487/10000 (54.8700%)
+___Train Local_ResNet_18,  epoch  72, local model 52, internal_epoch   1,  Average loss: 0.0065, Accuracy: 3349/3797 (88.2012%)
+___Train Local_ResNet_18,  epoch  72, local model 52, internal_epoch   2,  Average loss: 0.0056, Accuracy: 3391/3797 (89.3073%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0272, Accuracy: 5404/10000 (54.0400%)
+___Train Local_ResNet_18,  epoch  72, local model 95, internal_epoch   1,  Average loss: 0.0076, Accuracy: 3938/4625 (85.1459%)
+___Train Local_ResNet_18,  epoch  72, local model 95, internal_epoch   2,  Average loss: 0.0067, Accuracy: 4005/4625 (86.5946%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0860, Accuracy: 5311/10000 (53.1100%)
+___Train Local_ResNet_18,  epoch  72, local model 7, internal_epoch   1,  Average loss: 0.0079, Accuracy: 3862/4481 (86.1861%)
+___Train Local_ResNet_18,  epoch  72, local model 7, internal_epoch   2,  Average loss: 0.0082, Accuracy: 3880/4481 (86.5878%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.1328, Accuracy: 5265/10000 (52.6500%)
+___Train Local_ResNet_18,  epoch  72, local model 20, internal_epoch   1,  Average loss: 0.0055, Accuracy: 3864/4315 (89.5481%)
+___Train Local_ResNet_18,  epoch  72, local model 20, internal_epoch   2,  Average loss: 0.0042, Accuracy: 3972/4315 (92.0510%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0400, Accuracy: 5456/10000 (54.5600%)
+___Train Local_ResNet_18,  epoch  72, local model 73, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3710/4235 (87.6033%)
+___Train Local_ResNet_18,  epoch  72, local model 73, internal_epoch   2,  Average loss: 0.0052, Accuracy: 3819/4235 (90.1771%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.9565, Accuracy: 5553/10000 (55.5300%)
+___Train Local_ResNet_18,  epoch  72, local model 98, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3377/3828 (88.2184%)
+___Train Local_ResNet_18,  epoch  72, local model 98, internal_epoch   2,  Average loss: 0.0048, Accuracy: 3466/3828 (90.5434%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.9193, Accuracy: 5560/10000 (55.6000%)
+___Train Local_ResNet_18,  epoch  72, local model 74, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3827/4416 (86.6621%)
+___Train Local_ResNet_18,  epoch  72, local model 74, internal_epoch   2,  Average loss: 0.0053, Accuracy: 3967/4416 (89.8324%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.9269, Accuracy: 5578/10000 (55.7800%)
+___Train Local_ResNet_18,  epoch  72, local model 76, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3153/3638 (86.6685%)
+___Train Local_ResNet_18,  epoch  72, local model 76, internal_epoch   2,  Average loss: 0.0048, Accuracy: 3290/3638 (90.4343%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.9717, Accuracy: 5439/10000 (54.3900%)
+___Train Local_ResNet_18,  epoch  72, local model 9, internal_epoch   1,  Average loss: 0.0070, Accuracy: 4547/5265 (86.3628%)
+___Train Local_ResNet_18,  epoch  72, local model 9, internal_epoch   2,  Average loss: 0.0073, Accuracy: 4491/5265 (85.2991%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0434, Accuracy: 5308/10000 (53.0800%)
+___Train Local_ResNet_18,  epoch  72, local model 79, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3360/3781 (88.8654%)
+___Train Local_ResNet_18,  epoch  72, local model 79, internal_epoch   2,  Average loss: 0.0069, Accuracy: 3309/3781 (87.5165%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.3208, Accuracy: 5060/10000 (50.6000%)
+___Train Local_ResNet_18,  epoch  72, local model 48, internal_epoch   1,  Average loss: 0.0055, Accuracy: 3983/4441 (89.6870%)
+___Train Local_ResNet_18,  epoch  72, local model 48, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4017/4441 (90.4526%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.2143, Accuracy: 5237/10000 (52.3700%)
+___Train Local_ResNet_18,  epoch  72, local model 33, internal_epoch   1,  Average loss: 0.0056, Accuracy: 3978/4433 (89.7361%)
+___Train Local_ResNet_18,  epoch  72, local model 33, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4001/4433 (90.2549%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.9812, Accuracy: 5542/10000 (55.4200%)
+___Train Local_ResNet_18,  epoch  72, local model 12, internal_epoch   1,  Average loss: 0.0067, Accuracy: 4430/5083 (87.1533%)
+___Train Local_ResNet_18,  epoch  72, local model 12, internal_epoch   2,  Average loss: 0.0065, Accuracy: 4445/5083 (87.4484%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0674, Accuracy: 5257/10000 (52.5700%)
+___Train Local_ResNet_18,  epoch  72, local model 16, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4331/4928 (87.8856%)
+___Train Local_ResNet_18,  epoch  72, local model 16, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4406/4928 (89.4075%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.9577, Accuracy: 5559/10000 (55.5900%)
+___Train Local_ResNet_18,  epoch  72, local model 84, internal_epoch   1,  Average loss: 0.0065, Accuracy: 4173/4793 (87.0645%)
+___Train Local_ResNet_18,  epoch  72, local model 84, internal_epoch   2,  Average loss: 0.0048, Accuracy: 4368/4793 (91.1329%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0655, Accuracy: 5416/10000 (54.1600%)
+time spent on training: 247.8151409626007
+users count: 20 and corrupted count: 4.
+Original model state backed up.
+Validation completed, confusion matrix created.
+Validation completed, confusion matrix created.
+Validation completed for user 0, confusion matrix appended.
+No suspicious behavior detected for client 0.
+User 0 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 1, confusion matrix appended.
+No suspicious behavior detected for client 1.
+User 1 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 2, confusion matrix appended.
+No suspicious behavior detected for client 2.
+User 2 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 3, confusion matrix appended.
+No suspicious behavior detected for client 3.
+User 3 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 4, confusion matrix appended.
+No suspicious behavior detected for client 4.
+User 4 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 5, confusion matrix appended.
+No suspicious behavior detected for client 5.
+User 5 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 6, confusion matrix appended.
+No suspicious behavior detected for client 6.
+User 6 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 7, confusion matrix appended.
+No suspicious behavior detected for client 7.
+User 7 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 8, confusion matrix appended.
+No suspicious behavior detected for client 8.
+User 8 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 9, confusion matrix appended.
+No suspicious behavior detected for client 9.
+User 9 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 10, confusion matrix appended.
+No suspicious behavior detected for client 10.
+User 10 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 11, confusion matrix appended.
+No suspicious behavior detected for client 11.
+User 11 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 12, confusion matrix appended.
+No suspicious behavior detected for client 12.
+User 12 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 13, confusion matrix appended.
+No suspicious behavior detected for client 13.
+User 13 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 14, confusion matrix appended.
+No suspicious behavior detected for client 14.
+User 14 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 15, confusion matrix appended.
+No suspicious behavior detected for client 15.
+User 15 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 16, confusion matrix appended.
+No suspicious behavior detected for client 16.
+User 16 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 17, confusion matrix appended.
+No suspicious behavior detected for client 17.
+User 17 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 18, confusion matrix appended.
+No suspicious behavior detected for client 18.
+User 18 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 19, confusion matrix appended.
+No suspicious behavior detected for client 19.
+User 19 analyzed for suspicious behavior.
+Type of susp_pair_clients before calling assign_weights_based_on_misclassification: <class 'collections.defaultdict'>
+susp_pair_clients type on entry to assign_weights_based_on_misclassification: <class 'collections.defaultdict'>
+susp_pair_clients type on susp_clients_dict = susp_pair_client: <class 'collections.defaultdict'>
+Suspicious pairs analyzed across clients.
+Central model updated with weighted gradients.
+Actual adversaries: [0, 1, 2, 3].
+Identified adversaries: [].
+Accuracy of identifying adversarial clients: 0.00% (0/3 correctly identified as we are taking 3).
+___Test Target_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.0974, Accuracy: 7053/10000 (70.5300%)
+___Test Target_ResNet_18 poisoned: True, epoch: 72: Average loss: 8.0906, Accuracy: 222/9900 (2.2424%)
+Done in 274.83883833885193 sec.
+Server Epoch:73 choose agents : [13, 36, 58, 71, 86, 39, 96, 76, 59, 34, 52, 80, 90, 57, 87, 82, 78, 10, 18, 0].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  73, local model 13, internal_epoch   1,  Average loss: 0.0054, Accuracy: 4441/4885 (90.9110%), train_poison_data_count: 385
+Global model norm: 42.477316154570225.
+Norm before scaling: 42.4779368857565. Distance: 2.017729968609974
+Total norm for 4 adversaries is: 42.4779368857565. distance: 2.017729968609974
+___Test Local_ResNet_18 poisoned: True, epoch: 73: Average loss: 0.2436, Accuracy: 9244/9900 (93.3737%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  73, local model 36, internal_epoch   1,  Average loss: 0.0055, Accuracy: 4791/5305 (90.3110%), train_poison_data_count: 415
+Global model norm: 42.477316154570225.
+Norm before scaling: 42.47863088696774. Distance: 2.096133569203405
+Total norm for 4 adversaries is: 42.47863088696774. distance: 2.096133569203405
+___Test Local_ResNet_18 poisoned: True, epoch: 73: Average loss: 0.0842, Accuracy: 9666/9900 (97.6364%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  73, local model 58, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4256/4717 (90.2268%), train_poison_data_count: 370
+Global model norm: 42.477316154570225.
+Norm before scaling: 42.4790130856918. Distance: 1.9912276405281235
+Total norm for 4 adversaries is: 42.4790130856918. distance: 1.9912276405281235
+___Test Local_ResNet_18 poisoned: True, epoch: 73: Average loss: 0.2090, Accuracy: 9361/9900 (94.5556%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  73, local model 71, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4517/5066 (89.1630%), train_poison_data_count: 400
+Global model norm: 42.477316154570225.
+Norm before scaling: 42.483560411922134. Distance: 2.1641547118003523
+Total norm for 4 adversaries is: 42.483560411922134. distance: 2.1641547118003523
+___Test Local_ResNet_18 poisoned: True, epoch: 73: Average loss: 0.1460, Accuracy: 9528/9900 (96.2424%)
+___Train Local_ResNet_18,  epoch  73, local model 86, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3159/3616 (87.3617%)
+___Train Local_ResNet_18,  epoch  73, local model 86, internal_epoch   2,  Average loss: 0.0045, Accuracy: 3307/3616 (91.4546%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.8104, Accuracy: 5757/10000 (57.5700%)
+___Train Local_ResNet_18,  epoch  73, local model 39, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3405/3837 (88.7412%)
+___Train Local_ResNet_18,  epoch  73, local model 39, internal_epoch   2,  Average loss: 0.0046, Accuracy: 3505/3837 (91.3474%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.9406, Accuracy: 5491/10000 (54.9100%)
+___Train Local_ResNet_18,  epoch  73, local model 96, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4169/4679 (89.1002%)
+___Train Local_ResNet_18,  epoch  73, local model 96, internal_epoch   2,  Average loss: 0.0047, Accuracy: 4287/4679 (91.6221%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0593, Accuracy: 5380/10000 (53.8000%)
+___Train Local_ResNet_18,  epoch  73, local model 76, internal_epoch   1,  Average loss: 0.0072, Accuracy: 3090/3638 (84.9368%)
+___Train Local_ResNet_18,  epoch  73, local model 76, internal_epoch   2,  Average loss: 0.0051, Accuracy: 3266/3638 (89.7746%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0701, Accuracy: 5319/10000 (53.1900%)
+___Train Local_ResNet_18,  epoch  73, local model 59, internal_epoch   1,  Average loss: 0.0054, Accuracy: 3633/4046 (89.7924%)
+___Train Local_ResNet_18,  epoch  73, local model 59, internal_epoch   2,  Average loss: 0.0051, Accuracy: 3633/4046 (89.7924%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0136, Accuracy: 5409/10000 (54.0900%)
+___Train Local_ResNet_18,  epoch  73, local model 34, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3988/4518 (88.2691%)
+___Train Local_ResNet_18,  epoch  73, local model 34, internal_epoch   2,  Average loss: 0.0046, Accuracy: 4113/4518 (91.0359%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0628, Accuracy: 5255/10000 (52.5500%)
+___Train Local_ResNet_18,  epoch  73, local model 52, internal_epoch   1,  Average loss: 0.0056, Accuracy: 3389/3797 (89.2547%)
+___Train Local_ResNet_18,  epoch  73, local model 52, internal_epoch   2,  Average loss: 0.0052, Accuracy: 3414/3797 (89.9131%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0649, Accuracy: 5366/10000 (53.6600%)
+___Train Local_ResNet_18,  epoch  73, local model 80, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4428/5025 (88.1194%)
+___Train Local_ResNet_18,  epoch  73, local model 80, internal_epoch   2,  Average loss: 0.0057, Accuracy: 4434/5025 (88.2388%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.2779, Accuracy: 5150/10000 (51.5000%)
+___Train Local_ResNet_18,  epoch  73, local model 90, internal_epoch   1,  Average loss: 0.0054, Accuracy: 3923/4362 (89.9358%)
+___Train Local_ResNet_18,  epoch  73, local model 90, internal_epoch   2,  Average loss: 0.0050, Accuracy: 3953/4362 (90.6236%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0177, Accuracy: 5380/10000 (53.8000%)
+___Train Local_ResNet_18,  epoch  73, local model 57, internal_epoch   1,  Average loss: 0.0065, Accuracy: 4001/4558 (87.7797%)
+___Train Local_ResNet_18,  epoch  73, local model 57, internal_epoch   2,  Average loss: 0.0060, Accuracy: 4040/4558 (88.6354%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.1918, Accuracy: 5148/10000 (51.4800%)
+___Train Local_ResNet_18,  epoch  73, local model 87, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3208/3672 (87.3638%)
+___Train Local_ResNet_18,  epoch  73, local model 87, internal_epoch   2,  Average loss: 0.0056, Accuracy: 3283/3672 (89.4063%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0427, Accuracy: 5342/10000 (53.4200%)
+___Train Local_ResNet_18,  epoch  73, local model 82, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4326/4874 (88.7567%)
+___Train Local_ResNet_18,  epoch  73, local model 82, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4354/4874 (89.3311%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.1499, Accuracy: 5255/10000 (52.5500%)
+___Train Local_ResNet_18,  epoch  73, local model 78, internal_epoch   1,  Average loss: 0.0054, Accuracy: 3618/4025 (89.8882%)
+___Train Local_ResNet_18,  epoch  73, local model 78, internal_epoch   2,  Average loss: 0.0041, Accuracy: 3706/4025 (92.0745%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.8933, Accuracy: 5604/10000 (56.0400%)
+___Train Local_ResNet_18,  epoch  73, local model 10, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4090/4663 (87.7118%)
+___Train Local_ResNet_18,  epoch  73, local model 10, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4225/4663 (90.6069%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.1054, Accuracy: 5225/10000 (52.2500%)
+___Train Local_ResNet_18,  epoch  73, local model 18, internal_epoch   1,  Average loss: 0.0063, Accuracy: 3464/3911 (88.5707%)
+___Train Local_ResNet_18,  epoch  73, local model 18, internal_epoch   2,  Average loss: 0.0065, Accuracy: 3441/3911 (87.9826%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0152, Accuracy: 5445/10000 (54.4500%)
+___Train Local_ResNet_18,  epoch  73, local model 0, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4442/5017 (88.5390%)
+___Train Local_ResNet_18,  epoch  73, local model 0, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4559/5017 (90.8710%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.8407, Accuracy: 5692/10000 (56.9200%)
+time spent on training: 255.45486307144165
+users count: 20 and corrupted count: 4.
+Original model state backed up.
+Validation completed, confusion matrix created.
+Validation completed, confusion matrix created.
+Validation completed for user 0, confusion matrix appended.
+No suspicious behavior detected for client 0.
+User 0 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 1, confusion matrix appended.
+No suspicious behavior detected for client 1.
+User 1 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 2, confusion matrix appended.
+No suspicious behavior detected for client 2.
+User 2 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 3, confusion matrix appended.
+No suspicious behavior detected for client 3.
+User 3 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 4, confusion matrix appended.
+No suspicious behavior detected for client 4.
+User 4 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 5, confusion matrix appended.
+No suspicious behavior detected for client 5.
+User 5 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 6, confusion matrix appended.
+No suspicious behavior detected for client 6.
+User 6 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 7, confusion matrix appended.
+No suspicious behavior detected for client 7.
+User 7 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 8, confusion matrix appended.
+No suspicious behavior detected for client 8.
+User 8 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 9, confusion matrix appended.
+No suspicious behavior detected for client 9.
+User 9 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 10, confusion matrix appended.
+No suspicious behavior detected for client 10.
+User 10 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 11, confusion matrix appended.
+No suspicious behavior detected for client 11.
+User 11 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 12, confusion matrix appended.
+No suspicious behavior detected for client 12.
+User 12 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 13, confusion matrix appended.
+No suspicious behavior detected for client 13.
+User 13 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 14, confusion matrix appended.
+No suspicious behavior detected for client 14.
+User 14 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 15, confusion matrix appended.
+No suspicious behavior detected for client 15.
+User 15 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 16, confusion matrix appended.
+No suspicious behavior detected for client 16.
+User 16 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 17, confusion matrix appended.
+No suspicious behavior detected for client 17.
+User 17 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 18, confusion matrix appended.
+No suspicious behavior detected for client 18.
+User 18 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 19, confusion matrix appended.
+No suspicious behavior detected for client 19.
+User 19 analyzed for suspicious behavior.
+Type of susp_pair_clients before calling assign_weights_based_on_misclassification: <class 'collections.defaultdict'>
+susp_pair_clients type on entry to assign_weights_based_on_misclassification: <class 'collections.defaultdict'>
+susp_pair_clients type on susp_clients_dict = susp_pair_client: <class 'collections.defaultdict'>
+Suspicious pairs analyzed across clients.
+Central model updated with weighted gradients.
+Actual adversaries: [0, 1, 2, 3].
+Identified adversaries: [].
+Accuracy of identifying adversarial clients: 0.00% (0/3 correctly identified as we are taking 3).
+___Test Target_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.0922, Accuracy: 7048/10000 (70.4800%)
+___Test Target_ResNet_18 poisoned: True, epoch: 73: Average loss: 7.0937, Accuracy: 423/9900 (4.2727%)
+Done in 282.51583456993103 sec.
+Server Epoch:74 choose agents : [13, 36, 58, 71, 53, 55, 91, 40, 17, 22, 11, 3, 61, 19, 27, 54, 96, 2, 86, 28].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  74, local model 13, internal_epoch   1,  Average loss: 0.0053, Accuracy: 4443/4885 (90.9519%), train_poison_data_count: 385
+Global model norm: 42.49774379351288.
+Norm before scaling: 42.499877929512195. Distance: 1.9691542558552038
+Total norm for 4 adversaries is: 42.499877929512195. distance: 1.9691542558552038
+___Test Local_ResNet_18 poisoned: True, epoch: 74: Average loss: 0.5576, Accuracy: 8623/9900 (87.1010%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  74, local model 36, internal_epoch   1,  Average loss: 0.0051, Accuracy: 4832/5305 (91.0839%), train_poison_data_count: 415
+Global model norm: 42.49774379351288.
+Norm before scaling: 42.49583791660514. Distance: 2.0198414783785186
+Total norm for 4 adversaries is: 42.49583791660514. distance: 2.0198414783785186
+___Test Local_ResNet_18 poisoned: True, epoch: 74: Average loss: 0.0776, Accuracy: 9682/9900 (97.7980%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  74, local model 58, internal_epoch   1,  Average loss: 0.0054, Accuracy: 4252/4717 (90.1420%), train_poison_data_count: 370
+Global model norm: 42.49774379351288.
+Norm before scaling: 42.49919863674638. Distance: 1.9565060457116221
+Total norm for 4 adversaries is: 42.49919863674638. distance: 1.9565060457116221
+___Test Local_ResNet_18 poisoned: True, epoch: 74: Average loss: 0.1348, Accuracy: 9550/9900 (96.4646%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  74, local model 71, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4543/5066 (89.6763%), train_poison_data_count: 400
+Global model norm: 42.49774379351288.
+Norm before scaling: 42.50362174365998. Distance: 2.116490097891473
+Total norm for 4 adversaries is: 42.50362174365998. distance: 2.116490097891473
+___Test Local_ResNet_18 poisoned: True, epoch: 74: Average loss: 0.3598, Accuracy: 8993/9900 (90.8384%)
+___Train Local_ResNet_18,  epoch  74, local model 53, internal_epoch   1,  Average loss: 0.0071, Accuracy: 5267/6124 (86.0059%)
+___Train Local_ResNet_18,  epoch  74, local model 53, internal_epoch   2,  Average loss: 0.0066, Accuracy: 5332/6124 (87.0673%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.1219, Accuracy: 5204/10000 (52.0400%)
+___Train Local_ResNet_18,  epoch  74, local model 55, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3877/4356 (89.0037%)
+___Train Local_ResNet_18,  epoch  74, local model 55, internal_epoch   2,  Average loss: 0.0083, Accuracy: 3683/4356 (84.5500%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.3366, Accuracy: 5027/10000 (50.2700%)
+___Train Local_ResNet_18,  epoch  74, local model 91, internal_epoch   1,  Average loss: 0.0078, Accuracy: 3536/4158 (85.0409%)
+___Train Local_ResNet_18,  epoch  74, local model 91, internal_epoch   2,  Average loss: 0.0069, Accuracy: 3597/4158 (86.5079%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.0815, Accuracy: 5246/10000 (52.4600%)
+___Train Local_ResNet_18,  epoch  74, local model 40, internal_epoch   1,  Average loss: 0.0053, Accuracy: 4883/5455 (89.5142%)
+___Train Local_ResNet_18,  epoch  74, local model 40, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4924/5455 (90.2658%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.9017, Accuracy: 5522/10000 (55.2200%)
+___Train Local_ResNet_18,  epoch  74, local model 17, internal_epoch   1,  Average loss: 0.0066, Accuracy: 3920/4511 (86.8987%)
+___Train Local_ResNet_18,  epoch  74, local model 17, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4058/4511 (89.9579%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.0196, Accuracy: 5258/10000 (52.5800%)
+___Train Local_ResNet_18,  epoch  74, local model 22, internal_epoch   1,  Average loss: 0.0067, Accuracy: 4546/5232 (86.8884%)
+___Train Local_ResNet_18,  epoch  74, local model 22, internal_epoch   2,  Average loss: 0.0064, Accuracy: 4572/5232 (87.3853%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.0796, Accuracy: 5373/10000 (53.7300%)
+___Train Local_ResNet_18,  epoch  74, local model 11, internal_epoch   1,  Average loss: 0.0071, Accuracy: 4502/5244 (85.8505%)
+___Train Local_ResNet_18,  epoch  74, local model 11, internal_epoch   2,  Average loss: 0.0069, Accuracy: 4524/5244 (86.2700%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.2057, Accuracy: 5126/10000 (51.2600%)
+___Train Local_ResNet_18,  epoch  74, local model 3, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4387/4918 (89.2029%)
+___Train Local_ResNet_18,  epoch  74, local model 3, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4410/4918 (89.6706%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.1106, Accuracy: 5188/10000 (51.8800%)
+___Train Local_ResNet_18,  epoch  74, local model 61, internal_epoch   1,  Average loss: 0.0060, Accuracy: 3623/4126 (87.8090%)
+___Train Local_ResNet_18,  epoch  74, local model 61, internal_epoch   2,  Average loss: 0.0051, Accuracy: 3723/4126 (90.2327%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.8726, Accuracy: 5556/10000 (55.5600%)
+___Train Local_ResNet_18,  epoch  74, local model 19, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4355/4928 (88.3726%)
+___Train Local_ResNet_18,  epoch  74, local model 19, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4374/4928 (88.7581%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.1355, Accuracy: 5184/10000 (51.8400%)
+___Train Local_ResNet_18,  epoch  74, local model 27, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3729/4223 (88.3022%)
+___Train Local_ResNet_18,  epoch  74, local model 27, internal_epoch   2,  Average loss: 0.0045, Accuracy: 3839/4223 (90.9069%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.9555, Accuracy: 5584/10000 (55.8400%)
+___Train Local_ResNet_18,  epoch  74, local model 54, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4526/5195 (87.1222%)
+___Train Local_ResNet_18,  epoch  74, local model 54, internal_epoch   2,  Average loss: 0.0061, Accuracy: 4583/5195 (88.2194%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.1562, Accuracy: 5171/10000 (51.7100%)
+___Train Local_ResNet_18,  epoch  74, local model 96, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4154/4679 (88.7797%)
+___Train Local_ResNet_18,  epoch  74, local model 96, internal_epoch   2,  Average loss: 0.0062, Accuracy: 4132/4679 (88.3095%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.0050, Accuracy: 5360/10000 (53.6000%)
+___Train Local_ResNet_18,  epoch  74, local model 2, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3207/3646 (87.9594%)
+___Train Local_ResNet_18,  epoch  74, local model 2, internal_epoch   2,  Average loss: 0.0051, Accuracy: 3285/3646 (90.0987%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.8981, Accuracy: 5629/10000 (56.2900%)
+___Train Local_ResNet_18,  epoch  74, local model 86, internal_epoch   1,  Average loss: 0.0060, Accuracy: 3194/3616 (88.3296%)
+___Train Local_ResNet_18,  epoch  74, local model 86, internal_epoch   2,  Average loss: 0.0055, Accuracy: 3211/3616 (88.7998%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.9304, Accuracy: 5599/10000 (55.9900%)
+___Train Local_ResNet_18,  epoch  74, local model 28, internal_epoch   1,  Average loss: 0.0073, Accuracy: 4074/4716 (86.3868%)
+___Train Local_ResNet_18,  epoch  74, local model 28, internal_epoch   2,  Average loss: 0.0070, Accuracy: 4070/4716 (86.3020%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.9716, Accuracy: 5469/10000 (54.6900%)
+time spent on training: 261.00491094589233
+users count: 20 and corrupted count: 4.
+Original model state backed up.
+Validation completed, confusion matrix created.
+Validation completed, confusion matrix created.
+Validation completed for user 0, confusion matrix appended.
+No suspicious behavior detected for client 0.
+User 0 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 1, confusion matrix appended.
+No suspicious behavior detected for client 1.
+User 1 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 2, confusion matrix appended.
+No suspicious behavior detected for client 2.
+User 2 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 3, confusion matrix appended.
+No suspicious behavior detected for client 3.
+User 3 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 4, confusion matrix appended.
+No suspicious behavior detected for client 4.
+User 4 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 5, confusion matrix appended.
+No suspicious behavior detected for client 5.
+User 5 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 6, confusion matrix appended.
+No suspicious behavior detected for client 6.
+User 6 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 7, confusion matrix appended.
+No suspicious behavior detected for client 7.
+User 7 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 8, confusion matrix appended.
+No suspicious behavior detected for client 8.
+User 8 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 9, confusion matrix appended.
+No suspicious behavior detected for client 9.
+User 9 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 10, confusion matrix appended.
+No suspicious behavior detected for client 10.
+User 10 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 11, confusion matrix appended.
+No suspicious behavior detected for client 11.
+User 11 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 12, confusion matrix appended.
+No suspicious behavior detected for client 12.
+User 12 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 13, confusion matrix appended.
+No suspicious behavior detected for client 13.
+User 13 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 14, confusion matrix appended.
+No suspicious behavior detected for client 14.
+User 14 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 15, confusion matrix appended.
+No suspicious behavior detected for client 15.
+User 15 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 16, confusion matrix appended.
+No suspicious behavior detected for client 16.
+User 16 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 17, confusion matrix appended.
+No suspicious behavior detected for client 17.
+User 17 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 18, confusion matrix appended.
+No suspicious behavior detected for client 18.
+User 18 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 19, confusion matrix appended.
+No suspicious behavior detected for client 19.
+User 19 analyzed for suspicious behavior.
+Type of susp_pair_clients before calling assign_weights_based_on_misclassification: <class 'collections.defaultdict'>
+susp_pair_clients type on entry to assign_weights_based_on_misclassification: <class 'collections.defaultdict'>
+susp_pair_clients type on susp_clients_dict = susp_pair_client: <class 'collections.defaultdict'>
+Suspicious pairs analyzed across clients.
+Central model updated with weighted gradients.
+Actual adversaries: [0, 1, 2, 3].
+Identified adversaries: [].
+Accuracy of identifying adversarial clients: 0.00% (0/3 correctly identified as we are taking 3).
+___Test Target_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.0892, Accuracy: 7057/10000 (70.5700%)
+___Test Target_ResNet_18 poisoned: True, epoch: 74: Average loss: 6.4306, Accuracy: 689/9900 (6.9596%)
+Done in 288.03069376945496 sec.
+Server Epoch:75 choose agents : [13, 36, 58, 71, 53, 33, 79, 24, 80, 96, 47, 1, 20, 74, 94, 84, 22, 44, 46, 50].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  75, local model 13, internal_epoch   1,  Average loss: 0.0050, Accuracy: 4473/4885 (91.5660%), train_poison_data_count: 385
+Global model norm: 42.522762171975316.
+Norm before scaling: 42.52569449618445. Distance: 1.9587377238908332
+Total norm for 4 adversaries is: 42.52569449618445. distance: 1.9587377238908332
+___Test Local_ResNet_18 poisoned: True, epoch: 75: Average loss: 0.1737, Accuracy: 9476/9900 (95.7172%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  75, local model 36, internal_epoch   1,  Average loss: 0.0050, Accuracy: 4868/5305 (91.7625%), train_poison_data_count: 415
+Global model norm: 42.522762171975316.
+Norm before scaling: 42.51766780051926. Distance: 1.9810983232748807
+Total norm for 4 adversaries is: 42.51766780051926. distance: 1.9810983232748807
+___Test Local_ResNet_18 poisoned: True, epoch: 75: Average loss: 0.1369, Accuracy: 9561/9900 (96.5758%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  75, local model 58, internal_epoch   1,  Average loss: 0.0052, Accuracy: 4285/4717 (90.8416%), train_poison_data_count: 370
+Global model norm: 42.522762171975316.
+Norm before scaling: 42.523346356461204. Distance: 1.9181744063183643
+Total norm for 4 adversaries is: 42.523346356461204. distance: 1.9181744063183643
+___Test Local_ResNet_18 poisoned: True, epoch: 75: Average loss: 0.1985, Accuracy: 9380/9900 (94.7475%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  75, local model 71, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4556/5066 (89.9329%), train_poison_data_count: 400
+Global model norm: 42.522762171975316.
+Norm before scaling: 42.53028849482595. Distance: 2.0804989671106395
+Total norm for 4 adversaries is: 42.53028849482595. distance: 2.0804989671106395
+___Test Local_ResNet_18 poisoned: True, epoch: 75: Average loss: 0.2752, Accuracy: 9216/9900 (93.0909%)
+___Train Local_ResNet_18,  epoch  75, local model 53, internal_epoch   1,  Average loss: 0.0070, Accuracy: 5284/6124 (86.2835%)
+___Train Local_ResNet_18,  epoch  75, local model 53, internal_epoch   2,  Average loss: 0.0064, Accuracy: 5336/6124 (87.1326%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.1129, Accuracy: 5170/10000 (51.7000%)
+___Train Local_ResNet_18,  epoch  75, local model 33, internal_epoch   1,  Average loss: 0.0054, Accuracy: 3967/4433 (89.4879%)
+___Train Local_ResNet_18,  epoch  75, local model 33, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4041/4433 (91.1572%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0190, Accuracy: 5491/10000 (54.9100%)
+___Train Local_ResNet_18,  epoch  75, local model 79, internal_epoch   1,  Average loss: 0.0058, Accuracy: 3380/3781 (89.3943%)
+___Train Local_ResNet_18,  epoch  75, local model 79, internal_epoch   2,  Average loss: 0.0080, Accuracy: 3220/3781 (85.1627%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.3870, Accuracy: 4818/10000 (48.1800%)
+___Train Local_ResNet_18,  epoch  75, local model 24, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3574/3969 (90.0479%)
+___Train Local_ResNet_18,  epoch  75, local model 24, internal_epoch   2,  Average loss: 0.0061, Accuracy: 3577/3969 (90.1235%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0071, Accuracy: 5521/10000 (55.2100%)
+___Train Local_ResNet_18,  epoch  75, local model 80, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4478/5025 (89.1144%)
+___Train Local_ResNet_18,  epoch  75, local model 80, internal_epoch   2,  Average loss: 0.0048, Accuracy: 4523/5025 (90.0100%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.3467, Accuracy: 4943/10000 (49.4300%)
+___Train Local_ResNet_18,  epoch  75, local model 96, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4186/4679 (89.4636%)
+___Train Local_ResNet_18,  epoch  75, local model 96, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4229/4679 (90.3826%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0796, Accuracy: 5388/10000 (53.8800%)
+___Train Local_ResNet_18,  epoch  75, local model 47, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4159/4707 (88.3578%)
+___Train Local_ResNet_18,  epoch  75, local model 47, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4215/4707 (89.5475%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.9733, Accuracy: 5459/10000 (54.5900%)
+___Train Local_ResNet_18,  epoch  75, local model 1, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4431/4986 (88.8688%)
+___Train Local_ResNet_18,  epoch  75, local model 1, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4467/4986 (89.5909%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.8742, Accuracy: 5627/10000 (56.2700%)
+___Train Local_ResNet_18,  epoch  75, local model 20, internal_epoch   1,  Average loss: 0.0050, Accuracy: 3909/4315 (90.5910%)
+___Train Local_ResNet_18,  epoch  75, local model 20, internal_epoch   2,  Average loss: 0.0044, Accuracy: 3948/4315 (91.4948%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.8565, Accuracy: 5653/10000 (56.5300%)
+___Train Local_ResNet_18,  epoch  75, local model 74, internal_epoch   1,  Average loss: 0.0063, Accuracy: 3862/4416 (87.4547%)
+___Train Local_ResNet_18,  epoch  75, local model 74, internal_epoch   2,  Average loss: 0.0057, Accuracy: 3919/4416 (88.7455%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.9986, Accuracy: 5383/10000 (53.8300%)
+___Train Local_ResNet_18,  epoch  75, local model 94, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4244/4804 (88.3430%)
+___Train Local_ResNet_18,  epoch  75, local model 94, internal_epoch   2,  Average loss: 0.0081, Accuracy: 4052/4804 (84.3464%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.1411, Accuracy: 5219/10000 (52.1900%)
+___Train Local_ResNet_18,  epoch  75, local model 84, internal_epoch   1,  Average loss: 0.0065, Accuracy: 4182/4793 (87.2522%)
+___Train Local_ResNet_18,  epoch  75, local model 84, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4263/4793 (88.9422%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0506, Accuracy: 5387/10000 (53.8700%)
+___Train Local_ResNet_18,  epoch  75, local model 22, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4549/5232 (86.9457%)
+___Train Local_ResNet_18,  epoch  75, local model 22, internal_epoch   2,  Average loss: 0.0066, Accuracy: 4544/5232 (86.8502%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0023, Accuracy: 5357/10000 (53.5700%)
+___Train Local_ResNet_18,  epoch  75, local model 44, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4121/4662 (88.3955%)
+___Train Local_ResNet_18,  epoch  75, local model 44, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4202/4662 (90.1330%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0798, Accuracy: 5279/10000 (52.7900%)
+___Train Local_ResNet_18,  epoch  75, local model 46, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4254/4956 (85.8354%)
+___Train Local_ResNet_18,  epoch  75, local model 46, internal_epoch   2,  Average loss: 0.0064, Accuracy: 4335/4956 (87.4697%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.1828, Accuracy: 5157/10000 (51.5700%)
+___Train Local_ResNet_18,  epoch  75, local model 50, internal_epoch   1,  Average loss: 0.0065, Accuracy: 3831/4368 (87.7060%)
+___Train Local_ResNet_18,  epoch  75, local model 50, internal_epoch   2,  Average loss: 0.0064, Accuracy: 3824/4368 (87.5458%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.9943, Accuracy: 5300/10000 (53.0000%)
+time spent on training: 262.3933017253876
+users count: 20 and corrupted count: 4.
+Original model state backed up.
+Validation completed, confusion matrix created.
+Validation completed, confusion matrix created.
+Validation completed for user 0, confusion matrix appended.
+No suspicious behavior detected for client 0.
+User 0 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 1, confusion matrix appended.
+No suspicious behavior detected for client 1.
+User 1 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 2, confusion matrix appended.
+No suspicious behavior detected for client 2.
+User 2 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 3, confusion matrix appended.
+No suspicious behavior detected for client 3.
+User 3 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 4, confusion matrix appended.
+No suspicious behavior detected for client 4.
+User 4 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 5, confusion matrix appended.
+No suspicious behavior detected for client 5.
+User 5 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 6, confusion matrix appended.
+No suspicious behavior detected for client 6.
+User 6 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 7, confusion matrix appended.
+No suspicious behavior detected for client 7.
+User 7 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 8, confusion matrix appended.
+No suspicious behavior detected for client 8.
+User 8 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 9, confusion matrix appended.
+No suspicious behavior detected for client 9.
+User 9 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 10, confusion matrix appended.
+No suspicious behavior detected for client 10.
+User 10 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 11, confusion matrix appended.
+No suspicious behavior detected for client 11.
+User 11 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 12, confusion matrix appended.
+No suspicious behavior detected for client 12.
+User 12 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 13, confusion matrix appended.
+No suspicious behavior detected for client 13.
+User 13 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 14, confusion matrix appended.
+No suspicious behavior detected for client 14.
+User 14 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 15, confusion matrix appended.
+No suspicious behavior detected for client 15.
+User 15 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 16, confusion matrix appended.
+No suspicious behavior detected for client 16.
+User 16 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 17, confusion matrix appended.
+No suspicious behavior detected for client 17.
+User 17 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 18, confusion matrix appended.
+No suspicious behavior detected for client 18.
+User 18 analyzed for suspicious behavior.
+Validation completed, confusion matrix created.
+Validation completed for user 19, confusion matrix appended.
+No suspicious behavior detected for client 19.
+User 19 analyzed for suspicious behavior.
+Type of susp_pair_clients before calling assign_weights_based_on_misclassification: <class 'collections.defaultdict'>
+susp_pair_clients type on entry to assign_weights_based_on_misclassification: <class 'collections.defaultdict'>
+susp_pair_clients type on susp_clients_dict = susp_pair_client: <class 'collections.defaultdict'>
+Suspicious pairs analyzed across clients.
+Central model updated with weighted gradients.
+Actual adversaries: [0, 1, 2, 3].
+Identified adversaries: [].
+Accuracy of identifying adversarial clients: 0.00% (0/3 correctly identified as we are taking 3).
+___Test Target_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.0883, Accuracy: 7074/10000 (70.7400%)
+___Test Target_ResNet_18 poisoned: True, epoch: 75: Average loss: 5.7565, Accuracy: 1059/9900 (10.6970%)
+Done in 289.8740780353546 sec.
+Server Epoch:76 choose agents : [13, 36, 58, 71, 53, 25, 47, 77, 68, 92, 10, 46, 59, 23, 32, 21, 98, 76, 79, 39].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  76, local model 13, internal_epoch   1,  Average loss: 0.0050, Accuracy: 4469/4885 (91.4841%), train_poison_data_count: 385
+Global model norm: 42.547177686675795.
+Norm before scaling: 42.5475234067375. Distance: 1.9249022917287613
+Total norm for 4 adversaries is: 42.5475234067375. distance: 1.9249022917287613
+___Test Local_ResNet_18 poisoned: True, epoch: 76: Average loss: 0.2951, Accuracy: 9173/9900 (92.6566%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  76, local model 36, internal_epoch   1,  Average loss: 0.0050, Accuracy: 4852/5305 (91.4609%), train_poison_data_count: 415
+Global model norm: 42.547177686675795.
+Norm before scaling: 42.54391974679666. Distance: 1.9528014868787256
+Total norm for 4 adversaries is: 42.54391974679666. distance: 1.9528014868787256
+___Test Local_ResNet_18 poisoned: True, epoch: 76: Average loss: 0.2230, Accuracy: 9340/9900 (94.3434%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  76, local model 58, internal_epoch   1,  Average loss: 0.0050, Accuracy: 4313/4717 (91.4352%), train_poison_data_count: 370
+Global model norm: 42.547177686675795.
+Norm before scaling: 42.547067227806664. Distance: 1.8621748032307481
+Total norm for 4 adversaries is: 42.547067227806664. distance: 1.8621748032307481

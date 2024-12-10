@@ -8,6 +8,8 @@ import logging
 from torchvision import datasets, transforms
 import numpy as np
 from model.resnet_cifar100 import ResNet18100
+from torch.utils.data import random_split
+
 
 
 logger = logging.getLogger("logger")
@@ -27,6 +29,7 @@ class Cifar100Helper(Helper):
     def create_model(self):
         local_model = None
         target_model = None
+        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
         if self.params['type'] == config.TYPE_CIFAR100:
             local_model = ResNet18100(name='Local',
@@ -61,6 +64,7 @@ class Cifar100Helper(Helper):
             else:
                 cifar_classes[label] = [ind]
         return cifar_classes
+
 
     def sample_dirichlet_train_data(self, no_participants, alpha=0.9):
         """
@@ -154,6 +158,83 @@ class Cifar100Helper(Helper):
                                            batch_size=self.params['batch_size'],
                                            sampler=torch.utils.data.sampler.SubsetRandomSampler(
                                                poison_label_inds))
+    
+    # def load_data(self):
+    #     logger.info('Loading data')
+    #     dataPath = './data'
+
+    #     if self.params['type'] == config.TYPE_CIFAR100:
+    #         transform_train = transforms.Compose([
+    #             transforms.RandomCrop(32, padding=4),
+    #             transforms.RandomHorizontalFlip(),
+    #             transforms.ToTensor(),
+    #             transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
+    #         ])
+
+    #         transform_test = transforms.Compose([
+    #             transforms.ToTensor(),
+    #             transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
+    #         ])
+
+    #         self.train_dataset = datasets.CIFAR100(dataPath, train=True, download=True,
+    #                                                transform=transform_train)
+
+    #         self.test_dataset = datasets.CIFAR100(dataPath, train=False, transform=transform_test)
+
+    #     self.classes_dict = self.build_classes_dict()
+    #     logger.info('build_classes_dict done')
+
+    #     # Split the training dataset into training and validation datasets
+    #     val_size = int(0.1 * len(self.train_dataset))  # 10% for validation
+    #     train_size = len(self.train_dataset) - val_size
+    #     self.train_dataset, self.val_dataset = torch.utils.data.random_split(self.train_dataset, [train_size, val_size])
+
+
+    #     logger.info('train and validation datasets created')
+
+    #     if self.params['sampling_dirichlet']:
+    #         indices_per_participant = self.sample_dirichlet_train_data(
+    #             self.params['number_of_total_participants'],  # 100
+    #             alpha=self.params['dirichlet_alpha'])
+    #         train_loaders = [(pos, self.get_train(indices)) for pos, indices in
+    #                          indices_per_participant.items()]
+    #     else:
+    #         all_range = list(range(len(self.train_dataset)))
+    #         random.shuffle(all_range)
+    #         train_loaders = [(pos, self.get_train_old(all_range, pos))
+    #                          for pos in range(self.params['number_of_total_participants'])]
+
+    #     logger.info('train loaders done')
+    #     self.train_data = train_loaders
+    #     logger.info(f"Total participants: {len(self.train_data)}")
+    #     self.test_data = self.get_test()
+    #     logger.info(f"Total participants(test data): {len(self.test_data)}")
+    #     self.test_data_poison, self.test_targetlabel_data = self.poison_test_dataset()
+    #     if len(self.train_data) == 0:
+    #         logger.error("Train dataset is empty after loading.")
+    #         raise ValueError("Train dataset is empty!")
+
+
+    #     self.advasarial_namelist = self.params['adversary_list']
+
+    #     if not self.params['is_random_namelist']:
+    #         self.participants_list = self.params['participants_namelist']
+    #     else:
+    #         self.participants_list = list(range(self.params['number_of_total_participants']))
+
+    #     self.benign_namelist = list(set(self.participants_list) - set(self.advasarial_namelist))
+
+    #     # Create validation DataLoader
+    #     self.val_loader = torch.utils.data.DataLoader(self.val_dataset,
+    #                                                   batch_size=self.params['batch_size'],
+    #                                                   shuffle=False)
+
+    #     logger.info('Validation loader created')
+
+    # def get_val(self):
+    #     return self.val_loader
+
+
 
     def load_data(self):
         logger.info('Loading data')
@@ -173,31 +254,38 @@ class Cifar100Helper(Helper):
                 transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
             ])
 
-            self.train_dataset = datasets.CIFAR100(dataPath, train=True, download=True,
-                                                   transform=transform_train)
+            # Load full training set and split it into training and validation
+            full_train_dataset = datasets.CIFAR100(dataPath, train=True, download=True, transform=transform_train)
+
+            val_size = int(0.1 * len(full_train_dataset))  # Use 10% of the training data for validation
+            train_size = len(full_train_dataset) - val_size
+
+            self.train_dataset, self.val_dataset = random_split(full_train_dataset, [train_size, val_size])
 
             self.test_dataset = datasets.CIFAR100(dataPath, train=False, transform=transform_test)
 
         self.classes_dict = self.build_classes_dict()
         logger.info('build_classes_dict done')
+
         if self.params['sampling_dirichlet']:
             ## sample indices for participants using Dirichlet distribution
             indices_per_participant = self.sample_dirichlet_train_data(
-                self.params['number_of_total_participants'],  # 100
-                alpha=self.params['dirichlet_alpha'])
-            train_loaders = [(pos, self.get_train(indices)) for pos, indices in
-                             indices_per_participant.items()]
+                self.params['number_of_total_participants'],
+                alpha=self.params['dirichlet_alpha']
+            )
+            train_loaders = [(pos, self.get_train(indices)) for pos, indices in indices_per_participant.items()]
         else:
-            ## sample indices for participants that are equally
+            ## sample indices for participants equally
             all_range = list(range(len(self.train_dataset)))
             random.shuffle(all_range)
-            train_loaders = [(pos, self.get_train_old(all_range, pos))
-                             for pos in range(self.params['number_of_total_participants'])]
+            train_loaders = [(pos, self.get_train_old(all_range, pos)) for pos in range(self.params['number_of_total_participants'])]
 
         logger.info('train loaders done')
+
         self.train_data = train_loaders
         self.test_data = self.get_test()
         self.test_data_poison, self.test_targetlabel_data = self.poison_test_dataset()
+        self.val_data = self.get_val()  # New validation loader
 
         self.advasarial_namelist = self.params['adversary_list']
 
@@ -205,9 +293,18 @@ class Cifar100Helper(Helper):
             self.participants_list = self.params['participants_namelist']
         else:
             self.participants_list = list(range(self.params['number_of_total_participants']))
-        # random.shuffle(self.participants_list)
+
         self.benign_namelist = list(set(self.participants_list) - set(self.advasarial_namelist))
 
+    def get_val(self):
+        # Create DataLoader for validation set
+        val_loader = torch.utils.data.DataLoader(self.val_dataset,
+                                                 batch_size=self.params['batch_size'],
+                                                 shuffle=False, num_workers=8, pin_memory=True)
+        return val_loader
+
+    
+    
     def get_train(self, indices):
         """
         This method is used along with Dirichlet distribution
@@ -215,6 +312,12 @@ class Cifar100Helper(Helper):
         :param indices:
         :return:
         """
+        if len(self.train_dataset) == 0:
+            logger.info("Train dataset is empty!")
+            raise ValueError("Train dataset is empty!")
+        
+        
+
         train_loader = torch.utils.data.DataLoader(self.train_dataset,
                                                    batch_size=self.params['batch_size'],
                                                    sampler=torch.utils.data.sampler.SubsetRandomSampler(
@@ -239,10 +342,15 @@ class Cifar100Helper(Helper):
         return train_loader
 
     def get_test(self):
+        if len(self.test_dataset) == 0:
+            logger.info("Test dataset is empty!")
+            raise ValueError("Test dataset is empty!")
         test_loader = torch.utils.data.DataLoader(self.test_dataset,
                                                   batch_size=self.params['test_batch_size'],
                                                   shuffle=False)
         return test_loader
+ 
+
 
     def get_batch(self, train_data, bptt, evaluation=False):
         data, target = bptt
@@ -286,7 +394,7 @@ class Cifar100Helper(Helper):
 
     def add_pixel_pattern(self, ori_image, noise_trigger):
         image = copy.deepcopy(ori_image)
-        noise = torch.tensor(noise_trigger).cpu()
+        noise = noise_trigger.clone().detach().cpu()
         poison_patterns = []
         for i in range(0, self.params['trigger_num']):
             poison_patterns = poison_patterns + self.params[str(i) + '_poison_pattern']
@@ -309,6 +417,11 @@ if __name__ == '__main__':
     helper = Cifar100Helper(current_time=current_time, params=params_loaded,
                             name=params_loaded.get('name', 'mnist'))
     helper.load_data()
+
+    if len(helper.train_data) == 0:
+            logger.error("Train dataset is empty after loading.")
+            raise ValueError("Train dataset is empty!")
+
 
     pars = list(range(100))
     # show the data distribution among all participants.

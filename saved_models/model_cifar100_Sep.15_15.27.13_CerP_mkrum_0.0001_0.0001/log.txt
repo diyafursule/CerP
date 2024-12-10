@@ -1,0 +1,11 @@
+current path: saved_models/model_cifar100_Sep.15_15.27.13_CerP_mkrum_0.0001_0.0001
+Loading data
+build_classes_dict done
+train loaders done
+get poison test loader
+load data done
+Loaded parameters from saved model: LR is 0.01 and current epoch is 71
+create model done
+Poisoned following participants: [13, 36, 58, 71]
+We use following environment for graphs:  cifar100_CerP
+Server Epoch:71 choose agents : [13, 36, 58, 71, 85, 4, 97, 76, 38, 94, 86, 10, 29, 34, 7, 18, 6, 22, 69, 81].

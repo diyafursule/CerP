@@ -1,0 +1,244 @@
+current path: saved_models/model_cifar100_Oct.02_22.35.17_CerP_mkrum_0.0001_0.0001
+Loading data
+build_classes_dict done
+train loaders done
+get poison test loader
+load data done
+Loaded parameters from saved model: LR is 0.01 and current epoch is 71
+create model done
+Poisoned following participants: [13, 36, 58, 71]
+We use following environment for graphs:  cifar100_CerP
+Server Epoch:71 choose agents : [13, 36, 58, 71, 85, 4, 97, 76, 38, 94, 86, 10, 29, 34, 7, 18, 6, 22, 69, 81].
+poison local model 13 index 0
+poison_now
+start trigger fine-tuning
+normally training
+___PoisonTrain Local_ResNet_18 , epoch 71, local model 13, internal_epoch 1,  Average loss: 0.0093, Accuracy: 4621/5308 (87.0573%)
+Global model norm: 42.432124970265015
+Norm before scaling: 42.42290226656764
+poison local model 36 index 1
+poison_now
+normally training
+___PoisonTrain Local_ResNet_18 , epoch 71, local model 36, internal_epoch 1,  Average loss: 0.0079, Accuracy: 5166/5777 (89.4236%)
+Global model norm: 42.432124970265015
+Norm before scaling: 42.42237712640214
+poison local model 58 index 2
+poison_now
+normally training
+___PoisonTrain Local_ResNet_18 , epoch 71, local model 58, internal_epoch 1,  Average loss: 0.0104, Accuracy: 4409/5123 (86.0629%)
+Global model norm: 42.432124970265015
+Norm before scaling: 42.42275263825121
+poison local model 71 index 3
+poison_now
+normally training
+___PoisonTrain Local_ResNet_18 , epoch 71, local model 71, internal_epoch 1,  Average loss: 0.0093, Accuracy: 4787/5503 (86.9889%)
+Global model norm: 42.432124970265015
+Norm before scaling: 42.42292384753127
+___Train Local_ResNet_18, epoch 71, local model 85, internal_epoch 1, Average loss: 0.0053, Accuracy: 6227/6947 (89.6358%)
+Sample 4 has increased loss. Previous: 0.24482393264770508, Current: 0.5360569953918457, Weight: 4.794178456658942
+Sample 5 has increased loss. Previous: 0.17830680310726166, Current: 0.42083248496055603, Weight: 5.570352592564945
+Sample 6 has increased loss. Previous: 0.13852326571941376, Current: 0.33126577734947205, Weight: 5.718836763544963
+Sample 7 has increased loss. Previous: 0.15536071360111237, Current: 0.45321184396743774, Weight: 8.50981437956359
+Sample 11 has increased loss. Previous: 0.21828097105026245, Current: 0.33897411823272705, Weight: 2.4115780656327033
+Sample 15 has increased loss. Previous: 0.11821898818016052, Current: 0.39757534861564636, Weight: 11.31004729309855
+Sample 17 has increased loss. Previous: 0.19278021156787872, Current: 0.5586686730384827, Weight: 8.398152051891229
+Sample 19 has increased loss. Previous: 0.1840999871492386, Current: 0.29365548491477966, Weight: 2.544302341979996
+Sample 23 has increased loss. Previous: 0.17983213067054749, Current: 0.34100744128227234, Weight: 3.5957801640182945
+Sample 27 has increased loss. Previous: 0.19787654280662537, Current: 0.33398735523223877, Weight: 2.8488620597186687
+Sample 30 has increased loss. Previous: 0.20798303186893463, Current: 0.45155102014541626, Weight: 4.713655577808087
+Sample 31 has increased loss. Previous: 0.21633118391036987, Current: 0.4534194767475128, Weight: 4.393008957012252
+Sample 32 has increased loss. Previous: 0.1589987725019455, Current: 0.2916828393936157, Weight: 3.365380817576212
+Sample 33 has increased loss. Previous: 0.16537334024906158, Current: 0.31410515308380127, Weight: 3.6076062088835403
+Sample 39 has increased loss. Previous: 0.21058985590934753, Current: 0.4593426287174225, Weight: 4.757717026153443
+Sample 46 has increased loss. Previous: 0.23388130962848663, Current: 0.38315489888191223, Weight: 2.6838468591969553
+Sample 55 has increased loss. Previous: 0.2912774384021759, Current: 0.5128491520881653, Weight: 3.100027814098521
+Sample 60 has increased loss. Previous: 0.3144858777523041, Current: 0.4843382239341736, Weight: 2.3718935496490245
+Sample 62 has increased loss. Previous: 0.27882179617881775, Current: 0.49375614523887634, Weight: 3.1359677405726023
+Sample 72 has increased loss. Previous: 0.4122420847415924, Current: 0.7440001368522644, Weight: 3.257177149878655
+Sample 76 has increased loss. Previous: 0.19564421474933624, Current: 0.4259082078933716, Weight: 4.7391231994721705
+Sample 88 has increased loss. Previous: 0.23152731359004974, Current: 0.3503904938697815, Weight: 2.2903410920796037
+Sample 100 has increased loss. Previous: 0.2798522114753723, Current: 0.5336546301841736, Weight: 3.6363282288440653
+___Train Local_ResNet_18, epoch 71, local model 85, internal_epoch 2, Average loss: 0.0057, Accuracy: 6168/6947 (88.7865%)
+___Train Local_ResNet_18, epoch 71, local model 4, internal_epoch 1, Average loss: 0.0056, Accuracy: 3591/4028 (89.1509%)
+Sample 7 has increased loss. Previous: 0.19854389131069183, Current: 0.3137335479259491, Weight: 2.4969443471478017
+Sample 8 has increased loss. Previous: 0.10316851735115051, Current: 0.30730900168418884, Weight: 8.87270791494234
+Sample 11 has increased loss. Previous: 0.11079228669404984, Current: 0.28508996963500977, Weight: 6.621323750906017
+Sample 14 has increased loss. Previous: 0.1883394420146942, Current: 0.29008248448371887, Weight: 2.3722499925414584
+Sample 37 has increased loss. Previous: 0.27084019780158997, Current: 0.43484431505203247, Weight: 2.5777532837713735
+___Train Local_ResNet_18, epoch 71, local model 4, internal_epoch 2, Average loss: 0.0042, Accuracy: 3692/4028 (91.6584%)
+___Train Local_ResNet_18, epoch 71, local model 97, internal_epoch 1, Average loss: 0.0067, Accuracy: 4079/4736 (86.1275%)
+Sample 2 has increased loss. Previous: 0.2598317265510559, Current: 0.576977014541626, Weight: 4.9309734715793345
+Sample 5 has increased loss. Previous: 0.2858786880970001, Current: 0.4332538843154907, Weight: 2.2967904261762606
+Sample 26 has increased loss. Previous: 0.252837210893631, Current: 0.464872807264328, Weight: 3.3805417507853632
+Sample 27 has increased loss. Previous: 0.45106637477874756, Current: 0.7272619605064392, Weight: 2.599565939219152
+Sample 28 has increased loss. Previous: 0.34044334292411804, Current: 0.5888775587081909, Weight: 2.991991227770933
+Sample 45 has increased loss. Previous: 0.24393677711486816, Current: 0.4142123758792877, Weight: 2.8833115921467276
+___Train Local_ResNet_18, epoch 71, local model 97, internal_epoch 2, Average loss: 0.0055, Accuracy: 4208/4736 (88.8514%)
+___Train Local_ResNet_18, epoch 71, local model 76, internal_epoch 1, Average loss: 0.0066, Accuracy: 3434/3959 (86.7391%)
+Sample 7 has increased loss. Previous: 0.27216637134552, Current: 0.4252210855484009, Weight: 2.440959970781203
+Sample 10 has increased loss. Previous: 0.16743122041225433, Current: 0.41953474283218384, Weight: 6.278602344739928
+Sample 19 has increased loss. Previous: 0.20439846813678741, Current: 0.4275418221950531, Weight: 4.375240539912229
+Sample 52 has increased loss. Previous: 0.31024882197380066, Current: 0.5146092176437378, Weight: 2.7512803076762653
+___Train Local_ResNet_18, epoch 71, local model 76, internal_epoch 2, Average loss: 0.0051, Accuracy: 3572/3959 (90.2248%)
+___Train Local_ResNet_18, epoch 71, local model 38, internal_epoch 1, Average loss: 0.0066, Accuracy: 5460/6235 (87.5702%)
+Sample 9 has increased loss. Previous: 0.21026591956615448, Current: 0.33256998658180237, Weight: 2.501660274384332
+Sample 10 has increased loss. Previous: 0.19068674743175507, Current: 0.39878353476524353, Weight: 4.373543144656075
+Sample 12 has increased loss. Previous: 0.21625307202339172, Current: 0.39401334524154663, Weight: 3.3196881792085065
+Sample 14 has increased loss. Previous: 0.29005634784698486, Current: 0.46363529562950134, Weight: 2.5549842791975323
+Sample 17 has increased loss. Previous: 0.1653841733932495, Current: 0.3990526497364044, Weight: 5.822004059086595
+Sample 22 has increased loss. Previous: 0.1954110711812973, Current: 0.33668825030326843, Weight: 2.968640380662519
+Sample 24 has increased loss. Previous: 0.24667468667030334, Current: 0.4886848032474518, Weight: 3.924718362816726
+Sample 36 has increased loss. Previous: 0.23645377159118652, Current: 0.3837287425994873, Weight: 2.6336385449819235
+Sample 41 has increased loss. Previous: 0.311808705329895, Current: 0.5560969114303589, Weight: 3.1807130739067633
+Sample 52 has increased loss. Previous: 0.30150461196899414, Current: 0.4722117781639099, Weight: 2.452933142304334
+Sample 63 has increased loss. Previous: 0.25556686520576477, Current: 0.7019603848457336, Weight: 7.544250754195638
+Sample 84 has increased loss. Previous: 0.31189101934432983, Current: 0.4923053979873657, Weight: 2.4915147116022847
+___Train Local_ResNet_18, epoch 71, local model 38, internal_epoch 2, Average loss: 0.0054, Accuracy: 5580/6235 (89.4948%)
+___Train Local_ResNet_18, epoch 71, local model 94, internal_epoch 1, Average loss: 0.0066, Accuracy: 4551/5224 (87.1172%)
+Sample 10 has increased loss. Previous: 0.2562161982059479, Current: 0.46474432945251465, Weight: 3.2901449641551834
+Sample 14 has increased loss. Previous: 0.2731185853481293, Current: 0.44758662581443787, Weight: 2.6856640976787713
+Sample 22 has increased loss. Previous: 0.23967859148979187, Current: 0.40409979224205017, Weight: 2.8426197340473296
+Sample 27 has increased loss. Previous: 0.17846141755580902, Current: 0.5079193115234375, Weight: 8.100293854379471
+Sample 38 has increased loss. Previous: 0.24248932301998138, Current: 0.531181812286377, Weight: 4.7984519528111775
+Sample 42 has increased loss. Previous: 0.2766931653022766, Current: 0.44700515270233154, Weight: 2.6099260098508825
+Sample 60 has increased loss. Previous: 0.2481486201286316, Current: 0.5076104402542114, Weight: 4.184440169410612
+___Train Local_ResNet_18, epoch 71, local model 94, internal_epoch 2, Average loss: 0.0050, Accuracy: 4705/5224 (90.0651%)
+___Train Local_ResNet_18, epoch 71, local model 86, internal_epoch 1, Average loss: 0.0059, Accuracy: 3484/3929 (88.6740%)
+Sample 13 has increased loss. Previous: 0.2311389148235321, Current: 0.47947630286216736, Weight: 4.30316655521996
+Sample 14 has increased loss. Previous: 0.23028826713562012, Current: 0.4606892168521881, Weight: 4.001957483402105
+Sample 15 has increased loss. Previous: 0.17541912198066711, Current: 0.46798402070999146, Weight: 7.117183822016923
+Sample 21 has increased loss. Previous: 0.18076157569885254, Current: 0.3796401917934418, Weight: 4.410949964694524
+Sample 40 has increased loss. Previous: 0.22984102368354797, Current: 0.41663289070129395, Weight: 3.285882347931488
+Sample 52 has increased loss. Previous: 0.3038962781429291, Current: 0.5119764804840088, Weight: 2.8382409291390327
+Sample 59 has increased loss. Previous: 0.2470291256904602, Current: 0.5497950911521912, Weight: 4.953422736899409
+___Train Local_ResNet_18, epoch 71, local model 86, internal_epoch 2, Average loss: 0.0052, Accuracy: 3523/3929 (89.6666%)
+___Train Local_ResNet_18, epoch 71, local model 10, internal_epoch 1, Average loss: 0.0050, Accuracy: 4600/5068 (90.7656%)
+Sample 6 has increased loss. Previous: 0.1740632802248001, Current: 0.46582502126693726, Weight: 7.161950216074597
+Sample 10 has increased loss. Previous: 0.1700628697872162, Current: 0.45730090141296387, Weight: 7.230779331589719
+Sample 11 has increased loss. Previous: 0.24060207605361938, Current: 0.42909419536590576, Weight: 3.18058157272984
+Sample 13 has increased loss. Previous: 0.1524084359407425, Current: 0.3262577950954437, Weight: 4.582513796425296
+Sample 15 has increased loss. Previous: 0.13369670510292053, Current: 0.36915823817253113, Weight: 7.624014620287766
+Sample 17 has increased loss. Previous: 0.16670037806034088, Current: 0.4223880469799042, Weight: 6.4202223619444005
+Sample 18 has increased loss. Previous: 0.16279840469360352, Current: 0.3977813124656677, Weight: 5.970194267707892
+Sample 19 has increased loss. Previous: 0.15434342622756958, Current: 0.3353145718574524, Weight: 4.719854172091145
+Sample 24 has increased loss. Previous: 0.19787390530109406, Current: 0.44987303018569946, Weight: 5.1689563613188545
+Sample 29 has increased loss. Previous: 0.19866308569908142, Current: 0.31305834650993347, Weight: 2.4832258502921567
+Sample 40 has increased loss. Previous: 0.22749975323677063, Current: 0.362936407327652, Weight: 2.5450669535933574
+Sample 49 has increased loss. Previous: 0.27912646532058716, Current: 0.41905367374420166, Weight: 2.253913645043981
+Sample 54 has increased loss. Previous: 0.2188096046447754, Current: 0.36551380157470703, Weight: 2.790453550626035
+Sample 56 has increased loss. Previous: 0.14528678357601166, Current: 0.33407679200172424, Weight: 5.287378427569815
+Sample 59 has increased loss. Previous: 0.2785550653934479, Current: 0.44450271129608154, Weight: 2.5464004834709257
+___Train Local_ResNet_18, epoch 71, local model 10, internal_epoch 2, Average loss: 0.0050, Accuracy: 4589/5068 (90.5485%)
+___Train Local_ResNet_18, epoch 71, local model 29, internal_epoch 1, Average loss: 0.0047, Accuracy: 4307/4732 (91.0186%)
+Sample 16 has increased loss. Previous: 0.09379914402961731, Current: 0.21285361051559448, Weight: 5.14949086556482
+Sample 21 has increased loss. Previous: 0.11979652941226959, Current: 0.2562931180000305, Weight: 4.577047467522176
+Sample 30 has increased loss. Previous: 0.15407544374465942, Current: 0.24542579054832458, Weight: 2.537310068276965
+Sample 41 has increased loss. Previous: 0.16237492859363556, Current: 0.3736778497695923, Weight: 5.296107164889967
+Sample 49 has increased loss. Previous: 0.19014976918697357, Current: 0.5542297959327698, Weight: 8.49548417371714
+Sample 63 has increased loss. Previous: 0.17324450612068176, Current: 0.27061665058135986, Weight: 2.440001461115972
+___Train Local_ResNet_18, epoch 71, local model 29, internal_epoch 2, Average loss: 0.0033, Accuracy: 4433/4732 (93.6813%)
+___Train Local_ResNet_18, epoch 71, local model 34, internal_epoch 1, Average loss: 0.0057, Accuracy: 4366/4911 (88.9025%)
+Sample 4 has increased loss. Previous: 0.34253835678100586, Current: 0.5628119707107544, Weight: 2.699654780605775
+Sample 17 has increased loss. Previous: 0.17424824833869934, Current: 0.37589725852012634, Weight: 4.653733128484649
+Sample 28 has increased loss. Previous: 0.2546965777873993, Current: 0.46740075945854187, Weight: 3.3676938837621666
+Sample 43 has increased loss. Previous: 0.17669259011745453, Current: 0.3229355216026306, Weight: 3.3403729829426405
+___Train Local_ResNet_18, epoch 71, local model 34, internal_epoch 2, Average loss: 0.0045, Accuracy: 4501/4911 (91.6514%)
+___Train Local_ResNet_18, epoch 71, local model 7, internal_epoch 1, Average loss: 0.0059, Accuracy: 4297/4869 (88.2522%)
+Sample 5 has increased loss. Previous: 0.2135375291109085, Current: 0.4837910532951355, Weight: 5.132952428056994
+Sample 6 has increased loss. Previous: 0.4104677438735962, Current: 0.8037505745887756, Weight: 3.8342861802278874
+Sample 8 has increased loss. Previous: 0.25639647245407104, Current: 0.5626391172409058, Weight: 4.815437543925787
+Sample 9 has increased loss. Previous: 0.42703309655189514, Current: 0.7012619376182556, Weight: 2.6967299803877873
+Sample 11 has increased loss. Previous: 0.3547506630420685, Current: 0.5679253935813904, Weight: 2.5629264531857268
+Sample 12 has increased loss. Previous: 0.1724766343832016, Current: 0.3618934750556946, Weight: 4.402516250349579
+Sample 13 has increased loss. Previous: 0.2979496717453003, Current: 0.580824077129364, Weight: 3.800173275712265
+Sample 14 has increased loss. Previous: 0.19080469012260437, Current: 0.6621423363685608, Weight: 12.042720924515978
+Sample 15 has increased loss. Previous: 0.27315667271614075, Current: 0.49928319454193115, Weight: 3.3409522501731947
+Sample 17 has increased loss. Previous: 0.34298133850097656, Current: 0.6858011484146118, Weight: 3.998116404001507
+Sample 20 has increased loss. Previous: 0.2944158613681793, Current: 0.5322789549827576, Weight: 3.2685579119274704
+Sample 21 has increased loss. Previous: 0.22262553870677948, Current: 0.4988793134689331, Weight: 5.021587388886563
+Sample 22 has increased loss. Previous: 0.2991717457771301, Current: 0.5314023494720459, Weight: 3.1550466787494105
+Sample 23 has increased loss. Previous: 0.2009272277355194, Current: 0.32795900106430054, Weight: 2.66416749649421
+Sample 25 has increased loss. Previous: 0.1861533522605896, Current: 0.4718531668186188, Weight: 6.424983629229647
+Sample 26 has increased loss. Previous: 0.3134441375732422, Current: 0.5330518484115601, Weight: 2.892135286411335
+Sample 27 has increased loss. Previous: 0.27452075481414795, Current: 0.4811668395996094, Weight: 3.0721400530973515
+Sample 28 has increased loss. Previous: 0.33237260580062866, Current: 0.5005428791046143, Weight: 2.2679429762110566
+Sample 29 has increased loss. Previous: 0.22548018395900726, Current: 0.4013461470603943, Weight: 3.1682645297809304
+Sample 32 has increased loss. Previous: 0.3642985224723816, Current: 0.6327946782112122, Weight: 3.017246669238691
+Sample 34 has increased loss. Previous: 0.2640603482723236, Current: 0.5302761197090149, Weight: 4.032717091396413
+Sample 35 has increased loss. Previous: 0.2264803797006607, Current: 0.6020110249519348, Weight: 7.0655784156370505
+Sample 36 has increased loss. Previous: 0.34156477451324463, Current: 0.6944788694381714, Weight: 4.134013791343895
+Sample 37 has increased loss. Previous: 0.19218799471855164, Current: 0.715027928352356, Weight: 13.841829639558053
+Sample 43 has increased loss. Previous: 0.2189120650291443, Current: 0.45933133363723755, Weight: 4.402635679149757
+Sample 45 has increased loss. Previous: 0.345375657081604, Current: 0.5506804585456848, Weight: 2.542236105531177
+Sample 46 has increased loss. Previous: 0.3054797053337097, Current: 0.5634856224060059, Weight: 3.4025220833605823
+Sample 47 has increased loss. Previous: 0.2182466685771942, Current: 0.56965172290802, Weight: 6.812767754163859
+Sample 48 has increased loss. Previous: 0.2691032290458679, Current: 0.5258315205574036, Weight: 3.818171344742501
+Sample 52 has increased loss. Previous: 0.28292223811149597, Current: 0.657090961933136, Weight: 5.394072971382957
+Sample 54 has increased loss. Previous: 0.3530939221382141, Current: 0.5593817234039307, Weight: 2.5097823520485556
+Sample 61 has increased loss. Previous: 0.28607749938964844, Current: 0.7628833055496216, Weight: 7.111297054367521
+Sample 67 has increased loss. Previous: 0.4064887464046478, Current: 0.6379392147064209, Weight: 2.4629837442466993
+___Train Local_ResNet_18, epoch 71, local model 7, internal_epoch 2, Average loss: 0.0080, Accuracy: 4129/4869 (84.8018%)
+___Train Local_ResNet_18, epoch 71, local model 18, internal_epoch 1, Average loss: 0.0057, Accuracy: 3790/4249 (89.1975%)
+Sample 5 has increased loss. Previous: 0.32221168279647827, Current: 0.699600875377655, Weight: 4.714309838779026
+Sample 9 has increased loss. Previous: 0.2159273475408554, Current: 0.37083277106285095, Weight: 2.9494491497527386
+Sample 12 has increased loss. Previous: 0.13265135884284973, Current: 0.30336320400238037, Weight: 5.230008549351356
+Sample 13 has increased loss. Previous: 0.17105337977409363, Current: 0.3420000374317169, Weight: 3.997504744534582
+Sample 15 has increased loss. Previous: 0.2953530550003052, Current: 0.4940188527107239, Weight: 2.797719119293642
+Sample 18 has increased loss. Previous: 0.28912022709846497, Current: 0.44788336753845215, Weight: 2.399788219915804
+Sample 30 has increased loss. Previous: 0.22352556884288788, Current: 0.3770395517349243, Weight: 2.845243260334185
+Sample 36 has increased loss. Previous: 0.21118859946727753, Current: 0.39368972182273865, Weight: 3.475099253658635
+Sample 48 has increased loss. Previous: 0.23621921241283417, Current: 0.45774421095848083, Weight: 3.755046217442089
+Sample 54 has increased loss. Previous: 0.22378727793693542, Current: 0.44649362564086914, Weight: 3.980702657019695
+Sample 64 has increased loss. Previous: 0.16452796757221222, Current: 0.42983877658843994, Weight: 6.825456720909869
+___Train Local_ResNet_18, epoch 71, local model 18, internal_epoch 2, Average loss: 0.0051, Accuracy: 3819/4249 (89.8800%)
+___Train Local_ResNet_18, epoch 71, local model 6, internal_epoch 1, Average loss: 0.0065, Accuracy: 4380/4929 (88.8618%)
+Sample 5 has increased loss. Previous: 0.2813299894332886, Current: 0.5317587852478027, Weight: 3.5727060674846296
+Sample 9 has increased loss. Previous: 0.13544386625289917, Current: 0.3700368404388428, Weight: 7.4639933476878495
+Sample 13 has increased loss. Previous: 0.24021905660629272, Current: 0.38992854952812195, Weight: 2.6348454991602708
+Sample 14 has increased loss. Previous: 0.14984817802906036, Current: 0.3688490092754364, Weight: 6.058907313832687
+Sample 15 has increased loss. Previous: 0.21169136464595795, Current: 0.45932042598724365, Weight: 4.7078783548967245
+Sample 18 has increased loss. Previous: 0.24817025661468506, Current: 0.43381235003471375, Weight: 3.055655318100718
+Sample 20 has increased loss. Previous: 0.3237384259700775, Current: 0.49414703249931335, Weight: 2.329828114211559
+Sample 21 has increased loss. Previous: 0.18846888840198517, Current: 0.3706394135951996, Weight: 3.8674424692975724
+Sample 23 has increased loss. Previous: 0.19852371513843536, Current: 0.32483765482902527, Weight: 2.677367239626187
+Sample 24 has increased loss. Previous: 0.21355396509170532, Current: 0.50175940990448, Weight: 5.520466425487516
+___Train Local_ResNet_18, epoch 71, local model 6, internal_epoch 2, Average loss: 0.0058, Accuracy: 4464/4929 (90.5660%)
+___Train Local_ResNet_18, epoch 71, local model 22, internal_epoch 1, Average loss: 0.0054, Accuracy: 5108/5696 (89.6770%)
+Sample 2 has increased loss. Previous: 0.17285409569740295, Current: 0.3240630030632019, Weight: 3.5147914048086735
+Sample 4 has increased loss. Previous: 0.14409318566322327, Current: 0.22302405536174774, Weight: 2.395612282617491
+Sample 12 has increased loss. Previous: 0.21476119756698608, Current: 0.3702402710914612, Weight: 2.9720470229959743
+Sample 13 has increased loss. Previous: 0.20557980239391327, Current: 0.5302836894989014, Weight: 6.653584089817701
+Sample 17 has increased loss. Previous: 0.15141800045967102, Current: 0.3881479799747467, Weight: 6.571123763488763
+Sample 18 has increased loss. Previous: 0.09719843417406082, Current: 0.3100075125694275, Weight: 10.172457861876248
+Sample 24 has increased loss. Previous: 0.21905623376369476, Current: 0.3419876992702484, Weight: 2.4373042054035294
+Sample 26 has increased loss. Previous: 0.23373496532440186, Current: 0.45905497670173645, Weight: 3.8572876780682113
+Sample 29 has increased loss. Previous: 0.17098453640937805, Current: 0.32046499848365784, Weight: 3.512752360473208
+Sample 35 has increased loss. Previous: 0.23704293370246887, Current: 0.4348745048046112, Weight: 3.3656881026369403
+Sample 37 has increased loss. Previous: 0.22445964813232422, Current: 0.3737901449203491, Weight: 2.7731868888045
+Sample 70 has increased loss. Previous: 0.20452538132667542, Current: 0.5435609817504883, Weight: 7.063210129329472
+___Train Local_ResNet_18, epoch 71, local model 22, internal_epoch 2, Average loss: 0.0049, Accuracy: 5155/5696 (90.5021%)
+___Train Local_ResNet_18, epoch 71, local model 69, internal_epoch 1, Average loss: 0.0055, Accuracy: 3913/4364 (89.6654%)
+Sample 0 has increased loss. Previous: 0.21232257783412933, Current: 0.32717618346214294, Weight: 2.3744936214711334
+Sample 4 has increased loss. Previous: 0.20643304288387299, Current: 0.4091635048389435, Weight: 3.9285777409668894
+Sample 5 has increased loss. Previous: 0.24097101390361786, Current: 0.4468899965286255, Weight: 3.4393126456349257
+Sample 8 has increased loss. Previous: 0.21713629364967346, Current: 0.5682507157325745, Weight: 6.848810373640671
+Sample 12 has increased loss. Previous: 0.1534266620874405, Current: 0.48861005902290344, Weight: 10.14198896396715
+Sample 13 has increased loss. Previous: 0.14709043502807617, Current: 0.25628039240837097, Weight: 3.035721285422456
+Sample 16 has increased loss. Previous: 0.31778767704963684, Current: 0.5899549126625061, Weight: 3.44638299706439
+Sample 18 has increased loss. Previous: 0.23662054538726807, Current: 0.39707791805267334, Weight: 2.816090258110109
+Sample 20 has increased loss. Previous: 0.29902729392051697, Current: 0.7260976433753967, Weight: 5.896148228546213
+Sample 26 has increased loss. Previous: 0.22735053300857544, Current: 0.4525677561759949, Weight: 3.9625546434528647
+Sample 28 has increased loss. Previous: 0.1374153047800064, Current: 0.5342183709144592, Weight: 15.113582686488751
+Sample 34 has increased loss. Previous: 0.1968270093202591, Current: 0.4852360188961029, Weight: 6.077663829498188
+Sample 48 has increased loss. Previous: 0.1771497279405594, Current: 0.4384434223175049, Weight: 6.125564802707835
+Sample 59 has increased loss. Previous: 0.17807923257350922, Current: 0.2950139343738556, Weight: 2.744470128014502
+Sample 63 has increased loss. Previous: 0.2481490969657898, Current: 0.4494918882846832, Weight: 3.281091329305221
+Sample 67 has increased loss. Previous: 0.1450185924768448, Current: 0.309497594833374, Weight: 4.554777697953438
+___Train Local_ResNet_18, epoch 71, local model 69, internal_epoch 2, Average loss: 0.0057, Accuracy: 3879/4364 (88.8863%)
+___Train Local_ResNet_18, epoch 71, local model 81, internal_epoch 1, Average loss: 0.0053, Accuracy: 4528/5035 (89.9305%)
+Sample 10 has increased loss. Previous: 0.29784420132637024, Current: 0.5283419489860535, Weight: 3.1466749961906357
+Sample 20 has increased loss. Previous: 0.2504125237464905, Current: 0.3991437554359436, Weight: 2.540660220929104
+Sample 21 has increased loss. Previous: 0.1491653323173523, Current: 0.2640739679336548, Weight: 3.1341182784798414
+Sample 29 has increased loss. Previous: 0.2203320860862732, Current: 0.45946353673934937, Weight: 4.348571446190382
+___Train Local_ResNet_18, epoch 71, local model 81, internal_epoch 2, Average loss: 0.0042, Accuracy: 4646/5035 (92.2741%)
+time spent on training: 179.57941365242004

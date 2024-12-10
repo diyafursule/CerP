@@ -1,0 +1,2 @@
+current path: saved_models/model_cifar100_Oct.17_01.23.22_CerP_mkrum_0.0001_0.0001
+Loading data

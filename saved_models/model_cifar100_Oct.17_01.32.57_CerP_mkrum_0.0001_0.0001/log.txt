@@ -1,0 +1,1910 @@
+current path: saved_models/model_cifar100_Oct.17_01.32.57_CerP_mkrum_0.0001_0.0001
+Loading data
+build_classes_dict done
+train loaders done
+get poison test loader
+load data done
+Loaded parameters from saved model: LR is 0.01 and current epoch is 71
+create model done
+Poisoned following participants: [13, 36, 58, 71]
+We use following environment for graphs:  cifar100_CerP
+Server Epoch:71 choose agents : [13, 36, 58, 71, 89, 99, 77, 65, 67, 61, 30, 1, 69, 81, 12, 17, 52, 15, 86, 40].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  71, local model 13, internal_epoch   1,  Average loss: 0.0070, Accuracy: 4307/4885 (88.1679%), train_poison_data_count: 385
+Global model norm: 42.432124970265015.
+Norm before scaling: 42.43995212217861. Distance: 2.294175410514415
+___Test Local_ResNet_18 poisoned: True, epoch: 71: Average loss: 0.4487, Accuracy: 8814/9900 (89.0303%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  71, local model 36, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4736/5305 (89.2743%), train_poison_data_count: 415
+Global model norm: 42.432124970265015.
+Norm before scaling: 42.43523327893344. Distance: 2.251233504519271
+___Test Local_ResNet_18 poisoned: True, epoch: 71: Average loss: 0.7060, Accuracy: 8363/9900 (84.4747%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  71, local model 58, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4184/4717 (88.7004%), train_poison_data_count: 370
+Global model norm: 42.432124970265015.
+Norm before scaling: 42.438679337442274. Distance: 2.17737229420567
+___Test Local_ResNet_18 poisoned: True, epoch: 71: Average loss: 0.4189, Accuracy: 8903/9900 (89.9293%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  71, local model 71, internal_epoch   1,  Average loss: 0.0074, Accuracy: 4455/5066 (87.9392%), train_poison_data_count: 400
+Global model norm: 42.432124970265015.
+Norm before scaling: 42.440292963136756. Distance: 2.304369060693903
+___Test Local_ResNet_18 poisoned: True, epoch: 71: Average loss: 0.5974, Accuracy: 8514/9900 (86.0000%)
+___Train Local_ResNet_18,  epoch  71, local model 89, internal_epoch   1,  Average loss: 0.0068, Accuracy: 3838/4356 (88.1084%)
+___Train Local_ResNet_18,  epoch  71, local model 89, internal_epoch   2,  Average loss: 0.0079, Accuracy: 3697/4356 (84.8714%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.3673, Accuracy: 4734/10000 (47.3400%)
+___Train Local_ResNet_18,  epoch  71, local model 99, internal_epoch   1,  Average loss: 0.0060, Accuracy: 3936/4465 (88.1523%)
+___Train Local_ResNet_18,  epoch  71, local model 99, internal_epoch   2,  Average loss: 0.0044, Accuracy: 4091/4465 (91.6237%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.0162, Accuracy: 5538/10000 (55.3800%)
+___Train Local_ResNet_18,  epoch  71, local model 77, internal_epoch   1,  Average loss: 0.0068, Accuracy: 4044/4647 (87.0239%)
+___Train Local_ResNet_18,  epoch  71, local model 77, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4152/4647 (89.3480%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.9206, Accuracy: 5508/10000 (55.0800%)
+___Train Local_ResNet_18,  epoch  71, local model 65, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4446/5055 (87.9525%)
+___Train Local_ResNet_18,  epoch  71, local model 65, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4523/5055 (89.4758%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.0839, Accuracy: 5321/10000 (53.2100%)
+___Train Local_ResNet_18,  epoch  71, local model 67, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4437/5116 (86.7279%)
+___Train Local_ResNet_18,  epoch  71, local model 67, internal_epoch   2,  Average loss: 0.0066, Accuracy: 4476/5116 (87.4902%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.0660, Accuracy: 5190/10000 (51.9000%)
+___Train Local_ResNet_18,  epoch  71, local model 61, internal_epoch   1,  Average loss: 0.0063, Accuracy: 3635/4126 (88.0999%)
+___Train Local_ResNet_18,  epoch  71, local model 61, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3750/4126 (90.8871%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.9531, Accuracy: 5476/10000 (54.7600%)
+___Train Local_ResNet_18,  epoch  71, local model 30, internal_epoch   1,  Average loss: 0.0058, Accuracy: 3078/3472 (88.6521%)
+___Train Local_ResNet_18,  epoch  71, local model 30, internal_epoch   2,  Average loss: 0.0041, Accuracy: 3205/3472 (92.3099%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.0811, Accuracy: 5450/10000 (54.5000%)
+___Train Local_ResNet_18,  epoch  71, local model 1, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4434/4986 (88.9290%)
+___Train Local_ResNet_18,  epoch  71, local model 1, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4459/4986 (89.4304%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.1630, Accuracy: 5304/10000 (53.0400%)
+___Train Local_ResNet_18,  epoch  71, local model 69, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3542/4013 (88.2631%)
+___Train Local_ResNet_18,  epoch  71, local model 69, internal_epoch   2,  Average loss: 0.0044, Accuracy: 3685/4013 (91.8266%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.8487, Accuracy: 5661/10000 (56.6100%)
+___Train Local_ResNet_18,  epoch  71, local model 81, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4032/4618 (87.3105%)
+___Train Local_ResNet_18,  epoch  71, local model 81, internal_epoch   2,  Average loss: 0.0057, Accuracy: 4117/4618 (89.1511%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.0508, Accuracy: 5384/10000 (53.8400%)
+___Train Local_ResNet_18,  epoch  71, local model 12, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4425/5083 (87.0549%)
+___Train Local_ResNet_18,  epoch  71, local model 12, internal_epoch   2,  Average loss: 0.0065, Accuracy: 4435/5083 (87.2516%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.0425, Accuracy: 5375/10000 (53.7500%)
+___Train Local_ResNet_18,  epoch  71, local model 17, internal_epoch   1,  Average loss: 0.0065, Accuracy: 3970/4511 (88.0071%)
+___Train Local_ResNet_18,  epoch  71, local model 17, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4019/4511 (89.0933%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.1537, Accuracy: 5213/10000 (52.1300%)
+___Train Local_ResNet_18,  epoch  71, local model 52, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3336/3797 (87.8588%)
+___Train Local_ResNet_18,  epoch  71, local model 52, internal_epoch   2,  Average loss: 0.0054, Accuracy: 3399/3797 (89.5180%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.9751, Accuracy: 5518/10000 (55.1800%)
+___Train Local_ResNet_18,  epoch  71, local model 15, internal_epoch   1,  Average loss: 0.0056, Accuracy: 4992/5582 (89.4303%)
+___Train Local_ResNet_18,  epoch  71, local model 15, internal_epoch   2,  Average loss: 0.0048, Accuracy: 5053/5582 (90.5231%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.0880, Accuracy: 5294/10000 (52.9400%)
+___Train Local_ResNet_18,  epoch  71, local model 86, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3150/3616 (87.1128%)
+___Train Local_ResNet_18,  epoch  71, local model 86, internal_epoch   2,  Average loss: 0.0055, Accuracy: 3195/3616 (88.3573%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.1426, Accuracy: 5411/10000 (54.1100%)
+___Train Local_ResNet_18,  epoch  71, local model 40, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4817/5455 (88.3043%)
+___Train Local_ResNet_18,  epoch  71, local model 40, internal_epoch   2,  Average loss: 0.0056, Accuracy: 4848/5455 (88.8726%)
+___Test Local_ResNet_18 poisoned: False, epoch: 71: Average loss: 2.0789, Accuracy: 5161/10000 (51.6100%)
+time spent on training: 232.71057319641113
+___Test Target_ResNet_18 poisoned: False, epoch: 71: Average loss: 1.1264, Accuracy: 7016/10000 (70.1600%)
+___Test Target_ResNet_18 poisoned: True, epoch: 71: Average loss: 10.2077, Accuracy: 26/9900 (0.2626%)
+Done in 253.6006407737732 sec.
+Server Epoch:72 choose agents : [13, 36, 58, 71, 78, 52, 95, 7, 20, 73, 98, 74, 76, 9, 79, 48, 33, 12, 16, 84].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  72, local model 13, internal_epoch   1,  Average loss: 0.0067, Accuracy: 4352/4885 (89.0890%), train_poison_data_count: 385
+Global model norm: 42.46420539977611.
+Norm before scaling: 42.4662808562938. Distance: 2.208858631444039
+___Test Local_ResNet_18 poisoned: True, epoch: 72: Average loss: 0.2037, Accuracy: 9405/9900 (95.0000%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  72, local model 36, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4755/5305 (89.6324%), train_poison_data_count: 415
+Global model norm: 42.46420539977611.
+Norm before scaling: 42.46999745224563. Distance: 2.234225074699889
+___Test Local_ResNet_18 poisoned: True, epoch: 72: Average loss: 0.3563, Accuracy: 9053/9900 (91.4444%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  72, local model 58, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4199/4717 (89.0184%), train_poison_data_count: 370
+Global model norm: 42.46420539977611.
+Norm before scaling: 42.47189011799819. Distance: 2.1564769901823184
+___Test Local_ResNet_18 poisoned: True, epoch: 72: Average loss: 0.3166, Accuracy: 9105/9900 (91.9697%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  72, local model 71, internal_epoch   1,  Average loss: 0.0071, Accuracy: 4484/5066 (88.5116%), train_poison_data_count: 400
+Global model norm: 42.46420539977611.
+Norm before scaling: 42.47483888699947. Distance: 2.3024117306037337
+___Test Local_ResNet_18 poisoned: True, epoch: 72: Average loss: 0.2958, Accuracy: 9166/9900 (92.5859%)
+___Train Local_ResNet_18,  epoch  72, local model 78, internal_epoch   1,  Average loss: 0.0057, Accuracy: 3595/4025 (89.3168%)
+___Train Local_ResNet_18,  epoch  72, local model 78, internal_epoch   2,  Average loss: 0.0041, Accuracy: 3703/4025 (92.0000%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.8799, Accuracy: 5613/10000 (56.1300%)
+___Train Local_ResNet_18,  epoch  72, local model 52, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3382/3797 (89.0703%)
+___Train Local_ResNet_18,  epoch  72, local model 52, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3468/3797 (91.3353%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0689, Accuracy: 5398/10000 (53.9800%)
+___Train Local_ResNet_18,  epoch  72, local model 95, internal_epoch   1,  Average loss: 0.0071, Accuracy: 4007/4625 (86.6378%)
+___Train Local_ResNet_18,  epoch  72, local model 95, internal_epoch   2,  Average loss: 0.0065, Accuracy: 4019/4625 (86.8973%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.2072, Accuracy: 5063/10000 (50.6300%)
+___Train Local_ResNet_18,  epoch  72, local model 7, internal_epoch   1,  Average loss: 0.0077, Accuracy: 3820/4481 (85.2488%)
+___Train Local_ResNet_18,  epoch  72, local model 7, internal_epoch   2,  Average loss: 0.0077, Accuracy: 3874/4481 (86.4539%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.2078, Accuracy: 5195/10000 (51.9500%)
+___Train Local_ResNet_18,  epoch  72, local model 20, internal_epoch   1,  Average loss: 0.0053, Accuracy: 3883/4315 (89.9884%)
+___Train Local_ResNet_18,  epoch  72, local model 20, internal_epoch   2,  Average loss: 0.0046, Accuracy: 3941/4315 (91.3326%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0531, Accuracy: 5454/10000 (54.5400%)
+___Train Local_ResNet_18,  epoch  72, local model 73, internal_epoch   1,  Average loss: 0.0066, Accuracy: 3703/4235 (87.4380%)
+___Train Local_ResNet_18,  epoch  72, local model 73, internal_epoch   2,  Average loss: 0.0059, Accuracy: 3790/4235 (89.4923%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.1107, Accuracy: 5356/10000 (53.5600%)
+___Train Local_ResNet_18,  epoch  72, local model 98, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3384/3828 (88.4013%)
+___Train Local_ResNet_18,  epoch  72, local model 98, internal_epoch   2,  Average loss: 0.0045, Accuracy: 3508/3828 (91.6405%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.7906, Accuracy: 5805/10000 (58.0500%)
+___Train Local_ResNet_18,  epoch  72, local model 74, internal_epoch   1,  Average loss: 0.0068, Accuracy: 3830/4416 (86.7301%)
+___Train Local_ResNet_18,  epoch  72, local model 74, internal_epoch   2,  Average loss: 0.0053, Accuracy: 3937/4416 (89.1531%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.1162, Accuracy: 5245/10000 (52.4500%)
+___Train Local_ResNet_18,  epoch  72, local model 76, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3151/3638 (86.6135%)
+___Train Local_ResNet_18,  epoch  72, local model 76, internal_epoch   2,  Average loss: 0.0049, Accuracy: 3280/3638 (90.1594%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0083, Accuracy: 5493/10000 (54.9300%)
+___Train Local_ResNet_18,  epoch  72, local model 9, internal_epoch   1,  Average loss: 0.0070, Accuracy: 4546/5265 (86.3438%)
+___Train Local_ResNet_18,  epoch  72, local model 9, internal_epoch   2,  Average loss: 0.0067, Accuracy: 4566/5265 (86.7236%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0609, Accuracy: 5366/10000 (53.6600%)
+___Train Local_ResNet_18,  epoch  72, local model 79, internal_epoch   1,  Average loss: 0.0063, Accuracy: 3328/3781 (88.0190%)
+___Train Local_ResNet_18,  epoch  72, local model 79, internal_epoch   2,  Average loss: 0.0054, Accuracy: 3393/3781 (89.7382%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.1115, Accuracy: 5226/10000 (52.2600%)
+___Train Local_ResNet_18,  epoch  72, local model 48, internal_epoch   1,  Average loss: 0.0055, Accuracy: 3969/4441 (89.3718%)
+___Train Local_ResNet_18,  epoch  72, local model 48, internal_epoch   2,  Average loss: 0.0048, Accuracy: 4018/4441 (90.4751%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0102, Accuracy: 5503/10000 (55.0300%)
+___Train Local_ResNet_18,  epoch  72, local model 33, internal_epoch   1,  Average loss: 0.0058, Accuracy: 3952/4433 (89.1496%)
+___Train Local_ResNet_18,  epoch  72, local model 33, internal_epoch   2,  Average loss: 0.0052, Accuracy: 3993/4433 (90.0744%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.9030, Accuracy: 5603/10000 (56.0300%)
+___Train Local_ResNet_18,  epoch  72, local model 12, internal_epoch   1,  Average loss: 0.0070, Accuracy: 4430/5083 (87.1533%)
+___Train Local_ResNet_18,  epoch  72, local model 12, internal_epoch   2,  Average loss: 0.0067, Accuracy: 4427/5083 (87.0942%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.2212, Accuracy: 4956/10000 (49.5600%)
+___Train Local_ResNet_18,  epoch  72, local model 16, internal_epoch   1,  Average loss: 0.0067, Accuracy: 4294/4928 (87.1347%)
+___Train Local_ResNet_18,  epoch  72, local model 16, internal_epoch   2,  Average loss: 0.0056, Accuracy: 4390/4928 (89.0828%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.8918, Accuracy: 5575/10000 (55.7500%)
+___Train Local_ResNet_18,  epoch  72, local model 84, internal_epoch   1,  Average loss: 0.0068, Accuracy: 4146/4793 (86.5011%)
+___Train Local_ResNet_18,  epoch  72, local model 84, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4304/4793 (89.7976%)
+___Test Local_ResNet_18 poisoned: False, epoch: 72: Average loss: 2.0298, Accuracy: 5354/10000 (53.5400%)
+time spent on training: 230.21360969543457
+___Test Target_ResNet_18 poisoned: False, epoch: 72: Average loss: 1.1364, Accuracy: 6981/10000 (69.8100%)
+___Test Target_ResNet_18 poisoned: True, epoch: 72: Average loss: 10.1863, Accuracy: 30/9900 (0.3030%)
+Done in 251.10247588157654 sec.
+Server Epoch:73 choose agents : [13, 36, 58, 71, 86, 39, 96, 76, 59, 34, 52, 80, 90, 57, 87, 82, 78, 10, 18, 0].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  73, local model 13, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4400/4885 (90.0716%), train_poison_data_count: 385
+Global model norm: 42.493960680736.
+Norm before scaling: 42.49353552628256. Distance: 2.1247380039043864
+___Test Local_ResNet_18 poisoned: True, epoch: 73: Average loss: 0.2244, Accuracy: 9357/9900 (94.5152%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  73, local model 36, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4766/5305 (89.8398%), train_poison_data_count: 415
+Global model norm: 42.493960680736.
+Norm before scaling: 42.497996563533. Distance: 2.2003849386354717
+___Test Local_ResNet_18 poisoned: True, epoch: 73: Average loss: 0.1298, Accuracy: 9573/9900 (96.6970%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  73, local model 58, internal_epoch   1,  Average loss: 0.0067, Accuracy: 4195/4717 (88.9336%), train_poison_data_count: 370
+Global model norm: 42.493960680736.
+Norm before scaling: 42.49887119364907. Distance: 2.1452146459212877
+___Test Local_ResNet_18 poisoned: True, epoch: 73: Average loss: 0.2039, Accuracy: 9390/9900 (94.8485%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  73, local model 71, internal_epoch   1,  Average loss: 0.0068, Accuracy: 4519/5066 (89.2025%), train_poison_data_count: 400
+Global model norm: 42.493960680736.
+Norm before scaling: 42.49742926508173. Distance: 2.2116712020026443
+___Test Local_ResNet_18 poisoned: True, epoch: 73: Average loss: 0.3176, Accuracy: 9124/9900 (92.1616%)
+___Train Local_ResNet_18,  epoch  73, local model 86, internal_epoch   1,  Average loss: 0.0066, Accuracy: 3136/3616 (86.7257%)
+___Train Local_ResNet_18,  epoch  73, local model 86, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3281/3616 (90.7356%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.9331, Accuracy: 5552/10000 (55.5200%)
+___Train Local_ResNet_18,  epoch  73, local model 39, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3373/3837 (87.9072%)
+___Train Local_ResNet_18,  epoch  73, local model 39, internal_epoch   2,  Average loss: 0.0046, Accuracy: 3507/3837 (91.3995%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0071, Accuracy: 5446/10000 (54.4600%)
+___Train Local_ResNet_18,  epoch  73, local model 96, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4111/4679 (87.8607%)
+___Train Local_ResNet_18,  epoch  73, local model 96, internal_epoch   2,  Average loss: 0.0073, Accuracy: 4032/4679 (86.1723%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.1567, Accuracy: 5263/10000 (52.6300%)
+___Train Local_ResNet_18,  epoch  73, local model 76, internal_epoch   1,  Average loss: 0.0070, Accuracy: 3121/3638 (85.7889%)
+___Train Local_ResNet_18,  epoch  73, local model 76, internal_epoch   2,  Average loss: 0.0049, Accuracy: 3284/3638 (90.2694%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.9635, Accuracy: 5412/10000 (54.1200%)
+___Train Local_ResNet_18,  epoch  73, local model 59, internal_epoch   1,  Average loss: 0.0052, Accuracy: 3651/4046 (90.2373%)
+___Train Local_ResNet_18,  epoch  73, local model 59, internal_epoch   2,  Average loss: 0.0046, Accuracy: 3672/4046 (90.7563%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.8691, Accuracy: 5648/10000 (56.4800%)
+___Train Local_ResNet_18,  epoch  73, local model 34, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4020/4518 (88.9774%)
+___Train Local_ResNet_18,  epoch  73, local model 34, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4044/4518 (89.5086%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.9875, Accuracy: 5396/10000 (53.9600%)
+___Train Local_ResNet_18,  epoch  73, local model 52, internal_epoch   1,  Average loss: 0.0061, Accuracy: 3377/3797 (88.9386%)
+___Train Local_ResNet_18,  epoch  73, local model 52, internal_epoch   2,  Average loss: 0.0055, Accuracy: 3392/3797 (89.3337%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0253, Accuracy: 5419/10000 (54.1900%)
+___Train Local_ResNet_18,  epoch  73, local model 80, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4421/5025 (87.9801%)
+___Train Local_ResNet_18,  epoch  73, local model 80, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4506/5025 (89.6716%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.9853, Accuracy: 5442/10000 (54.4200%)
+___Train Local_ResNet_18,  epoch  73, local model 90, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3851/4362 (88.2852%)
+___Train Local_ResNet_18,  epoch  73, local model 90, internal_epoch   2,  Average loss: 0.0052, Accuracy: 3938/4362 (90.2797%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0259, Accuracy: 5342/10000 (53.4200%)
+___Train Local_ResNet_18,  epoch  73, local model 57, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3994/4558 (87.6262%)
+___Train Local_ResNet_18,  epoch  73, local model 57, internal_epoch   2,  Average loss: 0.0059, Accuracy: 4041/4558 (88.6573%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.2674, Accuracy: 5136/10000 (51.3600%)
+___Train Local_ResNet_18,  epoch  73, local model 87, internal_epoch   1,  Average loss: 0.0069, Accuracy: 3178/3672 (86.5468%)
+___Train Local_ResNet_18,  epoch  73, local model 87, internal_epoch   2,  Average loss: 0.0045, Accuracy: 3363/3672 (91.5850%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.0256, Accuracy: 5367/10000 (53.6700%)
+___Train Local_ResNet_18,  epoch  73, local model 82, internal_epoch   1,  Average loss: 0.0065, Accuracy: 4271/4874 (87.6282%)
+___Train Local_ResNet_18,  epoch  73, local model 82, internal_epoch   2,  Average loss: 0.0061, Accuracy: 4290/4874 (88.0181%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.2094, Accuracy: 5111/10000 (51.1100%)
+___Train Local_ResNet_18,  epoch  73, local model 78, internal_epoch   1,  Average loss: 0.0054, Accuracy: 3602/4025 (89.4907%)
+___Train Local_ResNet_18,  epoch  73, local model 78, internal_epoch   2,  Average loss: 0.0045, Accuracy: 3671/4025 (91.2050%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.8965, Accuracy: 5591/10000 (55.9100%)
+___Train Local_ResNet_18,  epoch  73, local model 10, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4113/4663 (88.2050%)
+___Train Local_ResNet_18,  epoch  73, local model 10, internal_epoch   2,  Average loss: 0.0047, Accuracy: 4230/4663 (90.7141%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.9862, Accuracy: 5391/10000 (53.9100%)
+___Train Local_ResNet_18,  epoch  73, local model 18, internal_epoch   1,  Average loss: 0.0063, Accuracy: 3462/3911 (88.5196%)
+___Train Local_ResNet_18,  epoch  73, local model 18, internal_epoch   2,  Average loss: 0.0066, Accuracy: 3406/3911 (87.0877%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 2.2584, Accuracy: 5143/10000 (51.4300%)
+___Train Local_ResNet_18,  epoch  73, local model 0, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4420/5017 (88.1005%)
+___Train Local_ResNet_18,  epoch  73, local model 0, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4493/5017 (89.5555%)
+___Test Local_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.8874, Accuracy: 5569/10000 (55.6900%)
+time spent on training: 228.98859906196594
+___Test Target_ResNet_18 poisoned: False, epoch: 73: Average loss: 1.1512, Accuracy: 6998/10000 (69.9800%)
+___Test Target_ResNet_18 poisoned: True, epoch: 73: Average loss: 10.0592, Accuracy: 35/9900 (0.3535%)
+Done in 249.71353840827942 sec.
+Server Epoch:74 choose agents : [13, 36, 58, 71, 53, 55, 91, 40, 17, 22, 11, 3, 61, 19, 27, 54, 96, 2, 86, 28].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  74, local model 13, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4387/4885 (89.8055%), train_poison_data_count: 385
+Global model norm: 42.52303775877701.
+Norm before scaling: 42.528425696085904. Distance: 2.153304036396821
+___Test Local_ResNet_18 poisoned: True, epoch: 74: Average loss: 0.1103, Accuracy: 9632/9900 (97.2929%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  74, local model 36, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4759/5305 (89.7078%), train_poison_data_count: 415
+Global model norm: 42.52303775877701.
+Norm before scaling: 42.52614085771245. Distance: 2.2157274531900506
+___Test Local_ResNet_18 poisoned: True, epoch: 74: Average loss: 0.0806, Accuracy: 9689/9900 (97.8687%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  74, local model 58, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4211/4717 (89.2728%), train_poison_data_count: 370
+Global model norm: 42.52303775877701.
+Norm before scaling: 42.52674939449875. Distance: 2.084514003619698
+___Test Local_ResNet_18 poisoned: True, epoch: 74: Average loss: 0.3477, Accuracy: 9062/9900 (91.5354%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  74, local model 71, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4461/5066 (88.0576%), train_poison_data_count: 400
+Global model norm: 42.52303775877701.
+Norm before scaling: 42.52771959080042. Distance: 2.267663078458161
+___Test Local_ResNet_18 poisoned: True, epoch: 74: Average loss: 0.0983, Accuracy: 9638/9900 (97.3535%)
+___Train Local_ResNet_18,  epoch  74, local model 53, internal_epoch   1,  Average loss: 0.0074, Accuracy: 5252/6124 (85.7609%)
+___Train Local_ResNet_18,  epoch  74, local model 53, internal_epoch   2,  Average loss: 0.0065, Accuracy: 5346/6124 (87.2959%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.0549, Accuracy: 5316/10000 (53.1600%)
+___Train Local_ResNet_18,  epoch  74, local model 55, internal_epoch   1,  Average loss: 0.0068, Accuracy: 3778/4356 (86.7309%)
+___Train Local_ResNet_18,  epoch  74, local model 55, internal_epoch   2,  Average loss: 0.0102, Accuracy: 3553/4356 (81.5657%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.1895, Accuracy: 5016/10000 (50.1600%)
+___Train Local_ResNet_18,  epoch  74, local model 91, internal_epoch   1,  Average loss: 0.0072, Accuracy: 3600/4158 (86.5801%)
+___Train Local_ResNet_18,  epoch  74, local model 91, internal_epoch   2,  Average loss: 0.0068, Accuracy: 3609/4158 (86.7965%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.9858, Accuracy: 5424/10000 (54.2400%)
+___Train Local_ResNet_18,  epoch  74, local model 40, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4801/5455 (88.0110%)
+___Train Local_ResNet_18,  epoch  74, local model 40, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4915/5455 (90.1008%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.0874, Accuracy: 5326/10000 (53.2600%)
+___Train Local_ResNet_18,  epoch  74, local model 17, internal_epoch   1,  Average loss: 0.0065, Accuracy: 3939/4511 (87.3199%)
+___Train Local_ResNet_18,  epoch  74, local model 17, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4058/4511 (89.9579%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.8266, Accuracy: 5585/10000 (55.8500%)
+___Train Local_ResNet_18,  epoch  74, local model 22, internal_epoch   1,  Average loss: 0.0068, Accuracy: 4537/5232 (86.7164%)
+___Train Local_ResNet_18,  epoch  74, local model 22, internal_epoch   2,  Average loss: 0.0067, Accuracy: 4530/5232 (86.5826%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.0212, Accuracy: 5420/10000 (54.2000%)
+___Train Local_ResNet_18,  epoch  74, local model 11, internal_epoch   1,  Average loss: 0.0079, Accuracy: 4418/5244 (84.2487%)
+___Train Local_ResNet_18,  epoch  74, local model 11, internal_epoch   2,  Average loss: 0.0067, Accuracy: 4530/5244 (86.3844%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.0515, Accuracy: 5252/10000 (52.5200%)
+___Train Local_ResNet_18,  epoch  74, local model 3, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4319/4918 (87.8203%)
+___Train Local_ResNet_18,  epoch  74, local model 3, internal_epoch   2,  Average loss: 0.0048, Accuracy: 4454/4918 (90.5653%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.0762, Accuracy: 5318/10000 (53.1800%)
+___Train Local_ResNet_18,  epoch  74, local model 61, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3635/4126 (88.0999%)
+___Train Local_ResNet_18,  epoch  74, local model 61, internal_epoch   2,  Average loss: 0.0049, Accuracy: 3751/4126 (90.9113%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.8339, Accuracy: 5710/10000 (57.1000%)
+___Train Local_ResNet_18,  epoch  74, local model 19, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4309/4928 (87.4391%)
+___Train Local_ResNet_18,  epoch  74, local model 19, internal_epoch   2,  Average loss: 0.0059, Accuracy: 4333/4928 (87.9261%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.0391, Accuracy: 5391/10000 (53.9100%)
+___Train Local_ResNet_18,  epoch  74, local model 27, internal_epoch   1,  Average loss: 0.0063, Accuracy: 3697/4223 (87.5444%)
+___Train Local_ResNet_18,  epoch  74, local model 27, internal_epoch   2,  Average loss: 0.0045, Accuracy: 3842/4223 (90.9780%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.9170, Accuracy: 5567/10000 (55.6700%)
+___Train Local_ResNet_18,  epoch  74, local model 54, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4490/5195 (86.4293%)
+___Train Local_ResNet_18,  epoch  74, local model 54, internal_epoch   2,  Average loss: 0.0065, Accuracy: 4544/5195 (87.4687%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.9679, Accuracy: 5440/10000 (54.4000%)
+___Train Local_ResNet_18,  epoch  74, local model 96, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4111/4679 (87.8607%)
+___Train Local_ResNet_18,  epoch  74, local model 96, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4182/4679 (89.3781%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 2.0821, Accuracy: 5351/10000 (53.5100%)
+___Train Local_ResNet_18,  epoch  74, local model 2, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3197/3646 (87.6851%)
+___Train Local_ResNet_18,  epoch  74, local model 2, internal_epoch   2,  Average loss: 0.0050, Accuracy: 3299/3646 (90.4827%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.8813, Accuracy: 5633/10000 (56.3300%)
+___Train Local_ResNet_18,  epoch  74, local model 86, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3149/3616 (87.0852%)
+___Train Local_ResNet_18,  epoch  74, local model 86, internal_epoch   2,  Average loss: 0.0051, Accuracy: 3251/3616 (89.9060%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.9773, Accuracy: 5573/10000 (55.7300%)
+___Train Local_ResNet_18,  epoch  74, local model 28, internal_epoch   1,  Average loss: 0.0071, Accuracy: 4102/4716 (86.9805%)
+___Train Local_ResNet_18,  epoch  74, local model 28, internal_epoch   2,  Average loss: 0.0060, Accuracy: 4169/4716 (88.4012%)
+___Test Local_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.9961, Accuracy: 5378/10000 (53.7800%)
+time spent on training: 235.3861083984375
+___Test Target_ResNet_18 poisoned: False, epoch: 74: Average loss: 1.1490, Accuracy: 6987/10000 (69.8700%)
+___Test Target_ResNet_18 poisoned: True, epoch: 74: Average loss: 9.8493, Accuracy: 48/9900 (0.4848%)
+Done in 256.3278098106384 sec.
+Server Epoch:75 choose agents : [13, 36, 58, 71, 53, 33, 79, 24, 80, 96, 47, 1, 20, 74, 94, 84, 22, 44, 46, 50].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  75, local model 13, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4389/4885 (89.8465%), train_poison_data_count: 385
+Global model norm: 42.56245697960381.
+Norm before scaling: 42.56699252400929. Distance: 2.143253911842328
+___Test Local_ResNet_18 poisoned: True, epoch: 75: Average loss: 0.3330, Accuracy: 9048/9900 (91.3939%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  75, local model 36, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4779/5305 (90.0848%), train_poison_data_count: 415
+Global model norm: 42.56245697960381.
+Norm before scaling: 42.563942592109285. Distance: 2.1471823615283467
+___Test Local_ResNet_18 poisoned: True, epoch: 75: Average loss: 0.1721, Accuracy: 9469/9900 (95.6465%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  75, local model 58, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4253/4717 (90.1632%), train_poison_data_count: 370
+Global model norm: 42.56245697960381.
+Norm before scaling: 42.5608680625099. Distance: 2.059716513858681
+___Test Local_ResNet_18 poisoned: True, epoch: 75: Average loss: 0.0607, Accuracy: 9725/9900 (98.2323%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  75, local model 71, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4501/5066 (88.8472%), train_poison_data_count: 400
+Global model norm: 42.56245697960381.
+Norm before scaling: 42.56958199845798. Distance: 2.2443792284354966
+___Test Local_ResNet_18 poisoned: True, epoch: 75: Average loss: 0.1638, Accuracy: 9488/9900 (95.8384%)
+___Train Local_ResNet_18,  epoch  75, local model 53, internal_epoch   1,  Average loss: 0.0072, Accuracy: 5268/6124 (86.0222%)
+___Train Local_ResNet_18,  epoch  75, local model 53, internal_epoch   2,  Average loss: 0.0070, Accuracy: 5270/6124 (86.0549%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.1881, Accuracy: 5124/10000 (51.2400%)
+___Train Local_ResNet_18,  epoch  75, local model 33, internal_epoch   1,  Average loss: 0.0057, Accuracy: 3941/4433 (88.9014%)
+___Train Local_ResNet_18,  epoch  75, local model 33, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4012/4433 (90.5030%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.8266, Accuracy: 5713/10000 (57.1300%)
+___Train Local_ResNet_18,  epoch  75, local model 79, internal_epoch   1,  Average loss: 0.0066, Accuracy: 3333/3781 (88.1513%)
+___Train Local_ResNet_18,  epoch  75, local model 79, internal_epoch   2,  Average loss: 0.0074, Accuracy: 3252/3781 (86.0090%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.1074, Accuracy: 5210/10000 (52.1000%)
+___Train Local_ResNet_18,  epoch  75, local model 24, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3546/3969 (89.3424%)
+___Train Local_ResNet_18,  epoch  75, local model 24, internal_epoch   2,  Average loss: 0.0060, Accuracy: 3592/3969 (90.5014%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.9325, Accuracy: 5605/10000 (56.0500%)
+___Train Local_ResNet_18,  epoch  75, local model 80, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4412/5025 (87.8010%)
+___Train Local_ResNet_18,  epoch  75, local model 80, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4551/5025 (90.5672%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0400, Accuracy: 5373/10000 (53.7300%)
+___Train Local_ResNet_18,  epoch  75, local model 96, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4138/4679 (88.4377%)
+___Train Local_ResNet_18,  epoch  75, local model 96, internal_epoch   2,  Average loss: 0.0057, Accuracy: 4158/4679 (88.8651%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0493, Accuracy: 5398/10000 (53.9800%)
+___Train Local_ResNet_18,  epoch  75, local model 47, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4130/4707 (87.7417%)
+___Train Local_ResNet_18,  epoch  75, local model 47, internal_epoch   2,  Average loss: 0.0047, Accuracy: 4300/4707 (91.3533%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.9712, Accuracy: 5465/10000 (54.6500%)
+___Train Local_ResNet_18,  epoch  75, local model 1, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4379/4986 (87.8259%)
+___Train Local_ResNet_18,  epoch  75, local model 1, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4473/4986 (89.7112%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0444, Accuracy: 5421/10000 (54.2100%)
+___Train Local_ResNet_18,  epoch  75, local model 20, internal_epoch   1,  Average loss: 0.0053, Accuracy: 3885/4315 (90.0348%)
+___Train Local_ResNet_18,  epoch  75, local model 20, internal_epoch   2,  Average loss: 0.0044, Accuracy: 3960/4315 (91.7729%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.9952, Accuracy: 5465/10000 (54.6500%)
+___Train Local_ResNet_18,  epoch  75, local model 74, internal_epoch   1,  Average loss: 0.0066, Accuracy: 3844/4416 (87.0471%)
+___Train Local_ResNet_18,  epoch  75, local model 74, internal_epoch   2,  Average loss: 0.0057, Accuracy: 3915/4416 (88.6549%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.9910, Accuracy: 5390/10000 (53.9000%)
+___Train Local_ResNet_18,  epoch  75, local model 94, internal_epoch   1,  Average loss: 0.0070, Accuracy: 4178/4804 (86.9692%)
+___Train Local_ResNet_18,  epoch  75, local model 94, internal_epoch   2,  Average loss: 0.0084, Accuracy: 4089/4804 (85.1166%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.4710, Accuracy: 4734/10000 (47.3400%)
+___Train Local_ResNet_18,  epoch  75, local model 84, internal_epoch   1,  Average loss: 0.0065, Accuracy: 4185/4793 (87.3148%)
+___Train Local_ResNet_18,  epoch  75, local model 84, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4305/4793 (89.8185%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0435, Accuracy: 5365/10000 (53.6500%)
+___Train Local_ResNet_18,  epoch  75, local model 22, internal_epoch   1,  Average loss: 0.0071, Accuracy: 4508/5232 (86.1621%)
+___Train Local_ResNet_18,  epoch  75, local model 22, internal_epoch   2,  Average loss: 0.0061, Accuracy: 4588/5232 (87.6911%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0237, Accuracy: 5341/10000 (53.4100%)
+___Train Local_ResNet_18,  epoch  75, local model 44, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4135/4662 (88.6958%)
+___Train Local_ResNet_18,  epoch  75, local model 44, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4216/4662 (90.4333%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.9322, Accuracy: 5590/10000 (55.9000%)
+___Train Local_ResNet_18,  epoch  75, local model 46, internal_epoch   1,  Average loss: 0.0071, Accuracy: 4242/4956 (85.5932%)
+___Train Local_ResNet_18,  epoch  75, local model 46, internal_epoch   2,  Average loss: 0.0062, Accuracy: 4351/4956 (87.7926%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.1971, Accuracy: 5133/10000 (51.3300%)
+___Train Local_ResNet_18,  epoch  75, local model 50, internal_epoch   1,  Average loss: 0.0066, Accuracy: 3812/4368 (87.2711%)
+___Train Local_ResNet_18,  epoch  75, local model 50, internal_epoch   2,  Average loss: 0.0060, Accuracy: 3869/4368 (88.5760%)
+___Test Local_ResNet_18 poisoned: False, epoch: 75: Average loss: 2.0319, Accuracy: 5396/10000 (53.9600%)
+time spent on training: 235.33762860298157
+___Test Target_ResNet_18 poisoned: False, epoch: 75: Average loss: 1.1599, Accuracy: 6978/10000 (69.7800%)
+___Test Target_ResNet_18 poisoned: True, epoch: 75: Average loss: 9.7764, Accuracy: 47/9900 (0.4747%)
+Done in 256.3892025947571 sec.
+Server Epoch:76 choose agents : [13, 36, 58, 71, 53, 25, 47, 77, 68, 92, 10, 46, 59, 23, 32, 21, 98, 76, 79, 39].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  76, local model 13, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4392/4885 (89.9079%), train_poison_data_count: 385
+Global model norm: 42.60155032206868.
+Norm before scaling: 42.604765175095146. Distance: 2.1318300101197374
+___Test Local_ResNet_18 poisoned: True, epoch: 76: Average loss: 0.2741, Accuracy: 9234/9900 (93.2727%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  76, local model 36, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4763/5305 (89.7832%), train_poison_data_count: 415
+Global model norm: 42.60155032206868.
+Norm before scaling: 42.60218213720469. Distance: 2.2096032743676943
+___Test Local_ResNet_18 poisoned: True, epoch: 76: Average loss: 0.2181, Accuracy: 9354/9900 (94.4848%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  76, local model 58, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4231/4717 (89.6968%), train_poison_data_count: 370
+Global model norm: 42.60155032206868.
+Norm before scaling: 42.60079814897472. Distance: 2.0115682304885025
+___Test Local_ResNet_18 poisoned: True, epoch: 76: Average loss: 0.1879, Accuracy: 9415/9900 (95.1010%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  76, local model 71, internal_epoch   1,  Average loss: 0.0067, Accuracy: 4524/5066 (89.3012%), train_poison_data_count: 400
+Global model norm: 42.60155032206868.
+Norm before scaling: 42.60404314366772. Distance: 2.227314069289923
+___Test Local_ResNet_18 poisoned: True, epoch: 76: Average loss: 0.1794, Accuracy: 9431/9900 (95.2626%)
+___Train Local_ResNet_18,  epoch  76, local model 53, internal_epoch   1,  Average loss: 0.0074, Accuracy: 5256/6124 (85.8263%)
+___Train Local_ResNet_18,  epoch  76, local model 53, internal_epoch   2,  Average loss: 0.0064, Accuracy: 5337/6124 (87.1489%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 1.9829, Accuracy: 5417/10000 (54.1700%)
+___Train Local_ResNet_18,  epoch  76, local model 25, internal_epoch   1,  Average loss: 0.0078, Accuracy: 5027/5902 (85.1745%)
+___Train Local_ResNet_18,  epoch  76, local model 25, internal_epoch   2,  Average loss: 0.0083, Accuracy: 4947/5902 (83.8190%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 2.2566, Accuracy: 5077/10000 (50.7700%)
+___Train Local_ResNet_18,  epoch  76, local model 47, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4131/4707 (87.7629%)
+___Train Local_ResNet_18,  epoch  76, local model 47, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4242/4707 (90.1211%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 2.0078, Accuracy: 5380/10000 (53.8000%)
+___Train Local_ResNet_18,  epoch  76, local model 77, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4069/4647 (87.5619%)
+___Train Local_ResNet_18,  epoch  76, local model 77, internal_epoch   2,  Average loss: 0.0048, Accuracy: 4234/4647 (91.1125%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 1.9850, Accuracy: 5454/10000 (54.5400%)
+___Train Local_ResNet_18,  epoch  76, local model 68, internal_epoch   1,  Average loss: 0.0058, Accuracy: 2932/3297 (88.9293%)
+___Train Local_ResNet_18,  epoch  76, local model 68, internal_epoch   2,  Average loss: 0.0043, Accuracy: 3026/3297 (91.7804%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 1.7987, Accuracy: 5848/10000 (58.4800%)
+___Train Local_ResNet_18,  epoch  76, local model 92, internal_epoch   1,  Average loss: 0.0059, Accuracy: 5532/6263 (88.3283%)
+___Train Local_ResNet_18,  epoch  76, local model 92, internal_epoch   2,  Average loss: 0.0048, Accuracy: 5675/6263 (90.6115%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 2.2232, Accuracy: 5092/10000 (50.9200%)
+___Train Local_ResNet_18,  epoch  76, local model 10, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4135/4663 (88.6768%)
+___Train Local_ResNet_18,  epoch  76, local model 10, internal_epoch   2,  Average loss: 0.0046, Accuracy: 4234/4663 (90.7999%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 2.0954, Accuracy: 5259/10000 (52.5900%)
+___Train Local_ResNet_18,  epoch  76, local model 46, internal_epoch   1,  Average loss: 0.0077, Accuracy: 4241/4956 (85.5730%)
+___Train Local_ResNet_18,  epoch  76, local model 46, internal_epoch   2,  Average loss: 0.0062, Accuracy: 4336/4956 (87.4899%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 2.1974, Accuracy: 5158/10000 (51.5800%)
+___Train Local_ResNet_18,  epoch  76, local model 59, internal_epoch   1,  Average loss: 0.0055, Accuracy: 3624/4046 (89.5699%)
+___Train Local_ResNet_18,  epoch  76, local model 59, internal_epoch   2,  Average loss: 0.0053, Accuracy: 3626/4046 (89.6194%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 2.1696, Accuracy: 5269/10000 (52.6900%)
+___Train Local_ResNet_18,  epoch  76, local model 23, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3680/4184 (87.9541%)
+___Train Local_ResNet_18,  epoch  76, local model 23, internal_epoch   2,  Average loss: 0.0055, Accuracy: 3737/4184 (89.3164%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 1.8953, Accuracy: 5537/10000 (55.3700%)
+___Train Local_ResNet_18,  epoch  76, local model 32, internal_epoch   1,  Average loss: 0.0068, Accuracy: 4825/5591 (86.2994%)
+___Train Local_ResNet_18,  epoch  76, local model 32, internal_epoch   2,  Average loss: 0.0067, Accuracy: 4841/5591 (86.5856%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 2.0804, Accuracy: 5163/10000 (51.6300%)
+___Train Local_ResNet_18,  epoch  76, local model 21, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4101/4634 (88.4981%)
+___Train Local_ResNet_18,  epoch  76, local model 21, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4130/4634 (89.1239%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 1.9438, Accuracy: 5520/10000 (55.2000%)
+___Train Local_ResNet_18,  epoch  76, local model 98, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3382/3828 (88.3490%)
+___Train Local_ResNet_18,  epoch  76, local model 98, internal_epoch   2,  Average loss: 0.0044, Accuracy: 3512/3828 (91.7450%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 1.8957, Accuracy: 5558/10000 (55.5800%)
+___Train Local_ResNet_18,  epoch  76, local model 76, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3156/3638 (86.7510%)
+___Train Local_ResNet_18,  epoch  76, local model 76, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3312/3638 (91.0390%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 1.9939, Accuracy: 5409/10000 (54.0900%)
+___Train Local_ResNet_18,  epoch  76, local model 79, internal_epoch   1,  Average loss: 0.0065, Accuracy: 3339/3781 (88.3100%)
+___Train Local_ResNet_18,  epoch  76, local model 79, internal_epoch   2,  Average loss: 0.0066, Accuracy: 3297/3781 (87.1992%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 2.0993, Accuracy: 5264/10000 (52.6400%)
+___Train Local_ResNet_18,  epoch  76, local model 39, internal_epoch   1,  Average loss: 0.0060, Accuracy: 3389/3837 (88.3242%)
+___Train Local_ResNet_18,  epoch  76, local model 39, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3486/3837 (90.8522%)
+___Test Local_ResNet_18 poisoned: False, epoch: 76: Average loss: 1.9223, Accuracy: 5541/10000 (55.4100%)
+time spent on training: 233.39837861061096
+___Test Target_ResNet_18 poisoned: False, epoch: 76: Average loss: 1.1792, Accuracy: 6949/10000 (69.4900%)
+___Test Target_ResNet_18 poisoned: True, epoch: 76: Average loss: 10.2509, Accuracy: 30/9900 (0.3030%)
+Done in 254.16645979881287 sec.
+Server Epoch:77 choose agents : [13, 36, 58, 71, 8, 31, 86, 21, 57, 35, 89, 28, 53, 65, 80, 3, 27, 7, 76, 69].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  77, local model 13, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4330/4885 (88.6387%), train_poison_data_count: 385
+Global model norm: 42.63069862016983.
+Norm before scaling: 42.635214020916735. Distance: 2.1874610897418316
+___Test Local_ResNet_18 poisoned: True, epoch: 77: Average loss: 0.3421, Accuracy: 9081/9900 (91.7273%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  77, local model 36, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4781/5305 (90.1225%), train_poison_data_count: 415
+Global model norm: 42.63069862016983.
+Norm before scaling: 42.629362805960255. Distance: 2.1977974616775207
+___Test Local_ResNet_18 poisoned: True, epoch: 77: Average loss: 0.1101, Accuracy: 9621/9900 (97.1818%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  77, local model 58, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4213/4717 (89.3152%), train_poison_data_count: 370
+Global model norm: 42.63069862016983.
+Norm before scaling: 42.63480602243093. Distance: 2.0979906096271015
+___Test Local_ResNet_18 poisoned: True, epoch: 77: Average loss: 0.0455, Accuracy: 9784/9900 (98.8283%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  77, local model 71, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4483/5066 (88.4919%), train_poison_data_count: 400
+Global model norm: 42.63069862016983.
+Norm before scaling: 42.63880280780421. Distance: 2.269875584020224
+___Test Local_ResNet_18 poisoned: True, epoch: 77: Average loss: 0.1318, Accuracy: 9544/9900 (96.4040%)
+___Train Local_ResNet_18,  epoch  77, local model 8, internal_epoch   1,  Average loss: 0.0069, Accuracy: 3899/4501 (86.6252%)
+___Train Local_ResNet_18,  epoch  77, local model 8, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4025/4501 (89.4246%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 2.1112, Accuracy: 5361/10000 (53.6100%)
+___Train Local_ResNet_18,  epoch  77, local model 31, internal_epoch   1,  Average loss: 0.0071, Accuracy: 3604/4175 (86.3234%)
+___Train Local_ResNet_18,  epoch  77, local model 31, internal_epoch   2,  Average loss: 0.0059, Accuracy: 3686/4175 (88.2874%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 1.9811, Accuracy: 5390/10000 (53.9000%)
+___Train Local_ResNet_18,  epoch  77, local model 86, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3143/3616 (86.9192%)
+___Train Local_ResNet_18,  epoch  77, local model 86, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3274/3616 (90.5420%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 1.9290, Accuracy: 5577/10000 (55.7700%)
+___Train Local_ResNet_18,  epoch  77, local model 21, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4124/4634 (88.9944%)
+___Train Local_ResNet_18,  epoch  77, local model 21, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4189/4634 (90.3971%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 2.0760, Accuracy: 5416/10000 (54.1600%)
+___Train Local_ResNet_18,  epoch  77, local model 57, internal_epoch   1,  Average loss: 0.0066, Accuracy: 3971/4558 (87.1215%)
+___Train Local_ResNet_18,  epoch  77, local model 57, internal_epoch   2,  Average loss: 0.0062, Accuracy: 4020/4558 (88.1966%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 2.0817, Accuracy: 5308/10000 (53.0800%)
+___Train Local_ResNet_18,  epoch  77, local model 35, internal_epoch   1,  Average loss: 0.0067, Accuracy: 4501/5167 (87.1105%)
+___Train Local_ResNet_18,  epoch  77, local model 35, internal_epoch   2,  Average loss: 0.0056, Accuracy: 4581/5167 (88.6588%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 2.2455, Accuracy: 5088/10000 (50.8800%)
+___Train Local_ResNet_18,  epoch  77, local model 89, internal_epoch   1,  Average loss: 0.0056, Accuracy: 3891/4356 (89.3251%)
+___Train Local_ResNet_18,  epoch  77, local model 89, internal_epoch   2,  Average loss: 0.0055, Accuracy: 3905/4356 (89.6465%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 2.3440, Accuracy: 4937/10000 (49.3700%)
+___Train Local_ResNet_18,  epoch  77, local model 28, internal_epoch   1,  Average loss: 0.0071, Accuracy: 4087/4716 (86.6624%)
+___Train Local_ResNet_18,  epoch  77, local model 28, internal_epoch   2,  Average loss: 0.0062, Accuracy: 4141/4716 (87.8075%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 2.1084, Accuracy: 5300/10000 (53.0000%)
+___Train Local_ResNet_18,  epoch  77, local model 53, internal_epoch   1,  Average loss: 0.0070, Accuracy: 5287/6124 (86.3325%)
+___Train Local_ResNet_18,  epoch  77, local model 53, internal_epoch   2,  Average loss: 0.0067, Accuracy: 5315/6124 (86.7897%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 1.9408, Accuracy: 5524/10000 (55.2400%)
+___Train Local_ResNet_18,  epoch  77, local model 65, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4415/5055 (87.3393%)
+___Train Local_ResNet_18,  epoch  77, local model 65, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4550/5055 (90.0099%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 1.9081, Accuracy: 5529/10000 (55.2900%)
+___Train Local_ResNet_18,  epoch  77, local model 80, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4391/5025 (87.3831%)
+___Train Local_ResNet_18,  epoch  77, local model 80, internal_epoch   2,  Average loss: 0.0046, Accuracy: 4575/5025 (91.0448%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 1.9708, Accuracy: 5477/10000 (54.7700%)
+___Train Local_ResNet_18,  epoch  77, local model 3, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4384/4918 (89.1419%)
+___Train Local_ResNet_18,  epoch  77, local model 3, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4428/4918 (90.0366%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 2.0336, Accuracy: 5321/10000 (53.2100%)
+___Train Local_ResNet_18,  epoch  77, local model 27, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3719/4223 (88.0654%)
+___Train Local_ResNet_18,  epoch  77, local model 27, internal_epoch   2,  Average loss: 0.0046, Accuracy: 3844/4223 (91.0253%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 2.0825, Accuracy: 5370/10000 (53.7000%)
+___Train Local_ResNet_18,  epoch  77, local model 7, internal_epoch   1,  Average loss: 0.0081, Accuracy: 3848/4481 (85.8737%)
+___Train Local_ResNet_18,  epoch  77, local model 7, internal_epoch   2,  Average loss: 0.0083, Accuracy: 3828/4481 (85.4274%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 2.1824, Accuracy: 5290/10000 (52.9000%)
+___Train Local_ResNet_18,  epoch  77, local model 76, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3181/3638 (87.4382%)
+___Train Local_ResNet_18,  epoch  77, local model 76, internal_epoch   2,  Average loss: 0.0049, Accuracy: 3301/3638 (90.7367%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 1.8751, Accuracy: 5586/10000 (55.8600%)
+___Train Local_ResNet_18,  epoch  77, local model 69, internal_epoch   1,  Average loss: 0.0056, Accuracy: 3591/4013 (89.4842%)
+___Train Local_ResNet_18,  epoch  77, local model 69, internal_epoch   2,  Average loss: 0.0041, Accuracy: 3707/4013 (92.3748%)
+___Test Local_ResNet_18 poisoned: False, epoch: 77: Average loss: 1.8230, Accuracy: 5680/10000 (56.8000%)
+time spent on training: 233.90641927719116
+___Test Target_ResNet_18 poisoned: False, epoch: 77: Average loss: 1.1732, Accuracy: 6945/10000 (69.4500%)
+___Test Target_ResNet_18 poisoned: True, epoch: 77: Average loss: 10.1606, Accuracy: 33/9900 (0.3333%)
+Done in 254.75638628005981 sec.
+Server Epoch:78 choose agents : [13, 36, 58, 71, 2, 8, 93, 35, 40, 32, 96, 0, 84, 66, 42, 31, 67, 4, 22, 30].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  78, local model 13, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4429/4885 (90.6653%), train_poison_data_count: 385
+Global model norm: 42.66325491933896.
+Norm before scaling: 42.66377280276119. Distance: 2.1251517970900453
+___Test Local_ResNet_18 poisoned: True, epoch: 78: Average loss: 0.1647, Accuracy: 9480/9900 (95.7576%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  78, local model 36, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4769/5305 (89.8963%), train_poison_data_count: 415
+Global model norm: 42.66325491933896.
+Norm before scaling: 42.66217335247057. Distance: 2.190147868176658
+___Test Local_ResNet_18 poisoned: True, epoch: 78: Average loss: 0.1307, Accuracy: 9551/9900 (96.4747%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  78, local model 58, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4233/4717 (89.7392%), train_poison_data_count: 370
+Global model norm: 42.66325491933896.
+Norm before scaling: 42.66264403771832. Distance: 2.0439025028737703
+___Test Local_ResNet_18 poisoned: True, epoch: 78: Average loss: 0.2095, Accuracy: 9357/9900 (94.5152%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  78, local model 71, internal_epoch   1,  Average loss: 0.0068, Accuracy: 4510/5066 (89.0249%), train_poison_data_count: 400
+Global model norm: 42.66325491933896.
+Norm before scaling: 42.66670687991473. Distance: 2.206209120763441
+___Test Local_ResNet_18 poisoned: True, epoch: 78: Average loss: 0.1472, Accuracy: 9505/9900 (96.0101%)
+___Train Local_ResNet_18,  epoch  78, local model 2, internal_epoch   1,  Average loss: 0.0063, Accuracy: 3195/3646 (87.6303%)
+___Train Local_ResNet_18,  epoch  78, local model 2, internal_epoch   2,  Average loss: 0.0048, Accuracy: 3311/3646 (90.8118%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 1.8581, Accuracy: 5628/10000 (56.2800%)
+___Train Local_ResNet_18,  epoch  78, local model 8, internal_epoch   1,  Average loss: 0.0068, Accuracy: 3907/4501 (86.8029%)
+___Train Local_ResNet_18,  epoch  78, local model 8, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4030/4501 (89.5357%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 1.9658, Accuracy: 5497/10000 (54.9700%)
+___Train Local_ResNet_18,  epoch  78, local model 93, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4089/4651 (87.9166%)
+___Train Local_ResNet_18,  epoch  78, local model 93, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4166/4651 (89.5721%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 2.1622, Accuracy: 5166/10000 (51.6600%)
+___Train Local_ResNet_18,  epoch  78, local model 35, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4589/5167 (88.8136%)
+___Train Local_ResNet_18,  epoch  78, local model 35, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4630/5167 (89.6071%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 2.1904, Accuracy: 5164/10000 (51.6400%)
+___Train Local_ResNet_18,  epoch  78, local model 40, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4858/5455 (89.0559%)
+___Train Local_ResNet_18,  epoch  78, local model 40, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4914/5455 (90.0825%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 2.0138, Accuracy: 5437/10000 (54.3700%)
+___Train Local_ResNet_18,  epoch  78, local model 32, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4857/5591 (86.8718%)
+___Train Local_ResNet_18,  epoch  78, local model 32, internal_epoch   2,  Average loss: 0.0062, Accuracy: 4871/5591 (87.1222%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 2.0833, Accuracy: 5323/10000 (53.2300%)
+___Train Local_ResNet_18,  epoch  78, local model 96, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4178/4679 (89.2926%)
+___Train Local_ResNet_18,  epoch  78, local model 96, internal_epoch   2,  Average loss: 0.0060, Accuracy: 4140/4679 (88.4804%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 2.1397, Accuracy: 5156/10000 (51.5600%)
+___Train Local_ResNet_18,  epoch  78, local model 0, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4452/5017 (88.7383%)
+___Train Local_ResNet_18,  epoch  78, local model 0, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4468/5017 (89.0572%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 1.8488, Accuracy: 5636/10000 (56.3600%)
+___Train Local_ResNet_18,  epoch  78, local model 84, internal_epoch   1,  Average loss: 0.0068, Accuracy: 4145/4793 (86.4803%)
+___Train Local_ResNet_18,  epoch  78, local model 84, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4321/4793 (90.1523%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 2.0245, Accuracy: 5402/10000 (54.0200%)
+___Train Local_ResNet_18,  epoch  78, local model 66, internal_epoch   1,  Average loss: 0.0058, Accuracy: 3978/4456 (89.2729%)
+___Train Local_ResNet_18,  epoch  78, local model 66, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4021/4456 (90.2379%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 2.0956, Accuracy: 5404/10000 (54.0400%)
+___Train Local_ResNet_18,  epoch  78, local model 42, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4774/5424 (88.0162%)
+___Train Local_ResNet_18,  epoch  78, local model 42, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4868/5424 (89.7493%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 2.2654, Accuracy: 5073/10000 (50.7300%)
+___Train Local_ResNet_18,  epoch  78, local model 31, internal_epoch   1,  Average loss: 0.0050, Accuracy: 3777/4175 (90.4671%)
+___Train Local_ResNet_18,  epoch  78, local model 31, internal_epoch   2,  Average loss: 0.0050, Accuracy: 3795/4175 (90.8982%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 1.9560, Accuracy: 5533/10000 (55.3300%)
+___Train Local_ResNet_18,  epoch  78, local model 67, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4494/5116 (87.8421%)
+___Train Local_ResNet_18,  epoch  78, local model 67, internal_epoch   2,  Average loss: 0.0057, Accuracy: 4545/5116 (88.8389%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 1.9931, Accuracy: 5374/10000 (53.7400%)
+___Train Local_ResNet_18,  epoch  78, local model 4, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3314/3704 (89.4708%)
+___Train Local_ResNet_18,  epoch  78, local model 4, internal_epoch   2,  Average loss: 0.0049, Accuracy: 3348/3704 (90.3888%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 1.8361, Accuracy: 5634/10000 (56.3400%)
+___Train Local_ResNet_18,  epoch  78, local model 22, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4629/5232 (88.4748%)
+___Train Local_ResNet_18,  epoch  78, local model 22, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4680/5232 (89.4495%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 2.1770, Accuracy: 5211/10000 (52.1100%)
+___Train Local_ResNet_18,  epoch  78, local model 30, internal_epoch   1,  Average loss: 0.0057, Accuracy: 3092/3472 (89.0553%)
+___Train Local_ResNet_18,  epoch  78, local model 30, internal_epoch   2,  Average loss: 0.0046, Accuracy: 3177/3472 (91.5035%)
+___Test Local_ResNet_18 poisoned: False, epoch: 78: Average loss: 1.9723, Accuracy: 5547/10000 (55.4700%)
+time spent on training: 234.21400666236877
+___Test Target_ResNet_18 poisoned: False, epoch: 78: Average loss: 1.1806, Accuracy: 6933/10000 (69.3300%)
+___Test Target_ResNet_18 poisoned: True, epoch: 78: Average loss: 10.3537, Accuracy: 33/9900 (0.3333%)
+Done in 255.08105039596558 sec.
+Server Epoch:79 choose agents : [13, 36, 58, 71, 63, 50, 4, 19, 55, 18, 93, 23, 29, 84, 60, 1, 53, 47, 73, 59].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  79, local model 13, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4412/4885 (90.3173%), train_poison_data_count: 385
+Global model norm: 42.69559626506799.
+Norm before scaling: 42.69595650818046. Distance: 2.1036830258149175
+___Test Local_ResNet_18 poisoned: True, epoch: 79: Average loss: 0.2935, Accuracy: 9167/9900 (92.5960%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  79, local model 36, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4741/5305 (89.3685%), train_poison_data_count: 415
+Global model norm: 42.69559626506799.
+Norm before scaling: 42.70071514879756. Distance: 2.236012958823443
+___Test Local_ResNet_18 poisoned: True, epoch: 79: Average loss: 0.1318, Accuracy: 9552/9900 (96.4848%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  79, local model 58, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4208/4717 (89.2092%), train_poison_data_count: 370
+Global model norm: 42.69559626506799.
+Norm before scaling: 42.69385075837181. Distance: 2.0695489591054668
+___Test Local_ResNet_18 poisoned: True, epoch: 79: Average loss: 0.1432, Accuracy: 9528/9900 (96.2424%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  79, local model 71, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4487/5066 (88.5709%), train_poison_data_count: 400
+Global model norm: 42.69559626506799.
+Norm before scaling: 42.70290488874849. Distance: 2.2917202567568085
+___Test Local_ResNet_18 poisoned: True, epoch: 79: Average loss: 0.0893, Accuracy: 9665/9900 (97.6263%)
+___Train Local_ResNet_18,  epoch  79, local model 63, internal_epoch   1,  Average loss: 0.0058, Accuracy: 3214/3590 (89.5265%)
+___Train Local_ResNet_18,  epoch  79, local model 63, internal_epoch   2,  Average loss: 0.0079, Accuracy: 3086/3590 (85.9610%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 2.1434, Accuracy: 5267/10000 (52.6700%)
+___Train Local_ResNet_18,  epoch  79, local model 50, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3806/4368 (87.1337%)
+___Train Local_ResNet_18,  epoch  79, local model 50, internal_epoch   2,  Average loss: 0.0062, Accuracy: 3837/4368 (87.8434%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 2.2979, Accuracy: 4957/10000 (49.5700%)
+___Train Local_ResNet_18,  epoch  79, local model 4, internal_epoch   1,  Average loss: 0.0060, Accuracy: 3273/3704 (88.3639%)
+___Train Local_ResNet_18,  epoch  79, local model 4, internal_epoch   2,  Average loss: 0.0050, Accuracy: 3337/3704 (90.0918%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 1.8348, Accuracy: 5755/10000 (57.5500%)
+___Train Local_ResNet_18,  epoch  79, local model 19, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4327/4928 (87.8044%)
+___Train Local_ResNet_18,  epoch  79, local model 19, internal_epoch   2,  Average loss: 0.0047, Accuracy: 4480/4928 (90.9091%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 1.8780, Accuracy: 5614/10000 (56.1400%)
+___Train Local_ResNet_18,  epoch  79, local model 55, internal_epoch   1,  Average loss: 0.0061, Accuracy: 3871/4356 (88.8659%)
+___Train Local_ResNet_18,  epoch  79, local model 55, internal_epoch   2,  Average loss: 0.0094, Accuracy: 3574/4356 (82.0478%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 2.2143, Accuracy: 5014/10000 (50.1400%)
+___Train Local_ResNet_18,  epoch  79, local model 18, internal_epoch   1,  Average loss: 0.0061, Accuracy: 3478/3911 (88.9287%)
+___Train Local_ResNet_18,  epoch  79, local model 18, internal_epoch   2,  Average loss: 0.0066, Accuracy: 3440/3911 (87.9570%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 2.2283, Accuracy: 5120/10000 (51.2000%)
+___Train Local_ResNet_18,  epoch  79, local model 93, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4080/4651 (87.7231%)
+___Train Local_ResNet_18,  epoch  79, local model 93, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4183/4651 (89.9376%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 2.2819, Accuracy: 5058/10000 (50.5800%)
+___Train Local_ResNet_18,  epoch  79, local model 23, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3670/4184 (87.7151%)
+___Train Local_ResNet_18,  epoch  79, local model 23, internal_epoch   2,  Average loss: 0.0053, Accuracy: 3785/4184 (90.4637%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 2.0032, Accuracy: 5373/10000 (53.7300%)
+___Train Local_ResNet_18,  epoch  79, local model 29, internal_epoch   1,  Average loss: 0.0056, Accuracy: 3857/4346 (88.7483%)
+___Train Local_ResNet_18,  epoch  79, local model 29, internal_epoch   2,  Average loss: 0.0041, Accuracy: 4022/4346 (92.5449%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 1.8728, Accuracy: 5656/10000 (56.5600%)
+___Train Local_ResNet_18,  epoch  79, local model 84, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4145/4793 (86.4803%)
+___Train Local_ResNet_18,  epoch  79, local model 84, internal_epoch   2,  Average loss: 0.0047, Accuracy: 4347/4793 (90.6948%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 1.9617, Accuracy: 5543/10000 (55.4300%)
+___Train Local_ResNet_18,  epoch  79, local model 60, internal_epoch   1,  Average loss: 0.0066, Accuracy: 3343/3804 (87.8812%)
+___Train Local_ResNet_18,  epoch  79, local model 60, internal_epoch   2,  Average loss: 0.0050, Accuracy: 3440/3804 (90.4311%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 2.0097, Accuracy: 5477/10000 (54.7700%)
+___Train Local_ResNet_18,  epoch  79, local model 1, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4398/4986 (88.2070%)
+___Train Local_ResNet_18,  epoch  79, local model 1, internal_epoch   2,  Average loss: 0.0056, Accuracy: 4452/4986 (89.2900%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 2.0288, Accuracy: 5357/10000 (53.5700%)
+___Train Local_ResNet_18,  epoch  79, local model 53, internal_epoch   1,  Average loss: 0.0071, Accuracy: 5303/6124 (86.5937%)
+___Train Local_ResNet_18,  epoch  79, local model 53, internal_epoch   2,  Average loss: 0.0065, Accuracy: 5333/6124 (87.0836%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 2.2034, Accuracy: 5121/10000 (51.2100%)
+___Train Local_ResNet_18,  epoch  79, local model 47, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4121/4707 (87.5505%)
+___Train Local_ResNet_18,  epoch  79, local model 47, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4236/4707 (89.9936%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 1.8488, Accuracy: 5665/10000 (56.6500%)
+___Train Local_ResNet_18,  epoch  79, local model 73, internal_epoch   1,  Average loss: 0.0053, Accuracy: 3818/4235 (90.1535%)
+___Train Local_ResNet_18,  epoch  79, local model 73, internal_epoch   2,  Average loss: 0.0055, Accuracy: 3781/4235 (89.2798%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 2.0642, Accuracy: 5401/10000 (54.0100%)
+___Train Local_ResNet_18,  epoch  79, local model 59, internal_epoch   1,  Average loss: 0.0054, Accuracy: 3657/4046 (90.3856%)
+___Train Local_ResNet_18,  epoch  79, local model 59, internal_epoch   2,  Average loss: 0.0048, Accuracy: 3686/4046 (91.1023%)
+___Test Local_ResNet_18 poisoned: False, epoch: 79: Average loss: 1.9812, Accuracy: 5499/10000 (54.9900%)
+time spent on training: 231.9208436012268
+___Test Target_ResNet_18 poisoned: False, epoch: 79: Average loss: 1.2087, Accuracy: 6886/10000 (68.8600%)
+___Test Target_ResNet_18 poisoned: True, epoch: 79: Average loss: 10.4169, Accuracy: 32/9900 (0.3232%)
+Done in 253.09706568717957 sec.
+Server Epoch:80 choose agents : [13, 36, 58, 71, 1, 21, 28, 53, 3, 52, 15, 46, 33, 37, 16, 18, 7, 49, 40, 97].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  80, local model 13, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4416/4885 (90.3992%), train_poison_data_count: 385
+Global model norm: 42.725958951899194.
+Norm before scaling: 42.72944012868572. Distance: 2.131642562197042
+___Test Local_ResNet_18 poisoned: True, epoch: 80: Average loss: 0.3640, Accuracy: 9026/9900 (91.1717%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  80, local model 36, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4757/5305 (89.6701%), train_poison_data_count: 415
+Global model norm: 42.725958951899194.
+Norm before scaling: 42.7292572918245. Distance: 2.228866830310757
+___Test Local_ResNet_18 poisoned: True, epoch: 80: Average loss: 0.0458, Accuracy: 9787/9900 (98.8586%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  80, local model 58, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4223/4717 (89.5272%), train_poison_data_count: 370
+Global model norm: 42.725958951899194.
+Norm before scaling: 42.72561039005909. Distance: 2.0144729278934417
+___Test Local_ResNet_18 poisoned: True, epoch: 80: Average loss: 0.4809, Accuracy: 8703/9900 (87.9091%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  80, local model 71, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4522/5066 (89.2617%), train_poison_data_count: 400
+Global model norm: 42.725958951899194.
+Norm before scaling: 42.73141557394425. Distance: 2.21893438728221
+___Test Local_ResNet_18 poisoned: True, epoch: 80: Average loss: 0.2667, Accuracy: 9233/9900 (93.2626%)
+___Train Local_ResNet_18,  epoch  80, local model 1, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4409/4986 (88.4276%)
+___Train Local_ResNet_18,  epoch  80, local model 1, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4444/4986 (89.1296%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 1.9428, Accuracy: 5519/10000 (55.1900%)
+___Train Local_ResNet_18,  epoch  80, local model 21, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4092/4634 (88.3038%)
+___Train Local_ResNet_18,  epoch  80, local model 21, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4135/4634 (89.2318%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 1.8997, Accuracy: 5582/10000 (55.8200%)
+___Train Local_ResNet_18,  epoch  80, local model 28, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4148/4716 (87.9559%)
+___Train Local_ResNet_18,  epoch  80, local model 28, internal_epoch   2,  Average loss: 0.0061, Accuracy: 4143/4716 (87.8499%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 2.0298, Accuracy: 5369/10000 (53.6900%)
+___Train Local_ResNet_18,  epoch  80, local model 53, internal_epoch   1,  Average loss: 0.0067, Accuracy: 5322/6124 (86.9040%)
+___Train Local_ResNet_18,  epoch  80, local model 53, internal_epoch   2,  Average loss: 0.0064, Accuracy: 5358/6124 (87.4918%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 1.9770, Accuracy: 5392/10000 (53.9200%)
+___Train Local_ResNet_18,  epoch  80, local model 3, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4369/4918 (88.8369%)
+___Train Local_ResNet_18,  epoch  80, local model 3, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4440/4918 (90.2806%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 1.9103, Accuracy: 5467/10000 (54.6700%)
+___Train Local_ResNet_18,  epoch  80, local model 52, internal_epoch   1,  Average loss: 0.0057, Accuracy: 3380/3797 (89.0176%)
+___Train Local_ResNet_18,  epoch  80, local model 52, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3450/3797 (90.8612%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 1.9881, Accuracy: 5565/10000 (55.6500%)
+___Train Local_ResNet_18,  epoch  80, local model 15, internal_epoch   1,  Average loss: 0.0054, Accuracy: 5025/5582 (90.0215%)
+___Train Local_ResNet_18,  epoch  80, local model 15, internal_epoch   2,  Average loss: 0.0050, Accuracy: 5030/5582 (90.1111%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 2.1965, Accuracy: 5128/10000 (51.2800%)
+___Train Local_ResNet_18,  epoch  80, local model 46, internal_epoch   1,  Average loss: 0.0070, Accuracy: 4263/4956 (86.0169%)
+___Train Local_ResNet_18,  epoch  80, local model 46, internal_epoch   2,  Average loss: 0.0068, Accuracy: 4284/4956 (86.4407%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 2.1783, Accuracy: 5172/10000 (51.7200%)
+___Train Local_ResNet_18,  epoch  80, local model 33, internal_epoch   1,  Average loss: 0.0056, Accuracy: 3981/4433 (89.8037%)
+___Train Local_ResNet_18,  epoch  80, local model 33, internal_epoch   2,  Average loss: 0.0046, Accuracy: 4052/4433 (91.4054%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 1.8015, Accuracy: 5773/10000 (57.7300%)
+___Train Local_ResNet_18,  epoch  80, local model 37, internal_epoch   1,  Average loss: 0.0068, Accuracy: 3856/4354 (88.5622%)
+___Train Local_ResNet_18,  epoch  80, local model 37, internal_epoch   2,  Average loss: 0.0114, Accuracy: 3466/4354 (79.6050%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 2.8516, Accuracy: 4166/10000 (41.6600%)
+___Train Local_ResNet_18,  epoch  80, local model 16, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4353/4928 (88.3320%)
+___Train Local_ResNet_18,  epoch  80, local model 16, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4443/4928 (90.1583%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 1.9170, Accuracy: 5564/10000 (55.6400%)
+___Train Local_ResNet_18,  epoch  80, local model 18, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3432/3911 (87.7525%)
+___Train Local_ResNet_18,  epoch  80, local model 18, internal_epoch   2,  Average loss: 0.0057, Accuracy: 3501/3911 (89.5167%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 2.1084, Accuracy: 5326/10000 (53.2600%)
+___Train Local_ResNet_18,  epoch  80, local model 7, internal_epoch   1,  Average loss: 0.0080, Accuracy: 3874/4481 (86.4539%)
+___Train Local_ResNet_18,  epoch  80, local model 7, internal_epoch   2,  Average loss: 0.0076, Accuracy: 3933/4481 (87.7706%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 2.1461, Accuracy: 5320/10000 (53.2000%)
+___Train Local_ResNet_18,  epoch  80, local model 49, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4613/5197 (88.7627%)
+___Train Local_ResNet_18,  epoch  80, local model 49, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4657/5197 (89.6094%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 1.9327, Accuracy: 5465/10000 (54.6500%)
+___Train Local_ResNet_18,  epoch  80, local model 40, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4809/5455 (88.1577%)
+___Train Local_ResNet_18,  epoch  80, local model 40, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4860/5455 (89.0926%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 2.1198, Accuracy: 5207/10000 (52.0700%)
+___Train Local_ResNet_18,  epoch  80, local model 97, internal_epoch   1,  Average loss: 0.0065, Accuracy: 3816/4361 (87.5029%)
+___Train Local_ResNet_18,  epoch  80, local model 97, internal_epoch   2,  Average loss: 0.0065, Accuracy: 3827/4361 (87.7551%)
+___Test Local_ResNet_18 poisoned: False, epoch: 80: Average loss: 2.1121, Accuracy: 5273/10000 (52.7300%)
+time spent on training: 238.6372435092926
+___Test Target_ResNet_18 poisoned: False, epoch: 80: Average loss: 1.2262, Accuracy: 6845/10000 (68.4500%)
+___Test Target_ResNet_18 poisoned: True, epoch: 80: Average loss: 10.1005, Accuracy: 39/9900 (0.3939%)
+Done in 259.588906288147 sec.
+Server Epoch:81 choose agents : [13, 36, 58, 71, 19, 23, 47, 98, 64, 44, 73, 11, 84, 7, 29, 97, 65, 54, 20, 10].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  81, local model 13, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4402/4885 (90.1126%), train_poison_data_count: 385
+Global model norm: 42.757356423430956.
+Norm before scaling: 42.762373711812934. Distance: 2.1581494354888586
+___Test Local_ResNet_18 poisoned: True, epoch: 81: Average loss: 0.1792, Accuracy: 9441/9900 (95.3636%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  81, local model 36, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4756/5305 (89.6513%), train_poison_data_count: 415
+Global model norm: 42.757356423430956.
+Norm before scaling: 42.76109482308363. Distance: 2.2351038884333416
+___Test Local_ResNet_18 poisoned: True, epoch: 81: Average loss: 0.1085, Accuracy: 9629/9900 (97.2626%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  81, local model 58, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4204/4717 (89.1244%), train_poison_data_count: 370
+Global model norm: 42.757356423430956.
+Norm before scaling: 42.76138457466254. Distance: 2.1166194139547794
+___Test Local_ResNet_18 poisoned: True, epoch: 81: Average loss: 0.0804, Accuracy: 9681/9900 (97.7879%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  81, local model 71, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4545/5066 (89.7158%), train_poison_data_count: 400
+Global model norm: 42.757356423430956.
+Norm before scaling: 42.76098491679872. Distance: 2.198823124210149
+___Test Local_ResNet_18 poisoned: True, epoch: 81: Average loss: 0.1849, Accuracy: 9420/9900 (95.1515%)
+___Train Local_ResNet_18,  epoch  81, local model 19, internal_epoch   1,  Average loss: 0.0065, Accuracy: 4293/4928 (87.1144%)
+___Train Local_ResNet_18,  epoch  81, local model 19, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4432/4928 (89.9351%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 2.0257, Accuracy: 5338/10000 (53.3800%)
+___Train Local_ResNet_18,  epoch  81, local model 23, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3674/4184 (87.8107%)
+___Train Local_ResNet_18,  epoch  81, local model 23, internal_epoch   2,  Average loss: 0.0057, Accuracy: 3730/4184 (89.1491%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 2.0740, Accuracy: 5295/10000 (52.9500%)
+___Train Local_ResNet_18,  epoch  81, local model 47, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4143/4707 (88.0178%)
+___Train Local_ResNet_18,  epoch  81, local model 47, internal_epoch   2,  Average loss: 0.0047, Accuracy: 4282/4707 (90.9709%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 1.9519, Accuracy: 5446/10000 (54.4600%)
+___Train Local_ResNet_18,  epoch  81, local model 98, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3401/3828 (88.8454%)
+___Train Local_ResNet_18,  epoch  81, local model 98, internal_epoch   2,  Average loss: 0.0046, Accuracy: 3487/3828 (91.0920%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 1.7947, Accuracy: 5791/10000 (57.9100%)
+___Train Local_ResNet_18,  epoch  81, local model 64, internal_epoch   1,  Average loss: 0.0061, Accuracy: 3979/4503 (88.3633%)
+___Train Local_ResNet_18,  epoch  81, local model 64, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4067/4503 (90.3176%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 2.1042, Accuracy: 5314/10000 (53.1400%)
+___Train Local_ResNet_18,  epoch  81, local model 44, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4110/4662 (88.1596%)
+___Train Local_ResNet_18,  epoch  81, local model 44, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4200/4662 (90.0901%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 2.1082, Accuracy: 5266/10000 (52.6600%)
+___Train Local_ResNet_18,  epoch  81, local model 73, internal_epoch   1,  Average loss: 0.0036, Accuracy: 3958/4235 (93.4593%)
+___Train Local_ResNet_18,  epoch  81, local model 73, internal_epoch   2,  Average loss: 0.0036, Accuracy: 3966/4235 (93.6482%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 1.8631, Accuracy: 5767/10000 (57.6700%)
+___Train Local_ResNet_18,  epoch  81, local model 11, internal_epoch   1,  Average loss: 0.0080, Accuracy: 4417/5244 (84.2296%)
+___Train Local_ResNet_18,  epoch  81, local model 11, internal_epoch   2,  Average loss: 0.0071, Accuracy: 4502/5244 (85.8505%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 2.0296, Accuracy: 5369/10000 (53.6900%)
+___Train Local_ResNet_18,  epoch  81, local model 84, internal_epoch   1,  Average loss: 0.0065, Accuracy: 4165/4793 (86.8976%)
+___Train Local_ResNet_18,  epoch  81, local model 84, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4316/4793 (90.0480%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 2.1104, Accuracy: 5231/10000 (52.3100%)
+___Train Local_ResNet_18,  epoch  81, local model 7, internal_epoch   1,  Average loss: 0.0079, Accuracy: 3883/4481 (86.6548%)
+___Train Local_ResNet_18,  epoch  81, local model 7, internal_epoch   2,  Average loss: 0.0077, Accuracy: 3880/4481 (86.5878%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 2.0875, Accuracy: 5326/10000 (53.2600%)
+___Train Local_ResNet_18,  epoch  81, local model 29, internal_epoch   1,  Average loss: 0.0053, Accuracy: 3906/4346 (89.8757%)
+___Train Local_ResNet_18,  epoch  81, local model 29, internal_epoch   2,  Average loss: 0.0042, Accuracy: 3966/4346 (91.2563%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 1.9123, Accuracy: 5638/10000 (56.3800%)
+___Train Local_ResNet_18,  epoch  81, local model 97, internal_epoch   1,  Average loss: 0.0053, Accuracy: 3931/4361 (90.1399%)
+___Train Local_ResNet_18,  epoch  81, local model 97, internal_epoch   2,  Average loss: 0.0058, Accuracy: 3877/4361 (88.9016%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 1.9310, Accuracy: 5589/10000 (55.8900%)
+___Train Local_ResNet_18,  epoch  81, local model 65, internal_epoch   1,  Average loss: 0.0056, Accuracy: 4518/5055 (89.3769%)
+___Train Local_ResNet_18,  epoch  81, local model 65, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4568/5055 (90.3660%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 2.0434, Accuracy: 5356/10000 (53.5600%)
+___Train Local_ResNet_18,  epoch  81, local model 54, internal_epoch   1,  Average loss: 0.0053, Accuracy: 4641/5195 (89.3359%)
+___Train Local_ResNet_18,  epoch  81, local model 54, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4669/5195 (89.8749%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 2.0462, Accuracy: 5316/10000 (53.1600%)
+___Train Local_ResNet_18,  epoch  81, local model 20, internal_epoch   1,  Average loss: 0.0053, Accuracy: 3886/4315 (90.0579%)
+___Train Local_ResNet_18,  epoch  81, local model 20, internal_epoch   2,  Average loss: 0.0045, Accuracy: 3950/4315 (91.5411%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 1.9893, Accuracy: 5472/10000 (54.7200%)
+___Train Local_ResNet_18,  epoch  81, local model 10, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4126/4663 (88.4838%)
+___Train Local_ResNet_18,  epoch  81, local model 10, internal_epoch   2,  Average loss: 0.0045, Accuracy: 4257/4663 (91.2932%)
+___Test Local_ResNet_18 poisoned: False, epoch: 81: Average loss: 2.0433, Accuracy: 5384/10000 (53.8400%)
+time spent on training: 233.80510187149048
+___Test Target_ResNet_18 poisoned: False, epoch: 81: Average loss: 1.2220, Accuracy: 6826/10000 (68.2600%)
+___Test Target_ResNet_18 poisoned: True, epoch: 81: Average loss: 10.0036, Accuracy: 35/9900 (0.3535%)
+Done in 254.75755906105042 sec.
+Server Epoch:82 choose agents : [13, 36, 58, 71, 20, 63, 96, 35, 51, 98, 73, 77, 3, 33, 7, 75, 64, 37, 1, 92].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  82, local model 13, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4397/4885 (90.0102%), train_poison_data_count: 385
+Global model norm: 42.78887920469231.
+Norm before scaling: 42.788986186484806. Distance: 2.1058180595340183
+___Test Local_ResNet_18 poisoned: True, epoch: 82: Average loss: 0.0958, Accuracy: 9664/9900 (97.6162%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  82, local model 36, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4770/5305 (89.9152%), train_poison_data_count: 415
+Global model norm: 42.78887920469231.
+Norm before scaling: 42.79198299440854. Distance: 2.2036540160586586
+___Test Local_ResNet_18 poisoned: True, epoch: 82: Average loss: 0.1503, Accuracy: 9546/9900 (96.4242%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  82, local model 58, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4248/4717 (90.0572%), train_poison_data_count: 370
+Global model norm: 42.78887920469231.
+Norm before scaling: 42.79166492337103. Distance: 2.084690364103161
+___Test Local_ResNet_18 poisoned: True, epoch: 82: Average loss: 0.1618, Accuracy: 9492/9900 (95.8788%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  82, local model 71, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4519/5066 (89.2025%), train_poison_data_count: 400
+Global model norm: 42.78887920469231.
+Norm before scaling: 42.795309048568626. Distance: 2.2788886821855643
+___Test Local_ResNet_18 poisoned: True, epoch: 82: Average loss: 0.1381, Accuracy: 9537/9900 (96.3333%)
+___Train Local_ResNet_18,  epoch  82, local model 20, internal_epoch   1,  Average loss: 0.0051, Accuracy: 3882/4315 (89.9652%)
+___Train Local_ResNet_18,  epoch  82, local model 20, internal_epoch   2,  Average loss: 0.0042, Accuracy: 3982/4315 (92.2827%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 1.8650, Accuracy: 5626/10000 (56.2600%)
+___Train Local_ResNet_18,  epoch  82, local model 63, internal_epoch   1,  Average loss: 0.0058, Accuracy: 3204/3590 (89.2479%)
+___Train Local_ResNet_18,  epoch  82, local model 63, internal_epoch   2,  Average loss: 0.0081, Accuracy: 3048/3590 (84.9025%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 2.1731, Accuracy: 5335/10000 (53.3500%)
+___Train Local_ResNet_18,  epoch  82, local model 96, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4185/4679 (89.4422%)
+___Train Local_ResNet_18,  epoch  82, local model 96, internal_epoch   2,  Average loss: 0.0057, Accuracy: 4180/4679 (89.3353%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 2.1131, Accuracy: 5296/10000 (52.9600%)
+___Train Local_ResNet_18,  epoch  82, local model 35, internal_epoch   1,  Average loss: 0.0054, Accuracy: 4629/5167 (89.5878%)
+___Train Local_ResNet_18,  epoch  82, local model 35, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4655/5167 (90.0910%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 2.2368, Accuracy: 5157/10000 (51.5700%)
+___Train Local_ResNet_18,  epoch  82, local model 51, internal_epoch   1,  Average loss: 0.0055, Accuracy: 3370/3775 (89.2715%)
+___Train Local_ResNet_18,  epoch  82, local model 51, internal_epoch   2,  Average loss: 0.0038, Accuracy: 3502/3775 (92.7682%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 1.8382, Accuracy: 5667/10000 (56.6700%)
+___Train Local_ResNet_18,  epoch  82, local model 98, internal_epoch   1,  Average loss: 0.0055, Accuracy: 3424/3828 (89.4462%)
+___Train Local_ResNet_18,  epoch  82, local model 98, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3497/3828 (91.3532%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 1.9304, Accuracy: 5575/10000 (55.7500%)
+___Train Local_ResNet_18,  epoch  82, local model 73, internal_epoch   1,  Average loss: 0.0043, Accuracy: 3947/4235 (93.1995%)
+___Train Local_ResNet_18,  epoch  82, local model 73, internal_epoch   2,  Average loss: 0.0044, Accuracy: 3878/4235 (91.5702%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 1.8824, Accuracy: 5716/10000 (57.1600%)
+___Train Local_ResNet_18,  epoch  82, local model 77, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4059/4647 (87.3467%)
+___Train Local_ResNet_18,  epoch  82, local model 77, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4161/4647 (89.5416%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 1.9047, Accuracy: 5613/10000 (56.1300%)
+___Train Local_ResNet_18,  epoch  82, local model 3, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4339/4918 (88.2269%)
+___Train Local_ResNet_18,  epoch  82, local model 3, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4446/4918 (90.4026%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 2.1429, Accuracy: 5202/10000 (52.0200%)
+___Train Local_ResNet_18,  epoch  82, local model 33, internal_epoch   1,  Average loss: 0.0058, Accuracy: 3933/4433 (88.7210%)
+___Train Local_ResNet_18,  epoch  82, local model 33, internal_epoch   2,  Average loss: 0.0047, Accuracy: 4058/4433 (91.5407%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 2.0788, Accuracy: 5424/10000 (54.2400%)
+___Train Local_ResNet_18,  epoch  82, local model 7, internal_epoch   1,  Average loss: 0.0079, Accuracy: 3865/4481 (86.2531%)
+___Train Local_ResNet_18,  epoch  82, local model 7, internal_epoch   2,  Average loss: 0.0075, Accuracy: 3883/4481 (86.6548%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 2.0247, Accuracy: 5351/10000 (53.5100%)
+___Train Local_ResNet_18,  epoch  82, local model 75, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3783/4295 (88.0792%)
+___Train Local_ResNet_18,  epoch  82, local model 75, internal_epoch   2,  Average loss: 0.0060, Accuracy: 3817/4295 (88.8708%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 1.9415, Accuracy: 5547/10000 (55.4700%)
+___Train Local_ResNet_18,  epoch  82, local model 64, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3972/4503 (88.2079%)
+___Train Local_ResNet_18,  epoch  82, local model 64, internal_epoch   2,  Average loss: 0.0056, Accuracy: 4008/4503 (89.0073%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 1.9929, Accuracy: 5468/10000 (54.6800%)
+___Train Local_ResNet_18,  epoch  82, local model 37, internal_epoch   1,  Average loss: 0.0069, Accuracy: 3813/4354 (87.5746%)
+___Train Local_ResNet_18,  epoch  82, local model 37, internal_epoch   2,  Average loss: 0.0099, Accuracy: 3603/4354 (82.7515%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 2.3741, Accuracy: 4838/10000 (48.3800%)
+___Train Local_ResNet_18,  epoch  82, local model 1, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4400/4986 (88.2471%)
+___Train Local_ResNet_18,  epoch  82, local model 1, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4493/4986 (90.1123%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 1.9546, Accuracy: 5550/10000 (55.5000%)
+___Train Local_ResNet_18,  epoch  82, local model 92, internal_epoch   1,  Average loss: 0.0061, Accuracy: 5544/6263 (88.5199%)
+___Train Local_ResNet_18,  epoch  82, local model 92, internal_epoch   2,  Average loss: 0.0055, Accuracy: 5608/6263 (89.5418%)
+___Test Local_ResNet_18 poisoned: False, epoch: 82: Average loss: 2.2879, Accuracy: 5044/10000 (50.4400%)
+time spent on training: 233.21343517303467
+___Test Target_ResNet_18 poisoned: False, epoch: 82: Average loss: 1.2099, Accuracy: 6870/10000 (68.7000%)
+___Test Target_ResNet_18 poisoned: True, epoch: 82: Average loss: 9.9471, Accuracy: 52/9900 (0.5253%)
+Done in 254.19686651229858 sec.
+Server Epoch:83 choose agents : [13, 36, 58, 71, 27, 40, 15, 99, 32, 18, 55, 45, 96, 90, 34, 12, 69, 49, 68, 48].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  83, local model 13, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4398/4885 (90.0307%), train_poison_data_count: 385
+Global model norm: 42.82983510814191.
+Norm before scaling: 42.830590384166435. Distance: 2.0951730247916753
+___Test Local_ResNet_18 poisoned: True, epoch: 83: Average loss: 0.2440, Accuracy: 9344/9900 (94.3838%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  83, local model 36, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4764/5305 (89.8021%), train_poison_data_count: 415
+Global model norm: 42.82983510814191.
+Norm before scaling: 42.83280625866332. Distance: 2.2073923541356293
+___Test Local_ResNet_18 poisoned: True, epoch: 83: Average loss: 0.1604, Accuracy: 9487/9900 (95.8283%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  83, local model 58, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4250/4717 (90.0996%), train_poison_data_count: 370
+Global model norm: 42.82983510814191.
+Norm before scaling: 42.83105494355848. Distance: 2.057709303044573
+___Test Local_ResNet_18 poisoned: True, epoch: 83: Average loss: 0.2829, Accuracy: 9163/9900 (92.5556%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  83, local model 71, internal_epoch   1,  Average loss: 0.0068, Accuracy: 4476/5066 (88.3537%), train_poison_data_count: 400
+Global model norm: 42.82983510814191.
+Norm before scaling: 42.83559197038282. Distance: 2.248822115833284
+___Test Local_ResNet_18 poisoned: True, epoch: 83: Average loss: 0.2295, Accuracy: 9328/9900 (94.2222%)
+___Train Local_ResNet_18,  epoch  83, local model 27, internal_epoch   1,  Average loss: 0.0057, Accuracy: 3761/4223 (89.0599%)
+___Train Local_ResNet_18,  epoch  83, local model 27, internal_epoch   2,  Average loss: 0.0046, Accuracy: 3862/4223 (91.4516%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 2.0354, Accuracy: 5362/10000 (53.6200%)
+___Train Local_ResNet_18,  epoch  83, local model 40, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4838/5455 (88.6893%)
+___Train Local_ResNet_18,  epoch  83, local model 40, internal_epoch   2,  Average loss: 0.0060, Accuracy: 4811/5455 (88.1943%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 2.1604, Accuracy: 5167/10000 (51.6700%)
+___Train Local_ResNet_18,  epoch  83, local model 15, internal_epoch   1,  Average loss: 0.0053, Accuracy: 5036/5582 (90.2186%)
+___Train Local_ResNet_18,  epoch  83, local model 15, internal_epoch   2,  Average loss: 0.0052, Accuracy: 5020/5582 (89.9319%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 2.1406, Accuracy: 5174/10000 (51.7400%)
+___Train Local_ResNet_18,  epoch  83, local model 99, internal_epoch   1,  Average loss: 0.0054, Accuracy: 4000/4465 (89.5857%)
+___Train Local_ResNet_18,  epoch  83, local model 99, internal_epoch   2,  Average loss: 0.0045, Accuracy: 4076/4465 (91.2878%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 1.9530, Accuracy: 5560/10000 (55.6000%)
+___Train Local_ResNet_18,  epoch  83, local model 32, internal_epoch   1,  Average loss: 0.0068, Accuracy: 4834/5591 (86.4604%)
+___Train Local_ResNet_18,  epoch  83, local model 32, internal_epoch   2,  Average loss: 0.0064, Accuracy: 4902/5591 (87.6766%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 2.1854, Accuracy: 5115/10000 (51.1500%)
+___Train Local_ResNet_18,  epoch  83, local model 18, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3498/3911 (89.4400%)
+___Train Local_ResNet_18,  epoch  83, local model 18, internal_epoch   2,  Average loss: 0.0060, Accuracy: 3448/3911 (88.1616%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 2.0894, Accuracy: 5301/10000 (53.0100%)
+___Train Local_ResNet_18,  epoch  83, local model 55, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3873/4356 (88.9118%)
+___Train Local_ResNet_18,  epoch  83, local model 55, internal_epoch   2,  Average loss: 0.0090, Accuracy: 3621/4356 (83.1267%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 2.2529, Accuracy: 4991/10000 (49.9100%)
+___Train Local_ResNet_18,  epoch  83, local model 45, internal_epoch   1,  Average loss: 0.0065, Accuracy: 4386/5037 (87.0756%)
+___Train Local_ResNet_18,  epoch  83, local model 45, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4515/5037 (89.6367%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 2.0066, Accuracy: 5331/10000 (53.3100%)
+___Train Local_ResNet_18,  epoch  83, local model 96, internal_epoch   1,  Average loss: 0.0056, Accuracy: 4183/4679 (89.3994%)
+___Train Local_ResNet_18,  epoch  83, local model 96, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4219/4679 (90.1688%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 2.0740, Accuracy: 5372/10000 (53.7200%)
+___Train Local_ResNet_18,  epoch  83, local model 90, internal_epoch   1,  Average loss: 0.0043, Accuracy: 4008/4362 (91.8845%)
+___Train Local_ResNet_18,  epoch  83, local model 90, internal_epoch   2,  Average loss: 0.0041, Accuracy: 4028/4362 (92.3430%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 1.8763, Accuracy: 5638/10000 (56.3800%)
+___Train Local_ResNet_18,  epoch  83, local model 34, internal_epoch   1,  Average loss: 0.0055, Accuracy: 4022/4518 (89.0217%)
+___Train Local_ResNet_18,  epoch  83, local model 34, internal_epoch   2,  Average loss: 0.0047, Accuracy: 4081/4518 (90.3276%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 1.9397, Accuracy: 5457/10000 (54.5700%)
+___Train Local_ResNet_18,  epoch  83, local model 12, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4441/5083 (87.3697%)
+___Train Local_ResNet_18,  epoch  83, local model 12, internal_epoch   2,  Average loss: 0.0066, Accuracy: 4410/5083 (86.7598%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 2.2617, Accuracy: 5043/10000 (50.4300%)
+___Train Local_ResNet_18,  epoch  83, local model 69, internal_epoch   1,  Average loss: 0.0057, Accuracy: 3566/4013 (88.8612%)
+___Train Local_ResNet_18,  epoch  83, local model 69, internal_epoch   2,  Average loss: 0.0043, Accuracy: 3708/4013 (92.3997%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 1.9749, Accuracy: 5408/10000 (54.0800%)
+___Train Local_ResNet_18,  epoch  83, local model 49, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4571/5197 (87.9546%)
+___Train Local_ResNet_18,  epoch  83, local model 49, internal_epoch   2,  Average loss: 0.0060, Accuracy: 4578/5197 (88.0893%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 2.1142, Accuracy: 5330/10000 (53.3000%)
+___Train Local_ResNet_18,  epoch  83, local model 68, internal_epoch   1,  Average loss: 0.0058, Accuracy: 2925/3297 (88.7170%)
+___Train Local_ResNet_18,  epoch  83, local model 68, internal_epoch   2,  Average loss: 0.0039, Accuracy: 3063/3297 (92.9026%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 1.7747, Accuracy: 5865/10000 (58.6500%)
+___Train Local_ResNet_18,  epoch  83, local model 48, internal_epoch   1,  Average loss: 0.0049, Accuracy: 4016/4441 (90.4301%)
+___Train Local_ResNet_18,  epoch  83, local model 48, internal_epoch   2,  Average loss: 0.0040, Accuracy: 4085/4441 (91.9838%)
+___Test Local_ResNet_18 poisoned: False, epoch: 83: Average loss: 1.9581, Accuracy: 5562/10000 (55.6200%)
+time spent on training: 235.4587869644165
+___Test Target_ResNet_18 poisoned: False, epoch: 83: Average loss: 1.2511, Accuracy: 6824/10000 (68.2400%)
+___Test Target_ResNet_18 poisoned: True, epoch: 83: Average loss: 10.0112, Accuracy: 37/9900 (0.3737%)
+Done in 256.38546419143677 sec.
+Server Epoch:84 choose agents : [13, 36, 58, 71, 8, 17, 37, 29, 47, 32, 77, 6, 88, 94, 92, 7, 62, 27, 48, 26].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  84, local model 13, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4421/4885 (90.5015%), train_poison_data_count: 385
+Global model norm: 42.86499974483844.
+Norm before scaling: 42.8652318387051. Distance: 2.055716137441655
+___Test Local_ResNet_18 poisoned: True, epoch: 84: Average loss: 0.3758, Accuracy: 9060/9900 (91.5152%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  84, local model 36, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4778/5305 (90.0660%), train_poison_data_count: 415
+Global model norm: 42.86499974483844.
+Norm before scaling: 42.86729072682122. Distance: 2.2051827851048214
+___Test Local_ResNet_18 poisoned: True, epoch: 84: Average loss: 0.2947, Accuracy: 9204/9900 (92.9697%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  84, local model 58, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4261/4717 (90.3328%), train_poison_data_count: 370
+Global model norm: 42.86499974483844.
+Norm before scaling: 42.86572734778552. Distance: 2.022485929046459
+___Test Local_ResNet_18 poisoned: True, epoch: 84: Average loss: 0.1499, Accuracy: 9506/9900 (96.0202%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  84, local model 71, internal_epoch   1,  Average loss: 0.0071, Accuracy: 4488/5066 (88.5906%), train_poison_data_count: 400
+Global model norm: 42.86499974483844.
+Norm before scaling: 42.86914876709852. Distance: 2.2693274401548247
+___Test Local_ResNet_18 poisoned: True, epoch: 84: Average loss: 0.2228, Accuracy: 9338/9900 (94.3232%)
+___Train Local_ResNet_18,  epoch  84, local model 8, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3956/4501 (87.8916%)
+___Train Local_ResNet_18,  epoch  84, local model 8, internal_epoch   2,  Average loss: 0.0059, Accuracy: 3979/4501 (88.4026%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 2.1581, Accuracy: 5274/10000 (52.7400%)
+___Train Local_ResNet_18,  epoch  84, local model 17, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3945/4511 (87.4529%)
+___Train Local_ResNet_18,  epoch  84, local model 17, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4071/4511 (90.2461%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 2.0132, Accuracy: 5401/10000 (54.0100%)
+___Train Local_ResNet_18,  epoch  84, local model 37, internal_epoch   1,  Average loss: 0.0072, Accuracy: 3804/4354 (87.3679%)
+___Train Local_ResNet_18,  epoch  84, local model 37, internal_epoch   2,  Average loss: 0.0142, Accuracy: 3269/4354 (75.0804%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 2.7910, Accuracy: 4220/10000 (42.2000%)
+___Train Local_ResNet_18,  epoch  84, local model 29, internal_epoch   1,  Average loss: 0.0050, Accuracy: 3930/4346 (90.4280%)
+___Train Local_ResNet_18,  epoch  84, local model 29, internal_epoch   2,  Average loss: 0.0039, Accuracy: 4004/4346 (92.1307%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 1.9117, Accuracy: 5644/10000 (56.4400%)
+___Train Local_ResNet_18,  epoch  84, local model 47, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4194/4707 (89.1013%)
+___Train Local_ResNet_18,  epoch  84, local model 47, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4268/4707 (90.6735%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 1.9123, Accuracy: 5554/10000 (55.5400%)
+___Train Local_ResNet_18,  epoch  84, local model 32, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4843/5591 (86.6214%)
+___Train Local_ResNet_18,  epoch  84, local model 32, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4969/5591 (88.8750%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 2.2750, Accuracy: 5005/10000 (50.0500%)
+___Train Local_ResNet_18,  epoch  84, local model 77, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4079/4647 (87.7771%)
+___Train Local_ResNet_18,  epoch  84, local model 77, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4207/4647 (90.5315%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 1.9656, Accuracy: 5576/10000 (55.7600%)
+___Train Local_ResNet_18,  epoch  84, local model 6, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4066/4538 (89.5989%)
+___Train Local_ResNet_18,  epoch  84, local model 6, internal_epoch   2,  Average loss: 0.0043, Accuracy: 4155/4538 (91.5602%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 1.8237, Accuracy: 5719/10000 (57.1900%)
+___Train Local_ResNet_18,  epoch  84, local model 88, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4315/4934 (87.4544%)
+___Train Local_ResNet_18,  epoch  84, local model 88, internal_epoch   2,  Average loss: 0.0073, Accuracy: 4247/4934 (86.0762%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 2.1442, Accuracy: 5209/10000 (52.0900%)
+___Train Local_ResNet_18,  epoch  84, local model 94, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4206/4804 (87.5520%)
+___Train Local_ResNet_18,  epoch  84, local model 94, internal_epoch   2,  Average loss: 0.0067, Accuracy: 4221/4804 (87.8643%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 2.3327, Accuracy: 4944/10000 (49.4400%)
+___Train Local_ResNet_18,  epoch  84, local model 92, internal_epoch   1,  Average loss: 0.0047, Accuracy: 5681/6263 (90.7073%)
+___Train Local_ResNet_18,  epoch  84, local model 92, internal_epoch   2,  Average loss: 0.0044, Accuracy: 5708/6263 (91.1384%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 2.0323, Accuracy: 5428/10000 (54.2800%)
+___Train Local_ResNet_18,  epoch  84, local model 7, internal_epoch   1,  Average loss: 0.0081, Accuracy: 3865/4481 (86.2531%)
+___Train Local_ResNet_18,  epoch  84, local model 7, internal_epoch   2,  Average loss: 0.0073, Accuracy: 3917/4481 (87.4135%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 2.2851, Accuracy: 5142/10000 (51.4200%)
+___Train Local_ResNet_18,  epoch  84, local model 62, internal_epoch   1,  Average loss: 0.0067, Accuracy: 4399/5063 (86.8852%)
+___Train Local_ResNet_18,  epoch  84, local model 62, internal_epoch   2,  Average loss: 0.0065, Accuracy: 4400/5063 (86.9050%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 2.1989, Accuracy: 5143/10000 (51.4300%)
+___Train Local_ResNet_18,  epoch  84, local model 27, internal_epoch   1,  Average loss: 0.0057, Accuracy: 3749/4223 (88.7758%)
+___Train Local_ResNet_18,  epoch  84, local model 27, internal_epoch   2,  Average loss: 0.0041, Accuracy: 3908/4223 (92.5408%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 1.8445, Accuracy: 5731/10000 (57.3100%)
+___Train Local_ResNet_18,  epoch  84, local model 48, internal_epoch   1,  Average loss: 0.0052, Accuracy: 4006/4441 (90.2049%)
+___Train Local_ResNet_18,  epoch  84, local model 48, internal_epoch   2,  Average loss: 0.0041, Accuracy: 4069/4441 (91.6235%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 2.0954, Accuracy: 5477/10000 (54.7700%)
+___Train Local_ResNet_18,  epoch  84, local model 26, internal_epoch   1,  Average loss: 0.0051, Accuracy: 3375/3756 (89.8562%)
+___Train Local_ResNet_18,  epoch  84, local model 26, internal_epoch   2,  Average loss: 0.0040, Accuracy: 3459/3756 (92.0927%)
+___Test Local_ResNet_18 poisoned: False, epoch: 84: Average loss: 1.8833, Accuracy: 5737/10000 (57.3700%)
+time spent on training: 236.1009407043457
+___Test Target_ResNet_18 poisoned: False, epoch: 84: Average loss: 1.2528, Accuracy: 6834/10000 (68.3400%)
+___Test Target_ResNet_18 poisoned: True, epoch: 84: Average loss: 10.2757, Accuracy: 32/9900 (0.3232%)
+Done in 257.0968098640442 sec.
+Server Epoch:85 choose agents : [13, 36, 58, 71, 11, 16, 60, 69, 91, 15, 40, 37, 33, 2, 34, 73, 90, 70, 32, 26].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  85, local model 13, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4442/4885 (90.9314%), train_poison_data_count: 385
+Global model norm: 42.90043006094534.
+Norm before scaling: 42.89722882903903. Distance: 2.076306343209805
+___Test Local_ResNet_18 poisoned: True, epoch: 85: Average loss: 0.1923, Accuracy: 9437/9900 (95.3232%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  85, local model 36, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4787/5305 (90.2356%), train_poison_data_count: 415
+Global model norm: 42.90043006094534.
+Norm before scaling: 42.90029490265044. Distance: 2.14374098261502
+___Test Local_ResNet_18 poisoned: True, epoch: 85: Average loss: 0.3249, Accuracy: 9145/9900 (92.3737%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  85, local model 58, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4222/4717 (89.5060%), train_poison_data_count: 370
+Global model norm: 42.90043006094534.
+Norm before scaling: 42.90279597349979. Distance: 2.077896679260106
+___Test Local_ResNet_18 poisoned: True, epoch: 85: Average loss: 0.2228, Accuracy: 9293/9900 (93.8687%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  85, local model 71, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4518/5066 (89.1828%), train_poison_data_count: 400
+Global model norm: 42.90043006094534.
+Norm before scaling: 42.90490284893514. Distance: 2.2472861135375335
+___Test Local_ResNet_18 poisoned: True, epoch: 85: Average loss: 0.1255, Accuracy: 9572/9900 (96.6869%)
+___Train Local_ResNet_18,  epoch  85, local model 11, internal_epoch   1,  Average loss: 0.0071, Accuracy: 4508/5244 (85.9649%)
+___Train Local_ResNet_18,  epoch  85, local model 11, internal_epoch   2,  Average loss: 0.0057, Accuracy: 4630/5244 (88.2914%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 1.9764, Accuracy: 5449/10000 (54.4900%)
+___Train Local_ResNet_18,  epoch  85, local model 16, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4348/4928 (88.2305%)
+___Train Local_ResNet_18,  epoch  85, local model 16, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4424/4928 (89.7727%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 1.9018, Accuracy: 5595/10000 (55.9500%)
+___Train Local_ResNet_18,  epoch  85, local model 60, internal_epoch   1,  Average loss: 0.0056, Accuracy: 3393/3804 (89.1956%)
+___Train Local_ResNet_18,  epoch  85, local model 60, internal_epoch   2,  Average loss: 0.0040, Accuracy: 3507/3804 (92.1924%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 1.9278, Accuracy: 5593/10000 (55.9300%)
+___Train Local_ResNet_18,  epoch  85, local model 69, internal_epoch   1,  Average loss: 0.0051, Accuracy: 3626/4013 (90.3563%)
+___Train Local_ResNet_18,  epoch  85, local model 69, internal_epoch   2,  Average loss: 0.0041, Accuracy: 3691/4013 (91.9761%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 1.7526, Accuracy: 5841/10000 (58.4100%)
+___Train Local_ResNet_18,  epoch  85, local model 91, internal_epoch   1,  Average loss: 0.0072, Accuracy: 3579/4158 (86.0750%)
+___Train Local_ResNet_18,  epoch  85, local model 91, internal_epoch   2,  Average loss: 0.0064, Accuracy: 3602/4158 (86.6282%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 1.9982, Accuracy: 5381/10000 (53.8100%)
+___Train Local_ResNet_18,  epoch  85, local model 15, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4975/5582 (89.1258%)
+___Train Local_ResNet_18,  epoch  85, local model 15, internal_epoch   2,  Average loss: 0.0045, Accuracy: 5084/5582 (91.0785%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 2.1253, Accuracy: 5227/10000 (52.2700%)
+___Train Local_ResNet_18,  epoch  85, local model 40, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4790/5455 (87.8093%)
+___Train Local_ResNet_18,  epoch  85, local model 40, internal_epoch   2,  Average loss: 0.0060, Accuracy: 4802/5455 (88.0293%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 2.0014, Accuracy: 5415/10000 (54.1500%)
+___Train Local_ResNet_18,  epoch  85, local model 37, internal_epoch   1,  Average loss: 0.0071, Accuracy: 3804/4354 (87.3679%)
+___Train Local_ResNet_18,  epoch  85, local model 37, internal_epoch   2,  Average loss: 0.0115, Accuracy: 3419/4354 (78.5255%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 2.3684, Accuracy: 4816/10000 (48.1600%)
+___Train Local_ResNet_18,  epoch  85, local model 33, internal_epoch   1,  Average loss: 0.0050, Accuracy: 4008/4433 (90.4128%)
+___Train Local_ResNet_18,  epoch  85, local model 33, internal_epoch   2,  Average loss: 0.0044, Accuracy: 4061/4433 (91.6084%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 1.8582, Accuracy: 5731/10000 (57.3100%)
+___Train Local_ResNet_18,  epoch  85, local model 2, internal_epoch   1,  Average loss: 0.0066, Accuracy: 3173/3646 (87.0269%)
+___Train Local_ResNet_18,  epoch  85, local model 2, internal_epoch   2,  Average loss: 0.0052, Accuracy: 3267/3646 (89.6050%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 1.8819, Accuracy: 5623/10000 (56.2300%)
+___Train Local_ResNet_18,  epoch  85, local model 34, internal_epoch   1,  Average loss: 0.0053, Accuracy: 4046/4518 (89.5529%)
+___Train Local_ResNet_18,  epoch  85, local model 34, internal_epoch   2,  Average loss: 0.0045, Accuracy: 4121/4518 (91.2129%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 1.8469, Accuracy: 5696/10000 (56.9600%)
+___Train Local_ResNet_18,  epoch  85, local model 73, internal_epoch   1,  Average loss: 0.0041, Accuracy: 3905/4235 (92.2078%)
+___Train Local_ResNet_18,  epoch  85, local model 73, internal_epoch   2,  Average loss: 0.0043, Accuracy: 3899/4235 (92.0661%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 1.8560, Accuracy: 5710/10000 (57.1000%)
+___Train Local_ResNet_18,  epoch  85, local model 90, internal_epoch   1,  Average loss: 0.0046, Accuracy: 3979/4362 (91.2196%)
+___Train Local_ResNet_18,  epoch  85, local model 90, internal_epoch   2,  Average loss: 0.0052, Accuracy: 3942/4362 (90.3714%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 2.0947, Accuracy: 5410/10000 (54.1000%)
+___Train Local_ResNet_18,  epoch  85, local model 70, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4778/5392 (88.6128%)
+___Train Local_ResNet_18,  epoch  85, local model 70, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4841/5392 (89.7812%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 1.9670, Accuracy: 5526/10000 (55.2600%)
+___Train Local_ResNet_18,  epoch  85, local model 32, internal_epoch   1,  Average loss: 0.0065, Accuracy: 4870/5591 (87.1043%)
+___Train Local_ResNet_18,  epoch  85, local model 32, internal_epoch   2,  Average loss: 0.0066, Accuracy: 4853/5591 (86.8002%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 2.0557, Accuracy: 5264/10000 (52.6400%)
+___Train Local_ResNet_18,  epoch  85, local model 26, internal_epoch   1,  Average loss: 0.0053, Accuracy: 3361/3756 (89.4835%)
+___Train Local_ResNet_18,  epoch  85, local model 26, internal_epoch   2,  Average loss: 0.0040, Accuracy: 3488/3756 (92.8647%)
+___Test Local_ResNet_18 poisoned: False, epoch: 85: Average loss: 2.0246, Accuracy: 5557/10000 (55.5700%)
+time spent on training: 234.0467472076416
+___Test Target_ResNet_18 poisoned: False, epoch: 85: Average loss: 1.2421, Accuracy: 6858/10000 (68.5800%)
+___Test Target_ResNet_18 poisoned: True, epoch: 85: Average loss: 10.2757, Accuracy: 33/9900 (0.3333%)
+Done in 254.99985432624817 sec.
+Server Epoch:86 choose agents : [13, 36, 58, 71, 21, 64, 16, 60, 63, 77, 95, 55, 52, 66, 78, 30, 68, 74, 89, 76].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  86, local model 13, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4425/4885 (90.5834%), train_poison_data_count: 385
+Global model norm: 42.9396535008544.
+Norm before scaling: 42.94014530834243. Distance: 2.1077037831314813
+___Test Local_ResNet_18 poisoned: True, epoch: 86: Average loss: 0.3267, Accuracy: 9111/9900 (92.0303%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  86, local model 36, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4742/5305 (89.3874%), train_poison_data_count: 415
+Global model norm: 42.9396535008544.
+Norm before scaling: 42.94261278921047. Distance: 2.225710093310472
+___Test Local_ResNet_18 poisoned: True, epoch: 86: Average loss: 0.2695, Accuracy: 9235/9900 (93.2828%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  86, local model 58, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4243/4717 (89.9512%), train_poison_data_count: 370
+Global model norm: 42.9396535008544.
+Norm before scaling: 42.93949572327032. Distance: 2.044174742819436
+___Test Local_ResNet_18 poisoned: True, epoch: 86: Average loss: 0.1959, Accuracy: 9426/9900 (95.2121%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  86, local model 71, internal_epoch   1,  Average loss: 0.0067, Accuracy: 4485/5066 (88.5314%), train_poison_data_count: 400
+Global model norm: 42.9396535008544.
+Norm before scaling: 42.9429894371232. Distance: 2.2397329472683447
+___Test Local_ResNet_18 poisoned: True, epoch: 86: Average loss: 0.1378, Accuracy: 9532/9900 (96.2828%)
+___Train Local_ResNet_18,  epoch  86, local model 21, internal_epoch   1,  Average loss: 0.0054, Accuracy: 4174/4634 (90.0734%)
+___Train Local_ResNet_18,  epoch  86, local model 21, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4202/4634 (90.6776%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.8882, Accuracy: 5688/10000 (56.8800%)
+___Train Local_ResNet_18,  epoch  86, local model 64, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3992/4503 (88.6520%)
+___Train Local_ResNet_18,  epoch  86, local model 64, internal_epoch   2,  Average loss: 0.0051, Accuracy: 4071/4503 (90.4064%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.9141, Accuracy: 5625/10000 (56.2500%)
+___Train Local_ResNet_18,  epoch  86, local model 16, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4377/4928 (88.8190%)
+___Train Local_ResNet_18,  epoch  86, local model 16, internal_epoch   2,  Average loss: 0.0053, Accuracy: 4428/4928 (89.8539%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.9434, Accuracy: 5603/10000 (56.0300%)
+___Train Local_ResNet_18,  epoch  86, local model 60, internal_epoch   1,  Average loss: 0.0058, Accuracy: 3380/3804 (88.8538%)
+___Train Local_ResNet_18,  epoch  86, local model 60, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3476/3804 (91.3775%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.9161, Accuracy: 5619/10000 (56.1900%)
+___Train Local_ResNet_18,  epoch  86, local model 63, internal_epoch   1,  Average loss: 0.0061, Accuracy: 3214/3590 (89.5265%)
+___Train Local_ResNet_18,  epoch  86, local model 63, internal_epoch   2,  Average loss: 0.0081, Accuracy: 3042/3590 (84.7354%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 2.1377, Accuracy: 5237/10000 (52.3700%)
+___Train Local_ResNet_18,  epoch  86, local model 77, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4131/4647 (88.8961%)
+___Train Local_ResNet_18,  epoch  86, local model 77, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4203/4647 (90.4454%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.8614, Accuracy: 5632/10000 (56.3200%)
+___Train Local_ResNet_18,  epoch  86, local model 95, internal_epoch   1,  Average loss: 0.0069, Accuracy: 4006/4625 (86.6162%)
+___Train Local_ResNet_18,  epoch  86, local model 95, internal_epoch   2,  Average loss: 0.0063, Accuracy: 4042/4625 (87.3946%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.9933, Accuracy: 5466/10000 (54.6600%)
+___Train Local_ResNet_18,  epoch  86, local model 55, internal_epoch   1,  Average loss: 0.0061, Accuracy: 3848/4356 (88.3379%)
+___Train Local_ResNet_18,  epoch  86, local model 55, internal_epoch   2,  Average loss: 0.0082, Accuracy: 3692/4356 (84.7567%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 2.3816, Accuracy: 4878/10000 (48.7800%)
+___Train Local_ResNet_18,  epoch  86, local model 52, internal_epoch   1,  Average loss: 0.0055, Accuracy: 3405/3797 (89.6761%)
+___Train Local_ResNet_18,  epoch  86, local model 52, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3456/3797 (91.0192%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.8875, Accuracy: 5613/10000 (56.1300%)
+___Train Local_ResNet_18,  epoch  86, local model 66, internal_epoch   1,  Average loss: 0.0054, Accuracy: 3986/4456 (89.4524%)
+___Train Local_ResNet_18,  epoch  86, local model 66, internal_epoch   2,  Average loss: 0.0041, Accuracy: 4115/4456 (92.3474%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.9640, Accuracy: 5545/10000 (55.4500%)
+___Train Local_ResNet_18,  epoch  86, local model 78, internal_epoch   1,  Average loss: 0.0053, Accuracy: 3613/4025 (89.7640%)
+___Train Local_ResNet_18,  epoch  86, local model 78, internal_epoch   2,  Average loss: 0.0037, Accuracy: 3753/4025 (93.2422%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.8798, Accuracy: 5657/10000 (56.5700%)
+___Train Local_ResNet_18,  epoch  86, local model 30, internal_epoch   1,  Average loss: 0.0051, Accuracy: 3135/3472 (90.2938%)
+___Train Local_ResNet_18,  epoch  86, local model 30, internal_epoch   2,  Average loss: 0.0045, Accuracy: 3191/3472 (91.9067%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.9969, Accuracy: 5562/10000 (55.6200%)
+___Train Local_ResNet_18,  epoch  86, local model 68, internal_epoch   1,  Average loss: 0.0056, Accuracy: 2935/3297 (89.0203%)
+___Train Local_ResNet_18,  epoch  86, local model 68, internal_epoch   2,  Average loss: 0.0041, Accuracy: 3050/3297 (92.5083%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.7520, Accuracy: 5911/10000 (59.1100%)
+___Train Local_ResNet_18,  epoch  86, local model 74, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3829/4416 (86.7074%)
+___Train Local_ResNet_18,  epoch  86, local model 74, internal_epoch   2,  Average loss: 0.0056, Accuracy: 3900/4416 (88.3152%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.8991, Accuracy: 5527/10000 (55.2700%)
+___Train Local_ResNet_18,  epoch  86, local model 89, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3898/4356 (89.4858%)
+___Train Local_ResNet_18,  epoch  86, local model 89, internal_epoch   2,  Average loss: 0.0062, Accuracy: 3819/4356 (87.6722%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 2.1435, Accuracy: 5141/10000 (51.4100%)
+___Train Local_ResNet_18,  epoch  86, local model 76, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3178/3638 (87.3557%)
+___Train Local_ResNet_18,  epoch  86, local model 76, internal_epoch   2,  Average loss: 0.0046, Accuracy: 3289/3638 (90.4068%)
+___Test Local_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.9090, Accuracy: 5516/10000 (55.1600%)
+time spent on training: 228.57500100135803
+___Test Target_ResNet_18 poisoned: False, epoch: 86: Average loss: 1.2246, Accuracy: 6884/10000 (68.8400%)
+___Test Target_ResNet_18 poisoned: True, epoch: 86: Average loss: 10.2366, Accuracy: 36/9900 (0.3636%)
+Done in 249.37082409858704 sec.
+Server Epoch:87 choose agents : [13, 36, 58, 71, 31, 46, 45, 84, 60, 70, 99, 5, 53, 83, 63, 8, 22, 87, 27, 37].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  87, local model 13, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4434/4885 (90.7677%), train_poison_data_count: 385
+Global model norm: 42.97229672862288.
+Norm before scaling: 42.97203964680115. Distance: 2.070582073583079
+___Test Local_ResNet_18 poisoned: True, epoch: 87: Average loss: 0.2030, Accuracy: 9395/9900 (94.8990%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  87, local model 36, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4781/5305 (90.1225%), train_poison_data_count: 415
+Global model norm: 42.97229672862288.
+Norm before scaling: 42.97411614219803. Distance: 2.1996962467653227
+___Test Local_ResNet_18 poisoned: True, epoch: 87: Average loss: 0.2401, Accuracy: 9308/9900 (94.0202%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  87, local model 58, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4243/4717 (89.9512%), train_poison_data_count: 370
+Global model norm: 42.97229672862288.
+Norm before scaling: 42.97521826315283. Distance: 2.0728079097978207
+___Test Local_ResNet_18 poisoned: True, epoch: 87: Average loss: 0.1560, Accuracy: 9486/9900 (95.8182%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  87, local model 71, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4535/5066 (89.5184%), train_poison_data_count: 400
+Global model norm: 42.97229672862288.
+Norm before scaling: 42.97443996417376. Distance: 2.223798890543998
+___Test Local_ResNet_18 poisoned: True, epoch: 87: Average loss: 0.1202, Accuracy: 9582/9900 (96.7879%)
+___Train Local_ResNet_18,  epoch  87, local model 31, internal_epoch   1,  Average loss: 0.0057, Accuracy: 3721/4175 (89.1257%)
+___Train Local_ResNet_18,  epoch  87, local model 31, internal_epoch   2,  Average loss: 0.0048, Accuracy: 3804/4175 (91.1138%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 1.9777, Accuracy: 5576/10000 (55.7600%)
+___Train Local_ResNet_18,  epoch  87, local model 46, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4339/4956 (87.5504%)
+___Train Local_ResNet_18,  epoch  87, local model 46, internal_epoch   2,  Average loss: 0.0060, Accuracy: 4384/4956 (88.4584%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 2.2090, Accuracy: 5232/10000 (52.3200%)
+___Train Local_ResNet_18,  epoch  87, local model 45, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4422/5037 (87.7904%)
+___Train Local_ResNet_18,  epoch  87, local model 45, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4533/5037 (89.9940%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 1.9379, Accuracy: 5504/10000 (55.0400%)
+___Train Local_ResNet_18,  epoch  87, local model 84, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4239/4793 (88.4415%)
+___Train Local_ResNet_18,  epoch  87, local model 84, internal_epoch   2,  Average loss: 0.0048, Accuracy: 4327/4793 (90.2775%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 2.0724, Accuracy: 5404/10000 (54.0400%)
+___Train Local_ResNet_18,  epoch  87, local model 60, internal_epoch   1,  Average loss: 0.0053, Accuracy: 3431/3804 (90.1945%)
+___Train Local_ResNet_18,  epoch  87, local model 60, internal_epoch   2,  Average loss: 0.0049, Accuracy: 3434/3804 (90.2734%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 1.9136, Accuracy: 5571/10000 (55.7100%)
+___Train Local_ResNet_18,  epoch  87, local model 70, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4787/5392 (88.7797%)
+___Train Local_ResNet_18,  epoch  87, local model 70, internal_epoch   2,  Average loss: 0.0058, Accuracy: 4776/5392 (88.5757%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 2.0458, Accuracy: 5363/10000 (53.6300%)
+___Train Local_ResNet_18,  epoch  87, local model 99, internal_epoch   1,  Average loss: 0.0050, Accuracy: 4049/4465 (90.6831%)
+___Train Local_ResNet_18,  epoch  87, local model 99, internal_epoch   2,  Average loss: 0.0041, Accuracy: 4096/4465 (91.7357%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 1.9745, Accuracy: 5519/10000 (55.1900%)
+___Train Local_ResNet_18,  epoch  87, local model 5, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4078/4596 (88.7293%)
+___Train Local_ResNet_18,  epoch  87, local model 5, internal_epoch   2,  Average loss: 0.0047, Accuracy: 4174/4596 (90.8181%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 2.0019, Accuracy: 5447/10000 (54.4700%)
+___Train Local_ResNet_18,  epoch  87, local model 53, internal_epoch   1,  Average loss: 0.0068, Accuracy: 5345/6124 (87.2796%)
+___Train Local_ResNet_18,  epoch  87, local model 53, internal_epoch   2,  Average loss: 0.0057, Accuracy: 5419/6124 (88.4879%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 2.0222, Accuracy: 5267/10000 (52.6700%)
+___Train Local_ResNet_18,  epoch  87, local model 83, internal_epoch   1,  Average loss: 0.0062, Accuracy: 2863/3271 (87.5268%)
+___Train Local_ResNet_18,  epoch  87, local model 83, internal_epoch   2,  Average loss: 0.0053, Accuracy: 2941/3271 (89.9113%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 1.9630, Accuracy: 5503/10000 (55.0300%)
+___Train Local_ResNet_18,  epoch  87, local model 63, internal_epoch   1,  Average loss: 0.0057, Accuracy: 3244/3590 (90.3621%)
+___Train Local_ResNet_18,  epoch  87, local model 63, internal_epoch   2,  Average loss: 0.0072, Accuracy: 3099/3590 (86.3231%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 2.2116, Accuracy: 5177/10000 (51.7700%)
+___Train Local_ResNet_18,  epoch  87, local model 8, internal_epoch   1,  Average loss: 0.0061, Accuracy: 3975/4501 (88.3137%)
+___Train Local_ResNet_18,  epoch  87, local model 8, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4011/4501 (89.1135%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 1.9044, Accuracy: 5650/10000 (56.5000%)
+___Train Local_ResNet_18,  epoch  87, local model 22, internal_epoch   1,  Average loss: 0.0056, Accuracy: 4670/5232 (89.2584%)
+___Train Local_ResNet_18,  epoch  87, local model 22, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4694/5232 (89.7171%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 2.0042, Accuracy: 5375/10000 (53.7500%)
+___Train Local_ResNet_18,  epoch  87, local model 87, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3237/3672 (88.1536%)
+___Train Local_ResNet_18,  epoch  87, local model 87, internal_epoch   2,  Average loss: 0.0049, Accuracy: 3323/3672 (90.4956%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 1.8276, Accuracy: 5693/10000 (56.9300%)
+___Train Local_ResNet_18,  epoch  87, local model 27, internal_epoch   1,  Average loss: 0.0056, Accuracy: 3768/4223 (89.2257%)
+___Train Local_ResNet_18,  epoch  87, local model 27, internal_epoch   2,  Average loss: 0.0048, Accuracy: 3838/4223 (90.8833%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 1.9005, Accuracy: 5553/10000 (55.5300%)
+___Train Local_ResNet_18,  epoch  87, local model 37, internal_epoch   1,  Average loss: 0.0070, Accuracy: 3851/4354 (88.4474%)
+___Train Local_ResNet_18,  epoch  87, local model 37, internal_epoch   2,  Average loss: 0.0150, Accuracy: 3197/4354 (73.4267%)
+___Test Local_ResNet_18 poisoned: False, epoch: 87: Average loss: 2.5359, Accuracy: 4489/10000 (44.8900%)
+time spent on training: 234.0451340675354
+___Test Target_ResNet_18 poisoned: False, epoch: 87: Average loss: 1.2183, Accuracy: 6881/10000 (68.8100%)
+___Test Target_ResNet_18 poisoned: True, epoch: 87: Average loss: 10.1850, Accuracy: 41/9900 (0.4141%)
+Done in 254.99098753929138 sec.
+Server Epoch:88 choose agents : [13, 36, 58, 71, 15, 77, 99, 12, 74, 46, 90, 55, 79, 63, 93, 44, 30, 42, 83, 45].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  88, local model 13, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4406/4885 (90.1945%), train_poison_data_count: 385
+Global model norm: 43.00616410896451.
+Norm before scaling: 43.006121532379694. Distance: 2.1026471256847037
+___Test Local_ResNet_18 poisoned: True, epoch: 88: Average loss: 0.1328, Accuracy: 9558/9900 (96.5455%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  88, local model 36, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4724/5305 (89.0481%), train_poison_data_count: 415
+Global model norm: 43.00616410896451.
+Norm before scaling: 43.00879526011584. Distance: 2.263014137483501
+___Test Local_ResNet_18 poisoned: True, epoch: 88: Average loss: 0.1851, Accuracy: 9410/9900 (95.0505%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  88, local model 58, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4232/4717 (89.7180%), train_poison_data_count: 370
+Global model norm: 43.00616410896451.
+Norm before scaling: 43.00779617960635. Distance: 2.0892473457176233
+___Test Local_ResNet_18 poisoned: True, epoch: 88: Average loss: 0.1434, Accuracy: 9526/9900 (96.2222%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  88, local model 71, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4560/5066 (90.0118%), train_poison_data_count: 400
+Global model norm: 43.00616410896451.
+Norm before scaling: 43.006750242331144. Distance: 2.1601320786184384
+___Test Local_ResNet_18 poisoned: True, epoch: 88: Average loss: 0.1463, Accuracy: 9513/9900 (96.0909%)
+___Train Local_ResNet_18,  epoch  88, local model 15, internal_epoch   1,  Average loss: 0.0051, Accuracy: 5044/5582 (90.3619%)
+___Train Local_ResNet_18,  epoch  88, local model 15, internal_epoch   2,  Average loss: 0.0049, Accuracy: 5065/5582 (90.7381%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 2.1382, Accuracy: 5257/10000 (52.5700%)
+___Train Local_ResNet_18,  epoch  88, local model 77, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4105/4647 (88.3366%)
+___Train Local_ResNet_18,  epoch  88, local model 77, internal_epoch   2,  Average loss: 0.0048, Accuracy: 4218/4647 (90.7682%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 2.0452, Accuracy: 5384/10000 (53.8400%)
+___Train Local_ResNet_18,  epoch  88, local model 99, internal_epoch   1,  Average loss: 0.0051, Accuracy: 4019/4465 (90.0112%)
+___Train Local_ResNet_18,  epoch  88, local model 99, internal_epoch   2,  Average loss: 0.0045, Accuracy: 4099/4465 (91.8029%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 1.9784, Accuracy: 5574/10000 (55.7400%)
+___Train Local_ResNet_18,  epoch  88, local model 12, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4474/5083 (88.0189%)
+___Train Local_ResNet_18,  epoch  88, local model 12, internal_epoch   2,  Average loss: 0.0063, Accuracy: 4470/5083 (87.9402%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 2.3101, Accuracy: 4960/10000 (49.6000%)
+___Train Local_ResNet_18,  epoch  88, local model 74, internal_epoch   1,  Average loss: 0.0063, Accuracy: 3853/4416 (87.2509%)
+___Train Local_ResNet_18,  epoch  88, local model 74, internal_epoch   2,  Average loss: 0.0050, Accuracy: 3972/4416 (89.9457%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 1.8854, Accuracy: 5580/10000 (55.8000%)
+___Train Local_ResNet_18,  epoch  88, local model 46, internal_epoch   1,  Average loss: 0.0053, Accuracy: 4438/4956 (89.5480%)
+___Train Local_ResNet_18,  epoch  88, local model 46, internal_epoch   2,  Average loss: 0.0046, Accuracy: 4509/4956 (90.9806%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 2.0587, Accuracy: 5457/10000 (54.5700%)
+___Train Local_ResNet_18,  epoch  88, local model 90, internal_epoch   1,  Average loss: 0.0044, Accuracy: 4001/4362 (91.7240%)
+___Train Local_ResNet_18,  epoch  88, local model 90, internal_epoch   2,  Average loss: 0.0040, Accuracy: 4012/4362 (91.9762%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 1.8901, Accuracy: 5589/10000 (55.8900%)
+___Train Local_ResNet_18,  epoch  88, local model 55, internal_epoch   1,  Average loss: 0.0054, Accuracy: 3904/4356 (89.6235%)
+___Train Local_ResNet_18,  epoch  88, local model 55, internal_epoch   2,  Average loss: 0.0083, Accuracy: 3687/4356 (84.6419%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 2.1926, Accuracy: 5089/10000 (50.8900%)
+___Train Local_ResNet_18,  epoch  88, local model 79, internal_epoch   1,  Average loss: 0.0047, Accuracy: 3458/3781 (91.4573%)
+___Train Local_ResNet_18,  epoch  88, local model 79, internal_epoch   2,  Average loss: 0.0041, Accuracy: 3515/3781 (92.9648%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 2.0280, Accuracy: 5521/10000 (55.2100%)
+___Train Local_ResNet_18,  epoch  88, local model 63, internal_epoch   1,  Average loss: 0.0056, Accuracy: 3241/3590 (90.2786%)
+___Train Local_ResNet_18,  epoch  88, local model 63, internal_epoch   2,  Average loss: 0.0069, Accuracy: 3143/3590 (87.5487%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 2.0682, Accuracy: 5290/10000 (52.9000%)
+___Train Local_ResNet_18,  epoch  88, local model 93, internal_epoch   1,  Average loss: 0.0053, Accuracy: 4189/4651 (90.0667%)
+___Train Local_ResNet_18,  epoch  88, local model 93, internal_epoch   2,  Average loss: 0.0048, Accuracy: 4203/4651 (90.3677%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 2.1959, Accuracy: 5261/10000 (52.6100%)
+___Train Local_ResNet_18,  epoch  88, local model 44, internal_epoch   1,  Average loss: 0.0052, Accuracy: 4176/4662 (89.5753%)
+___Train Local_ResNet_18,  epoch  88, local model 44, internal_epoch   2,  Average loss: 0.0045, Accuracy: 4263/4662 (91.4414%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 1.8745, Accuracy: 5672/10000 (56.7200%)
+___Train Local_ResNet_18,  epoch  88, local model 30, internal_epoch   1,  Average loss: 0.0053, Accuracy: 3133/3472 (90.2362%)
+___Train Local_ResNet_18,  epoch  88, local model 30, internal_epoch   2,  Average loss: 0.0045, Accuracy: 3174/3472 (91.4171%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 1.9575, Accuracy: 5531/10000 (55.3100%)
+___Train Local_ResNet_18,  epoch  88, local model 42, internal_epoch   1,  Average loss: 0.0046, Accuracy: 4948/5424 (91.2242%)
+___Train Local_ResNet_18,  epoch  88, local model 42, internal_epoch   2,  Average loss: 0.0037, Accuracy: 5022/5424 (92.5885%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 2.1910, Accuracy: 5257/10000 (52.5700%)
+___Train Local_ResNet_18,  epoch  88, local model 83, internal_epoch   1,  Average loss: 0.0059, Accuracy: 2891/3271 (88.3828%)
+___Train Local_ResNet_18,  epoch  88, local model 83, internal_epoch   2,  Average loss: 0.0052, Accuracy: 2928/3271 (89.5139%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 2.0307, Accuracy: 5412/10000 (54.1200%)
+___Train Local_ResNet_18,  epoch  88, local model 45, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4468/5037 (88.7036%)
+___Train Local_ResNet_18,  epoch  88, local model 45, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4534/5037 (90.0139%)
+___Test Local_ResNet_18 poisoned: False, epoch: 88: Average loss: 1.9016, Accuracy: 5562/10000 (55.6200%)
+time spent on training: 233.16366696357727
+___Test Target_ResNet_18 poisoned: False, epoch: 88: Average loss: 1.2237, Accuracy: 6897/10000 (68.9700%)
+___Test Target_ResNet_18 poisoned: True, epoch: 88: Average loss: 10.0588, Accuracy: 55/9900 (0.5556%)
+Done in 254.03464818000793 sec.
+Server Epoch:89 choose agents : [13, 36, 58, 71, 56, 69, 54, 24, 55, 48, 34, 18, 90, 60, 27, 21, 37, 11, 45, 4].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  89, local model 13, internal_epoch   1,  Average loss: 0.0056, Accuracy: 4439/4885 (90.8700%), train_poison_data_count: 385
+Global model norm: 43.03827188305413.
+Norm before scaling: 43.03589356299722. Distance: 2.079647796962654
+___Test Local_ResNet_18 poisoned: True, epoch: 89: Average loss: 0.2079, Accuracy: 9404/9900 (94.9899%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  89, local model 36, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4769/5305 (89.8963%), train_poison_data_count: 415
+Global model norm: 43.03827188305413.
+Norm before scaling: 43.040610365386314. Distance: 2.225725090092274
+___Test Local_ResNet_18 poisoned: True, epoch: 89: Average loss: 0.2498, Accuracy: 9307/9900 (94.0101%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  89, local model 58, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4261/4717 (90.3328%), train_poison_data_count: 370
+Global model norm: 43.03827188305413.
+Norm before scaling: 43.035276624877035. Distance: 2.0316051466120877
+___Test Local_ResNet_18 poisoned: True, epoch: 89: Average loss: 0.1598, Accuracy: 9498/9900 (95.9394%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  89, local model 71, internal_epoch   1,  Average loss: 0.0060, Accuracy: 4574/5066 (90.2882%), train_poison_data_count: 400
+Global model norm: 43.03827188305413.
+Norm before scaling: 43.038480352071275. Distance: 2.1197261440888626
+___Test Local_ResNet_18 poisoned: True, epoch: 89: Average loss: 0.2753, Accuracy: 9221/9900 (93.1414%)
+___Train Local_ResNet_18,  epoch  89, local model 56, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4374/4989 (87.6729%)
+___Train Local_ResNet_18,  epoch  89, local model 56, internal_epoch   2,  Average loss: 0.0055, Accuracy: 4425/4989 (88.6951%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 1.9371, Accuracy: 5583/10000 (55.8300%)
+___Train Local_ResNet_18,  epoch  89, local model 69, internal_epoch   1,  Average loss: 0.0050, Accuracy: 3626/4013 (90.3563%)
+___Train Local_ResNet_18,  epoch  89, local model 69, internal_epoch   2,  Average loss: 0.0039, Accuracy: 3708/4013 (92.3997%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 1.8979, Accuracy: 5619/10000 (56.1900%)
+___Train Local_ResNet_18,  epoch  89, local model 54, internal_epoch   1,  Average loss: 0.0054, Accuracy: 4661/5195 (89.7209%)
+___Train Local_ResNet_18,  epoch  89, local model 54, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4669/5195 (89.8749%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 2.2961, Accuracy: 5098/10000 (50.9800%)
+___Train Local_ResNet_18,  epoch  89, local model 24, internal_epoch   1,  Average loss: 0.0065, Accuracy: 3571/3969 (89.9723%)
+___Train Local_ResNet_18,  epoch  89, local model 24, internal_epoch   2,  Average loss: 0.0049, Accuracy: 3680/3969 (92.7186%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 1.7924, Accuracy: 5839/10000 (58.3900%)
+___Train Local_ResNet_18,  epoch  89, local model 55, internal_epoch   1,  Average loss: 0.0055, Accuracy: 3877/4356 (89.0037%)
+___Train Local_ResNet_18,  epoch  89, local model 55, internal_epoch   2,  Average loss: 0.0051, Accuracy: 3903/4356 (89.6006%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 1.9834, Accuracy: 5504/10000 (55.0400%)
+___Train Local_ResNet_18,  epoch  89, local model 48, internal_epoch   1,  Average loss: 0.0049, Accuracy: 4011/4441 (90.3175%)
+___Train Local_ResNet_18,  epoch  89, local model 48, internal_epoch   2,  Average loss: 0.0043, Accuracy: 4060/4441 (91.4209%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 2.1879, Accuracy: 5314/10000 (53.1400%)
+___Train Local_ResNet_18,  epoch  89, local model 34, internal_epoch   1,  Average loss: 0.0055, Accuracy: 4025/4518 (89.0881%)
+___Train Local_ResNet_18,  epoch  89, local model 34, internal_epoch   2,  Average loss: 0.0046, Accuracy: 4102/4518 (90.7924%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 2.0439, Accuracy: 5372/10000 (53.7200%)
+___Train Local_ResNet_18,  epoch  89, local model 18, internal_epoch   1,  Average loss: 0.0061, Accuracy: 3453/3911 (88.2894%)
+___Train Local_ResNet_18,  epoch  89, local model 18, internal_epoch   2,  Average loss: 0.0069, Accuracy: 3401/3911 (86.9599%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 2.1680, Accuracy: 5241/10000 (52.4100%)
+___Train Local_ResNet_18,  epoch  89, local model 90, internal_epoch   1,  Average loss: 0.0044, Accuracy: 4001/4362 (91.7240%)
+___Train Local_ResNet_18,  epoch  89, local model 90, internal_epoch   2,  Average loss: 0.0039, Accuracy: 4046/4362 (92.7556%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 1.9406, Accuracy: 5560/10000 (55.6000%)
+___Train Local_ResNet_18,  epoch  89, local model 60, internal_epoch   1,  Average loss: 0.0058, Accuracy: 3373/3804 (88.6698%)
+___Train Local_ResNet_18,  epoch  89, local model 60, internal_epoch   2,  Average loss: 0.0044, Accuracy: 3479/3804 (91.4564%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 1.8564, Accuracy: 5610/10000 (56.1000%)
+___Train Local_ResNet_18,  epoch  89, local model 27, internal_epoch   1,  Average loss: 0.0058, Accuracy: 3756/4223 (88.9415%)
+___Train Local_ResNet_18,  epoch  89, local model 27, internal_epoch   2,  Average loss: 0.0042, Accuracy: 3884/4223 (91.9725%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 2.0861, Accuracy: 5333/10000 (53.3300%)
+___Train Local_ResNet_18,  epoch  89, local model 21, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4070/4634 (87.8291%)
+___Train Local_ResNet_18,  epoch  89, local model 21, internal_epoch   2,  Average loss: 0.0056, Accuracy: 4119/4634 (88.8865%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 1.9331, Accuracy: 5537/10000 (55.3700%)
+___Train Local_ResNet_18,  epoch  89, local model 37, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3831/4354 (87.9881%)
+___Train Local_ResNet_18,  epoch  89, local model 37, internal_epoch   2,  Average loss: 0.0077, Accuracy: 3741/4354 (85.9210%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 2.4529, Accuracy: 4920/10000 (49.2000%)
+___Train Local_ResNet_18,  epoch  89, local model 11, internal_epoch   1,  Average loss: 0.0056, Accuracy: 4674/5244 (89.1304%)
+___Train Local_ResNet_18,  epoch  89, local model 11, internal_epoch   2,  Average loss: 0.0058, Accuracy: 4647/5244 (88.6156%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 2.0338, Accuracy: 5413/10000 (54.1300%)
+___Train Local_ResNet_18,  epoch  89, local model 45, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4401/5037 (87.3734%)
+___Train Local_ResNet_18,  epoch  89, local model 45, internal_epoch   2,  Average loss: 0.0049, Accuracy: 4542/5037 (90.1727%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 1.9990, Accuracy: 5420/10000 (54.2000%)
+___Train Local_ResNet_18,  epoch  89, local model 4, internal_epoch   1,  Average loss: 0.0063, Accuracy: 3245/3704 (87.6080%)
+___Train Local_ResNet_18,  epoch  89, local model 4, internal_epoch   2,  Average loss: 0.0047, Accuracy: 3369/3704 (90.9557%)
+___Test Local_ResNet_18 poisoned: False, epoch: 89: Average loss: 1.8664, Accuracy: 5782/10000 (57.8200%)
+time spent on training: 229.2102963924408
+___Test Target_ResNet_18 poisoned: False, epoch: 89: Average loss: 1.2184, Accuracy: 6878/10000 (68.7800%)
+___Test Target_ResNet_18 poisoned: True, epoch: 89: Average loss: 10.0741, Accuracy: 50/9900 (0.5051%)
+Done in 250.0409541130066 sec.
+Server Epoch:90 choose agents : [13, 36, 58, 71, 74, 49, 3, 92, 2, 47, 62, 75, 84, 6, 12, 76, 53, 81, 24, 91].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  90, local model 13, internal_epoch   1,  Average loss: 0.0055, Accuracy: 4430/4885 (90.6858%), train_poison_data_count: 385
+Global model norm: 43.067578109056555.
+Norm before scaling: 43.06798484210023. Distance: 2.0641896811495797
+___Test Local_ResNet_18 poisoned: True, epoch: 90: Average loss: 0.1955, Accuracy: 9439/9900 (95.3434%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  90, local model 36, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4763/5305 (89.7832%), train_poison_data_count: 415
+Global model norm: 43.067578109056555.
+Norm before scaling: 43.06905480092769. Distance: 2.2268212954383264
+___Test Local_ResNet_18 poisoned: True, epoch: 90: Average loss: 0.0999, Accuracy: 9645/9900 (97.4242%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  90, local model 58, internal_epoch   1,  Average loss: 0.0056, Accuracy: 4295/4717 (91.0536%), train_poison_data_count: 370
+Global model norm: 43.067578109056555.
+Norm before scaling: 43.0664018211449. Distance: 2.0095026049875884
+___Test Local_ResNet_18 poisoned: True, epoch: 90: Average loss: 0.2023, Accuracy: 9398/9900 (94.9293%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  90, local model 71, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4561/5066 (90.0316%), train_poison_data_count: 400
+Global model norm: 43.067578109056555.
+Norm before scaling: 43.070479009518515. Distance: 2.1525275122537972
+___Test Local_ResNet_18 poisoned: True, epoch: 90: Average loss: 0.2362, Accuracy: 9275/9900 (93.6869%)
+___Train Local_ResNet_18,  epoch  90, local model 74, internal_epoch   1,  Average loss: 0.0067, Accuracy: 3815/4416 (86.3904%)
+___Train Local_ResNet_18,  epoch  90, local model 74, internal_epoch   2,  Average loss: 0.0056, Accuracy: 3939/4416 (89.1984%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.9499, Accuracy: 5467/10000 (54.6700%)
+___Train Local_ResNet_18,  epoch  90, local model 49, internal_epoch   1,  Average loss: 0.0050, Accuracy: 4705/5197 (90.5330%)
+___Train Local_ResNet_18,  epoch  90, local model 49, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4687/5197 (90.1866%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.9534, Accuracy: 5511/10000 (55.1100%)
+___Train Local_ResNet_18,  epoch  90, local model 3, internal_epoch   1,  Average loss: 0.0052, Accuracy: 4430/4918 (90.0773%)
+___Train Local_ResNet_18,  epoch  90, local model 3, internal_epoch   2,  Average loss: 0.0048, Accuracy: 4476/4918 (91.0126%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 2.0434, Accuracy: 5311/10000 (53.1100%)
+___Train Local_ResNet_18,  epoch  90, local model 92, internal_epoch   1,  Average loss: 0.0046, Accuracy: 5715/6263 (91.2502%)
+___Train Local_ResNet_18,  epoch  90, local model 92, internal_epoch   2,  Average loss: 0.0045, Accuracy: 5729/6263 (91.4737%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 2.1675, Accuracy: 5230/10000 (52.3000%)
+___Train Local_ResNet_18,  epoch  90, local model 2, internal_epoch   1,  Average loss: 0.0062, Accuracy: 3217/3646 (88.2337%)
+___Train Local_ResNet_18,  epoch  90, local model 2, internal_epoch   2,  Average loss: 0.0045, Accuracy: 3330/3646 (91.3330%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.9088, Accuracy: 5641/10000 (56.4100%)
+___Train Local_ResNet_18,  epoch  90, local model 47, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4152/4707 (88.2091%)
+___Train Local_ResNet_18,  epoch  90, local model 47, internal_epoch   2,  Average loss: 0.0047, Accuracy: 4275/4707 (90.8222%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.8867, Accuracy: 5587/10000 (55.8700%)
+___Train Local_ResNet_18,  epoch  90, local model 62, internal_epoch   1,  Average loss: 0.0065, Accuracy: 4387/5063 (86.6482%)
+___Train Local_ResNet_18,  epoch  90, local model 62, internal_epoch   2,  Average loss: 0.0070, Accuracy: 4386/5063 (86.6285%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 2.2453, Accuracy: 5103/10000 (51.0300%)
+___Train Local_ResNet_18,  epoch  90, local model 75, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3803/4295 (88.5448%)
+___Train Local_ResNet_18,  epoch  90, local model 75, internal_epoch   2,  Average loss: 0.0064, Accuracy: 3775/4295 (87.8929%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 2.1193, Accuracy: 5316/10000 (53.1600%)
+___Train Local_ResNet_18,  epoch  90, local model 84, internal_epoch   1,  Average loss: 0.0063, Accuracy: 4197/4793 (87.5652%)
+___Train Local_ResNet_18,  epoch  90, local model 84, internal_epoch   2,  Average loss: 0.0042, Accuracy: 4411/4793 (92.0300%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.9350, Accuracy: 5538/10000 (55.3800%)
+___Train Local_ResNet_18,  epoch  90, local model 6, internal_epoch   1,  Average loss: 0.0052, Accuracy: 4083/4538 (89.9736%)
+___Train Local_ResNet_18,  epoch  90, local model 6, internal_epoch   2,  Average loss: 0.0042, Accuracy: 4175/4538 (92.0009%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.9311, Accuracy: 5593/10000 (55.9300%)
+___Train Local_ResNet_18,  epoch  90, local model 12, internal_epoch   1,  Average loss: 0.0064, Accuracy: 4462/5083 (87.7828%)
+___Train Local_ResNet_18,  epoch  90, local model 12, internal_epoch   2,  Average loss: 0.0061, Accuracy: 4497/5083 (88.4714%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 2.0047, Accuracy: 5385/10000 (53.8500%)
+___Train Local_ResNet_18,  epoch  90, local model 76, internal_epoch   1,  Average loss: 0.0064, Accuracy: 3167/3638 (87.0533%)
+___Train Local_ResNet_18,  epoch  90, local model 76, internal_epoch   2,  Average loss: 0.0043, Accuracy: 3329/3638 (91.5063%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.8860, Accuracy: 5633/10000 (56.3300%)
+___Train Local_ResNet_18,  epoch  90, local model 53, internal_epoch   1,  Average loss: 0.0067, Accuracy: 5315/6124 (86.7897%)
+___Train Local_ResNet_18,  epoch  90, local model 53, internal_epoch   2,  Average loss: 0.0064, Accuracy: 5342/6124 (87.2306%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.9115, Accuracy: 5490/10000 (54.9000%)
+___Train Local_ResNet_18,  epoch  90, local model 81, internal_epoch   1,  Average loss: 0.0049, Accuracy: 4161/4618 (90.1039%)
+___Train Local_ResNet_18,  epoch  90, local model 81, internal_epoch   2,  Average loss: 0.0037, Accuracy: 4310/4618 (93.3304%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.8668, Accuracy: 5812/10000 (58.1200%)
+___Train Local_ResNet_18,  epoch  90, local model 24, internal_epoch   1,  Average loss: 0.0060, Accuracy: 3563/3969 (89.7707%)
+___Train Local_ResNet_18,  epoch  90, local model 24, internal_epoch   2,  Average loss: 0.0057, Accuracy: 3632/3969 (91.5092%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.9551, Accuracy: 5630/10000 (56.3000%)
+___Train Local_ResNet_18,  epoch  90, local model 91, internal_epoch   1,  Average loss: 0.0073, Accuracy: 3578/4158 (86.0510%)
+___Train Local_ResNet_18,  epoch  90, local model 91, internal_epoch   2,  Average loss: 0.0056, Accuracy: 3702/4158 (89.0332%)
+___Test Local_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.8765, Accuracy: 5567/10000 (55.6700%)
+time spent on training: 236.47790026664734
+___Test Target_ResNet_18 poisoned: False, epoch: 90: Average loss: 1.2030, Accuracy: 6867/10000 (68.6700%)
+___Test Target_ResNet_18 poisoned: True, epoch: 90: Average loss: 9.8310, Accuracy: 58/9900 (0.5859%)
+Done in 257.3359363079071 sec.
+Server Epoch:91 choose agents : [13, 36, 58, 71, 28, 7, 97, 84, 75, 11, 56, 49, 89, 77, 69, 6, 47, 92, 73, 14].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  91, local model 13, internal_epoch   1,  Average loss: 0.0056, Accuracy: 4431/4885 (90.7062%), train_poison_data_count: 385
+Global model norm: 43.1003241223674.
+Norm before scaling: 43.101254502026244. Distance: 2.0747900569370845
+___Test Local_ResNet_18 poisoned: True, epoch: 91: Average loss: 0.2194, Accuracy: 9352/9900 (94.4646%)
+poison local model 36 index 1 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  91, local model 36, internal_epoch   1,  Average loss: 0.0058, Accuracy: 4787/5305 (90.2356%), train_poison_data_count: 415
+Global model norm: 43.1003241223674.
+Norm before scaling: 43.10050963346098. Distance: 2.1984348017846136
+___Test Local_ResNet_18 poisoned: True, epoch: 91: Average loss: 0.1448, Accuracy: 9542/9900 (96.3838%)
+poison local model 58 index 2 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  91, local model 58, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4249/4717 (90.0784%), train_poison_data_count: 370
+Global model norm: 43.1003241223674.
+Norm before scaling: 43.102435502985934. Distance: 2.064927724169173
+___Test Local_ResNet_18 poisoned: True, epoch: 91: Average loss: 0.1025, Accuracy: 9649/9900 (97.4646%)
+poison local model 71 index 3 
+poison_now
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  91, local model 71, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4532/5066 (89.4591%), train_poison_data_count: 400
+Global model norm: 43.1003241223674.
+Norm before scaling: 43.10369718408735. Distance: 2.2411463642998863
+___Test Local_ResNet_18 poisoned: True, epoch: 91: Average loss: 0.2063, Accuracy: 9381/9900 (94.7576%)
+___Train Local_ResNet_18,  epoch  91, local model 28, internal_epoch   1,  Average loss: 0.0066, Accuracy: 4124/4716 (87.4470%)
+___Train Local_ResNet_18,  epoch  91, local model 28, internal_epoch   2,  Average loss: 0.0060, Accuracy: 4155/4716 (88.1043%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 2.0977, Accuracy: 5232/10000 (52.3200%)
+___Train Local_ResNet_18,  epoch  91, local model 7, internal_epoch   1,  Average loss: 0.0061, Accuracy: 4050/4481 (90.3816%)
+___Train Local_ResNet_18,  epoch  91, local model 7, internal_epoch   2,  Average loss: 0.0066, Accuracy: 3964/4481 (88.4624%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 2.0878, Accuracy: 5379/10000 (53.7900%)
+___Train Local_ResNet_18,  epoch  91, local model 97, internal_epoch   1,  Average loss: 0.0053, Accuracy: 3910/4361 (89.6583%)
+___Train Local_ResNet_18,  epoch  91, local model 97, internal_epoch   2,  Average loss: 0.0051, Accuracy: 3936/4361 (90.2545%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 1.9778, Accuracy: 5540/10000 (55.4000%)
+___Train Local_ResNet_18,  epoch  91, local model 84, internal_epoch   1,  Average loss: 0.0067, Accuracy: 4155/4793 (86.6889%)
+___Train Local_ResNet_18,  epoch  91, local model 84, internal_epoch   2,  Average loss: 0.0050, Accuracy: 4336/4793 (90.4653%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 1.9525, Accuracy: 5518/10000 (55.1800%)
+___Train Local_ResNet_18,  epoch  91, local model 75, internal_epoch   1,  Average loss: 0.0059, Accuracy: 3806/4295 (88.6147%)
+___Train Local_ResNet_18,  epoch  91, local model 75, internal_epoch   2,  Average loss: 0.0062, Accuracy: 3805/4295 (88.5914%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 2.0914, Accuracy: 5253/10000 (52.5300%)
+___Train Local_ResNet_18,  epoch  91, local model 11, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4585/5244 (87.4333%)
+___Train Local_ResNet_18,  epoch  91, local model 11, internal_epoch   2,  Average loss: 0.0058, Accuracy: 4639/5244 (88.4630%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 2.0128, Accuracy: 5398/10000 (53.9800%)
+___Train Local_ResNet_18,  epoch  91, local model 56, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4381/4989 (87.8132%)
+___Train Local_ResNet_18,  epoch  91, local model 56, internal_epoch   2,  Average loss: 0.0054, Accuracy: 4479/4989 (89.7775%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 1.9350, Accuracy: 5568/10000 (55.6800%)
+___Train Local_ResNet_18,  epoch  91, local model 49, internal_epoch   1,  Average loss: 0.0041, Accuracy: 4812/5197 (92.5919%)
+___Train Local_ResNet_18,  epoch  91, local model 49, internal_epoch   2,  Average loss: 0.0042, Accuracy: 4810/5197 (92.5534%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 2.0928, Accuracy: 5440/10000 (54.4000%)
+___Train Local_ResNet_18,  epoch  91, local model 89, internal_epoch   1,  Average loss: 0.0048, Accuracy: 3927/4356 (90.1515%)
+___Train Local_ResNet_18,  epoch  91, local model 89, internal_epoch   2,  Average loss: 0.0040, Accuracy: 4018/4356 (92.2406%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 2.0957, Accuracy: 5328/10000 (53.2800%)
+___Train Local_ResNet_18,  epoch  91, local model 77, internal_epoch   1,  Average loss: 0.0057, Accuracy: 4151/4647 (89.3264%)
+___Train Local_ResNet_18,  epoch  91, local model 77, internal_epoch   2,  Average loss: 0.0052, Accuracy: 4181/4647 (89.9720%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 1.9521, Accuracy: 5544/10000 (55.4400%)
+___Train Local_ResNet_18,  epoch  91, local model 69, internal_epoch   1,  Average loss: 0.0056, Accuracy: 3587/4013 (89.3845%)
+___Train Local_ResNet_18,  epoch  91, local model 69, internal_epoch   2,  Average loss: 0.0040, Accuracy: 3723/4013 (92.7735%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 1.9656, Accuracy: 5503/10000 (55.0300%)
+___Train Local_ResNet_18,  epoch  91, local model 6, internal_epoch   1,  Average loss: 0.0051, Accuracy: 4081/4538 (89.9295%)
+___Train Local_ResNet_18,  epoch  91, local model 6, internal_epoch   2,  Average loss: 0.0040, Accuracy: 4208/4538 (92.7281%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 1.8275, Accuracy: 5809/10000 (58.0900%)
+___Train Local_ResNet_18,  epoch  91, local model 47, internal_epoch   1,  Average loss: 0.0056, Accuracy: 4183/4707 (88.8676%)
+___Train Local_ResNet_18,  epoch  91, local model 47, internal_epoch   2,  Average loss: 0.0048, Accuracy: 4272/4707 (90.7584%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 1.8312, Accuracy: 5640/10000 (56.4000%)
+___Train Local_ResNet_18,  epoch  91, local model 92, internal_epoch   1,  Average loss: 0.0050, Accuracy: 5667/6263 (90.4838%)
+___Train Local_ResNet_18,  epoch  91, local model 92, internal_epoch   2,  Average loss: 0.0045, Accuracy: 5707/6263 (91.1225%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 2.0562, Accuracy: 5443/10000 (54.4300%)
+___Train Local_ResNet_18,  epoch  91, local model 73, internal_epoch   1,  Average loss: 0.0041, Accuracy: 3895/4235 (91.9717%)
+___Train Local_ResNet_18,  epoch  91, local model 73, internal_epoch   2,  Average loss: 0.0035, Accuracy: 3967/4235 (93.6718%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 1.8439, Accuracy: 5811/10000 (58.1100%)
+___Train Local_ResNet_18,  epoch  91, local model 14, internal_epoch   1,  Average loss: 0.0056, Accuracy: 3458/3861 (89.5623%)
+___Train Local_ResNet_18,  epoch  91, local model 14, internal_epoch   2,  Average loss: 0.0048, Accuracy: 3530/3861 (91.4271%)
+___Test Local_ResNet_18 poisoned: False, epoch: 91: Average loss: 1.9254, Accuracy: 5427/10000 (54.2700%)
+time spent on training: 235.81538105010986
+___Test Target_ResNet_18 poisoned: False, epoch: 91: Average loss: 1.2138, Accuracy: 6845/10000 (68.4500%)
+___Test Target_ResNet_18 poisoned: True, epoch: 91: Average loss: 10.0381, Accuracy: 41/9900 (0.4141%)
+Done in 256.7598261833191 sec.
+Server Epoch:92 choose agents : [13, 36, 58, 71, 65, 98, 97, 69, 34, 57, 61, 96, 73, 45, 87, 16, 55, 66, 84, 80].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  92, local model 13, internal_epoch   1,  Average loss: 0.0059, Accuracy: 4420/4885 (90.4811%), train_poison_data_count: 385
+Global model norm: 43.132733964563535.
+Norm before scaling: 43.13256840290467. Distance: 2.0982260613850197

@@ -33,7 +33,6 @@ def proj_lp(v, xi, p):
         raise ValueError('Values of p different from 2 and Inf are currently not supported...')
     return v
 
-
 def cifar100_trigger(helper, local_model, target_model, noise_trigger,intinal_trigger):
     logger.info("start trigger fine-tuning")
     init = False
@@ -41,7 +40,8 @@ def cifar100_trigger(helper, local_model, target_model, noise_trigger,intinal_tr
     model = copy.deepcopy(local_model)
     model.copy_params(target_model.state_dict())
     model.eval()
-    pre_trigger = torch.tensor(noise_trigger).cuda()
+    pre_trigger = noise_trigger.clone().detach().cuda()
+
     aa = copy.deepcopy(intinal_trigger).cuda()
 
     for e in range(1):
@@ -50,6 +50,9 @@ def cifar100_trigger(helper, local_model, target_model, noise_trigger,intinal_tr
         for poison_id in helper.params['adversary_list']:
             print(poison_id)
             _, data_iterator = helper.train_data[poison_id]
+            if not data_iterator:
+                logger.error(f"No data available for participant {poison_id}.")
+                continue
             for batch_id, (datas, labels) in enumerate(data_iterator):
                 datasize += len(datas)
                 x = Variable(cuda(datas, True))

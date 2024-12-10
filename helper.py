@@ -3,6 +3,7 @@ from shutil import copyfile
 from collections import defaultdict
 import math
 import torch
+from sklearn.metrics import confusion_matrix
 from torch.autograd import Variable
 import logging
 import sklearn.metrics.pairwise as smp
@@ -320,6 +321,267 @@ class Helper:
         current_weights = current_weights - self.params['lr'] * current_grads
         Helper.row_into_parameters(current_weights, target_model)
         return True
+
+
+
+    def new_updated_mkrum(self, target_model, updates, corrupted_count, users_count, distances=None, return_index=False):
+        current_weights = np.concatenate([i.data.cpu().numpy().flatten() for i in target_model.parameters()])
+        users_grads = np.empty((users_count, len(current_weights)), dtype=current_weights.dtype)
+        users_grads = Helper.collect_gradients(updates, users_grads)
+
+        if not return_index:
+            assert users_count >= 2 * corrupted_count + 1, (
+                'users_count>=2*corrupted_count + 3', users_count, corrupted_count)
+        non_malicious_count = users_count - corrupted_count
+        selection_set = []
+        krumscore = []
+        if distances is None:
+            distances = Helper.krum_create_distances(users_grads)
+        for user in distances.keys():
+            errors = sorted(distances[user].values())
+            current_error = sum(errors[:non_malicious_count])
+            krumscore.append(current_error)
+        aa = krumscore[0]
+        krumscore[0] = krumscore[1]
+        krumscore[1] = aa
+        result = map(krumscore.index, heapq.nsmallest(non_malicious_count, krumscore))
+        for i in result:
+            selection_set.append(users_grads[i])
+
+        current_grads = np.empty((users_grads.shape[1],), users_grads.dtype)
+        users_gradsss = np.array(selection_set)
+        for i, param_across_users in enumerate(users_gradsss.T):
+            current_grads[i] = np.mean(param_across_users)
+
+        current_weights = current_weights - self.params['lr'] * current_grads
+        Helper.row_into_parameters(current_weights, target_model)
+        return True
+    
+
+    def enhanced_mkrum(self, target_model, updates, corrupted_count, users_count, validation_loader, validation_criterion,  threshold_ratio=0.15, small_weight=0.1, distances=None, return_index=False):
+        
+        # Step 1: Extract current model weights as a 1D numpy array
+        current_weights = np.concatenate([param.data.cpu().numpy().flatten() for param in target_model.parameters()])
+        
+        # Step 2: Collect user gradients
+        users_grads = np.empty((users_count, len(current_weights)), dtype=current_weights.dtype)
+        users_grads = Helper.collect_gradients(updates, users_grads)
+        logger.info(f"users count: {users_count} and corrupted count: {corrupted_count}.")
+        
+        # Step 3: Ensure there are enough non-malicious clients
+        if not return_index:
+            assert users_count >= 2 * corrupted_count + 1, (
+                'users_count must be >= 2 * corrupted_count + 1', users_count, corrupted_count)
+        
+        non_malicious_count = users_count - corrupted_count
+        selection_set = []
+        krumscore = []
+        
+        # Step 4: Compute pairwise distances if not provided
+        if distances is None:
+            distances = Helper.krum_create_distances(users_grads)
+        
+        # Step 5: Compute Krum scores for each user
+        for user in distances.keys():
+            errors = sorted(distances[user].values())
+            current_error = sum(errors[:non_malicious_count])
+            krumscore.append(current_error)
+        
+        # Step 6: Select users with the smallest Krum scores
+        selected_indices = heapq.nsmallest(users_count, range(len(krumscore)), key=lambda i: krumscore[i])
+        logger.info(f"Selected all {users_count} users.")
+        
+        # Step 7: Initialize lists for suspicious and non-suspicious updates
+        suspicious_updates = []
+        non_suspicious_updates = []
+        update_weights = [1.0] * users_count
+        
+        # Step 8: Backup the original model state
+        original_model_state = copy.deepcopy(target_model.state_dict())
+        logger.info("Original model state backed up.")
+
+        ground_metrics_loss, ground_metrics_cm = self.validate_on_validation_set(target_model, validation_loader, validation_criterion)  # original model performance
+        
+        cm_list = []  # List to store confusion matrices
+        susp_pair_clients = defaultdict(int)
+        suspicious_count = 0
+        
+        # Step 9: Iterate through each selected user's gradient for validation
+        for idx in range(users_count):
+            user_grad = users_grads[idx]
+            
+            # Restore the model to the original state using original_model_state
+            target_model.load_state_dict(original_model_state)  # Restore model state
+            
+            # Apply the current user's gradient
+            temp_weights = current_weights - self.params['lr'] * user_grad
+            Helper.row_into_parameters(temp_weights, target_model)
+            
+            # Perform validation
+            validation_loss, cm = self.validate_on_validation_set(target_model, validation_loader, validation_criterion)
+            logger.info(f"Validation completed for user {idx}, confusion matrix appended.")
+
+            # cm_list.append(cm)  # Store confusion matrix for analysis
+
+            # Update susp_pair_clients here in analyze_confusion_matrix
+            is_suspicious = self.analyze_confusion_matrix(cm, ground_metrics_cm, susp_pair_clients, idx, non_suspicious_updates, suspicious_updates, update_weights)
+            suspicious_count += is_suspicious
+            if is_suspicious:
+                logger.warning(f"Suspicious behavior detected for user {idx}.")
+            else:
+                logger.info(f"No suspicious behavior detected for user {idx}.")
+        
+
+        logger.info(f"Type of susp_pair_clients before calling assign_weights_based_on_misclassification: {type(susp_pair_clients)}")
+
+
+        indetified_adversaries = []
+
+        # Step 10: Rank clients based on misclassification counts and assign weights
+        update_weights, identified_adversaries = self.assign_weights_based_on_misclassification(susp_pair_clients, update_weights, small_weight)
+
+        
+            
+        # # Step 10: Analyze suspicious pairs across clients
+        logger.info("Suspicious pairs analyzed across clients.")
+
+        total_weight = sum(update_weights)  # Sum of all update weights (since update_weights is a list)
+        weighted_grads = np.zeros_like(current_weights)
+
+        # Loop through the selected clients and apply their updates
+        for client_idx in selected_indices:
+            weight = update_weights[client_idx]  # Get the corresponding weight for this client
+            client_grad = users_grads[client_idx]  # Get the gradient of this client
+
+            # Perform weighted aggregation of the client's update
+            weighted_grads += (weight / total_weight) * client_grad
+
+        # Update the central model with the aggregated, weighted gradients
+        updated_weights = current_weights - self.params['lr'] * weighted_grads
+        Helper.row_into_parameters(updated_weights, target_model)
+        logger.info("Central model updated with weighted gradients.")
+
+
+
+        # Step 10: Calculate and log adversarial client detection accuracy
+        actual_adversaries = [0,1,2,3]
+        top_n = 3  # Top 'n' clients to consider for accuracy calculation
+        
+        # Step 10.2: Calculate accuracy of adversarial detection
+        correctly_identified = set(identified_adversaries).intersection(set(actual_adversaries))
+        num_correctly_identified = len(correctly_identified)
+        num_actual_adversaries = len(actual_adversaries)
+        logger.info(f"Identified adversaries: {identified_adversaries}")
+        logger.info(f"Actual adversaries: {actual_adversaries}")
+
+        accuracy = num_correctly_identified / 3 if num_actual_adversaries > 0 else 0.0
+        logger.info(f"Accuracy of identifying adversarial clients: {accuracy:.2%} "
+                    f"({num_correctly_identified}/{top_n} correctly identified).")
+        
+
+    # Step 11: Return the updated model    
+        
+        if return_index:
+            return True, suspicious_updates
+        else:
+            return True
+
+
+    
+    
+
+    def validate_on_validation_set(self, model, validation_loader, criterion):
+        model.eval()
+        validation_loss = 0.0
+        all_preds = []
+        all_targets = []
+        
+        with torch.no_grad():
+            for data, target in validation_loader:
+                data, target = data.to(self.device), target.to(self.device)
+                output = model(data)
+                loss = criterion(output, target)
+                validation_loss += loss.item()
+                
+                preds = output.argmax(dim=1).cpu().numpy()
+                all_preds.extend(preds)
+                all_targets.extend(target.cpu().numpy())
+        
+        cm = confusion_matrix(all_targets, all_preds, labels=list(range(100)))  # CIFAR-100 has 100 classes
+        logger.info("Validation completed, confusion matrix created.")
+        return validation_loss, cm
+
+
+
+
+    def assign_weights_based_on_misclassification(self, susp_pair_clients, update_weights, small_weight=0.1, top_n=3):
+        # Confirm susp_pair_clients type at the start
+        logger.info(f"susp_pair_clients type on entry to assign_weights_based_on_misclassification: {type(susp_pair_clients)}")
+
+        # Assign to a temporary variable to prevent accidental overwriting
+        susp_clients_dict = susp_pair_clients
+        indetified_adversaries = []
+
+        logger.info(f"susp_pair_clients type on susp_clients_dict = susp_pair_client: {type(susp_pair_clients)}")
+        
+        # Ensure susp_pair_clients is sorted by misclassification score
+        sorted_clients = sorted(susp_clients_dict.items(), key=lambda x: x[1], reverse=True)
+
+        # Step 2: Assign small weight to the top 'n' clients
+        for i, (client_idx, score) in enumerate(sorted_clients):
+            if i < top_n:
+                update_weights[client_idx] = small_weight  # Assign small weight to top 'n' clients
+                logger.info(f"Client {client_idx} ranked {i+1} with score {score}. Assigned small weight: {small_weight}")
+                indetified_adversaries.append(client_idx)
+            else:
+                update_weights[client_idx] = 1.0  # Assign normal weight to other clients
+                logger.info(f"Client {client_idx} assigned normal weight.")
+
+        return update_weights,indetified_adversaries 
+
+
+
+    def analyze_confusion_matrix(self, cm, ground_metrics_cm, susp_pair_clients, client_idx, non_suspicious_updates, suspicious_updates, update_weights):
+        threshold = 0.1  # Threshold for misclassification rate
+        target_class_tracker = defaultdict(int)
+
+        # Loop through each row (true class) in the confusion matrix
+        for row_idx in range(len(cm)):
+            max_idx = np.argmax(cm[row_idx])  # Find the class with the highest misclassification rate
+            max_rate = np.max(cm[row_idx]) / np.sum(cm[row_idx])  # Get the misclassification rate
+
+            # If misclassification rate is above the threshold and it's misclassified to a wrong class
+            if max_rate > threshold and max_idx != row_idx:
+                target_class_tracker[max_idx] += 1  # Track how many times it's misclassified to the target class
+
+        # If there are misclassifications, find the largest misclassified target class
+        if len(target_class_tracker) > 0:
+            # Find the target class with the highest misclassifications
+            largest_target_class, max_misclassifications = max(target_class_tracker.items(), key=lambda x: x[1])
+
+            # Assign a score based on the number of misclassifications to this target class
+            score = max_misclassifications
+
+            # Record the score for this client in susp_pair_clients
+            susp_pair_clients[client_idx] = score
+
+            logger.info(f"Client {client_idx} misclassified the most to class {largest_target_class} with {max_misclassifications} misclassifications.")
+
+            # Determine if the client should be considered suspicious based on the score
+            # Here, you can define a threshold or condition to mark suspicious behavior
+            if score > 1:  # For example, if more than one misclassification into the same target class
+                suspicious_updates.append(client_idx)
+                return True
+            else:
+                non_suspicious_updates.append(client_idx)
+                return False
+
+        logger.info(f"No suspicious behavior detected for client {client_idx}.")
+        return False
+
+
+
+
 
     def computekrum(self, users_grads, users_count, corrupted_count, distances=None, return_index=False, debug=False):
         if not return_index:

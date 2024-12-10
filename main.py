@@ -58,7 +58,7 @@ def trigger_test_byname(helper, agent_name_key, vis, epoch):
 
 def vis_agg_weight(helper, names, weights, epoch, vis, adversarial_name_keys):
     print(names)
-    print(adversarial_name_keys)
+    print("adeversarial name keys :",adversarial_name_keys)
     for i in range(0, len(names)):
         _name = names[i]
         _weight = weights[i]
@@ -112,6 +112,7 @@ if __name__ == '__main__':
     logger.info(f'load data done')
     helper.create_model()
     logger.info(f'create model done')
+
     ### Create models
     if helper.params['is_poison']:
         logger.info(f"Poisoned following participants: {(helper.params['adversary_list'])}")
@@ -160,12 +161,12 @@ if __name__ == '__main__':
         agent_name_keys = helper.participants_list
         adversarial_name_keys = []
         if helper.params['is_random_namelist']:
-            if helper.params['is_random_adversary']:  # random choose , maybe don't have advasarial
+            if helper.params['is_random_adversary']:  # random choose, maybe don't have adversarial
                 agent_name_keys = random.sample(helper.participants_list, helper.params['no_models'])
                 for _name_keys in agent_name_keys:
                     if _name_keys in helper.params['adversary_list']:
                         adversarial_name_keys.append(_name_keys)
-            else:  # must have advasarial if this epoch is in their poison epoch
+            else:  # must have adversarial if this epoch is in their poison epoch
                 ongoing_epochs = list(range(epoch, epoch + helper.params['aggr_epoch_interval']))
                 for idx in range(0, len(helper.params['adversary_list'])):
                     for ongoing_epoch in ongoing_epochs:
@@ -181,11 +182,11 @@ if __name__ == '__main__':
                 random_agent_name_keys = random.sample(helper.benign_namelist + nonattacker, benign_num)
                 agent_name_keys = adversarial_name_keys + random_agent_name_keys
         else:
-            if helper.params['is_random_adversary'] == False:
+            if not helper.params['is_random_adversary']:
                 adversarial_name_keys = copy.deepcopy(helper.params['adversary_list'])
         logger.info(f'Server Epoch:{epoch} choose agents : {agent_name_keys}.')
 
-        epochs_submit_update_dict, num_samples_dict, user_grad, server_update, tuned_trigger = train.train(
+        submit_update_dict, num_samples, user_grads, server_update, tuned_trigger = train.train(
             helper=helper,
             start_epoch=epoch,
             local_model=helper.local_model,
@@ -198,8 +199,8 @@ if __name__ == '__main__':
         noise_trigger = tuned_trigger
 
         logger.info(f'time spent on training: {time.time() - t}')
-        weight_accumulator, updates = helper.accumulate_weight(weight_accumulator, epochs_submit_update_dict,
-                                                               agent_name_keys, num_samples_dict)
+        weight_accumulator, updates = helper.accumulate_weight(weight_accumulator, submit_update_dict,
+                                                               agent_name_keys, num_samples)
         is_updated = True
 
         print(helper.params['aggregation_methods'])
@@ -216,19 +217,34 @@ if __name__ == '__main__':
 
             num_oracle_calls = 1
 
+        # elif helper.params['aggregation_methods'] == config.AGGR_MKRUM:
+        #     is_updated = helper.mkrum(target_model=helper.target_model, updates=updates,
+        #                               corrupted_count=int(helper.params['thetamin']),
+        #                               users_count=int(helper.params['no_models']))
+
         elif helper.params['aggregation_methods'] == config.AGGR_MKRUM:
-            is_updated = helper.mkrum(target_model=helper.target_model, updates=updates,
-                                      corrupted_count=int(helper.params['thetamin']),
-                                      users_count=int(helper.params['no_models']))
+            # Call the enhanced_mkrum instead of the original mkrum
+            is_updated = helper.enhanced_mkrum(
+                target_model=helper.target_model,
+                updates=updates,
+                corrupted_count=int(helper.params['thetamin']),
+                users_count=int(helper.params['no_models']),
+                validation_loader=helper.get_val(),
+                validation_criterion= torch.nn.CrossEntropyLoss() ,
+                threshold_ratio=helper.params.get('threshold_ratio', 0.15),
+                small_weight=helper.params.get('small_weight', 0.1),  
+                distances=None,  # Provide if you have pre-computed distances
+                return_index=False
+            )
+
 
         elif helper.params['aggregation_methods'] == config.AGGR_FOOLSGOLD:
             is_updated, names, weights, alphas = helper.foolsgold_update(helper.target_model, updates)
 
             num_oracle_calls = 1
 
-
         # clear the weight_accumulator
-        weight_accumulator = helper.init_weight_accumulator(helper.target_model)
+        weight_accumulator  = helper.init_weight_accumulator(helper.target_model)
         temp_global_epoch = epoch + helper.params['aggr_epoch_interval'] - 1
 
         epoch_loss, epoch_acc, epoch_corret, epoch_total = test.Mytest(helper=helper, epoch=temp_global_epoch,

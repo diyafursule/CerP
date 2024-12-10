@@ -1,0 +1,22 @@
+current path: saved_models/model_cifar100_Oct.02_22.51.14_CerP_mkrum_0.0001_0.0001
+Loading data
+build_classes_dict done
+train loaders done
+get poison test loader
+load data done
+Loaded parameters from saved model: LR is 0.01 and current epoch is 71
+create model done
+Poisoned following participants: [13, 36, 58, 71]
+We use following environment for graphs:  cifar100_CerP
+Server Epoch:71 choose agents : [13, 36, 58, 71, 85, 4, 97, 76, 38, 94, 86, 10, 29, 34, 7, 18, 6, 22, 69, 81].
+poison local model 13 index 0 
+poison_now
+start trigger fine-tuning
+normally training
+save normal model, normally training ending
+Current lr: [0.005]
+___PoisonTrain Local_ResNet_18 , epoch  71, local model 13, internal_epoch   1,  Average loss: 0.0062, Accuracy: 4750/5308 (89.4876%), train_poison_data_count: 415
+Global model norm: 42.432124970265015.
+Norm before scaling: 42.43915106324289. Distance: 2.282600630080543
+Updated normal model updates.
+Finished internal epoch: 1

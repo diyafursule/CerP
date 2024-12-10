@@ -1,7 +1,7 @@
 import torch
-#device=torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
-cuda_idx = torch.cuda.current_device()
-device = torch.device("cuda:{}".format(cuda_idx))
+device=torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+# cuda_idx = torch.cuda.current_device()
+# device = torch.device("cuda:{}".format(cuda_idx))
 AGGR_MEAN = 'mean'
 AGGR_GEO_MED = 'geom_median'
 AGGR_FOOLSGOLD ='foolsgold'

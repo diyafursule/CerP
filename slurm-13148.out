@@ -1,0 +1,20 @@
+/csehome/fursule.1/DATA/CerP/venv/lib64/python3.6/site-packages/torch/package/_directory_reader.py:17: UserWarning: Failed to initialize NumPy: numpy.core.multiarray failed to import (Triggered internally at  ../torch/csrc/utils/tensor_numpy.cpp:68.)
+  _dtype_to_storage = {data_type(0).dtype: data_type for data_type in _storages}
+/csehome/fursule.1/DATA/CerP/venv/lib64/python3.6/site-packages/torch/cuda/__init__.py:143: UserWarning: 
+NVIDIA A30 with CUDA capability sm_80 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA A30 GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+Traceback (most recent call last):
+  File "main.py", line 5, in <module>
+    import train
+  File "/csehome/fursule.1/DATA/CerP/train.py", line 1, in <module>
+    import cifar100_train
+  File "/csehome/fursule.1/DATA/CerP/cifar100_train.py", line 4, in <module>
+    import main
+  File "/csehome/fursule.1/DATA/CerP/main.py", line 7, in <module>
+    from cifar100_helper import Cifar100Helper
+  File "/csehome/fursule.1/DATA/CerP/cifar100_helper.py", line 2, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
