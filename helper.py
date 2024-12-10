@@ -44,7 +44,7 @@ class Helper:
         beta=self.params['beta_loss']
         self.folder_path = f'saved_models/model_{self.name}_{current_time}_{bb}_{aa}_{alpha}_{beta}'
         try:
-            os.mkdir(self.folder_path)
+            os.makedirs(self.folder_path, exist_ok=True)
         except FileExistsError:
             logger.info('Folder already exists')
         logger.addHandler(logging.FileHandler(filename=f'{self.folder_path}/log.txt'))
