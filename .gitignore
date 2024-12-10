@@ -1,0 +1,27 @@
+# Python bytecode and cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+
+# Log files and output
+*.log
+*.out
+*.txt
+
+# Data or model directories
+data/
+saved_models/
+results/
+
+# IDE or editor-specific files
+.vscode/
+.idea/
+
+# Bash scripts (optional, if not needed in version control)
+*.sh
+
+# Miniconda installer (large file, usually not needed in the repo)
+Miniconda3-latest-Linux-x86_64.sh
