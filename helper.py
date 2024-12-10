@@ -435,7 +435,7 @@ class Helper:
 
             # cm_list.append(cm)  # Store confusion matrix for analysis
 
-            classesMisclassified = {}
+            classesMisclassified = defaultdict(list)
 
             # Update susp_pair_clients here in analyze_confusion_matrix
             is_suspicious = self.analyze_confusion_matrix(cm, ground_metrics_cm, susp_pair_clients, classesMisclassified, idx, non_suspicious_updates, suspicious_updates, update_weights)
