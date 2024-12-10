@@ -44,10 +44,7 @@ class Helper:
         beta=self.params['beta_loss']
         self.folder_path = f'saved_models/model_{self.name}_{current_time}_{bb}_{aa}_{alpha}_{beta}'
         try:
-            if not os.path.exists(self.folder_path):
-                os.makedirs(self.folder_path)
-            else:
-                os.mkdir(self.folder_path)
+            os.mkdir(self.folder_path)
         except FileExistsError:
             logger.info('Folder already exists')
         logger.addHandler(logging.FileHandler(filename=f'{self.folder_path}/log.txt'))
@@ -325,41 +322,40 @@ class Helper:
         Helper.row_into_parameters(current_weights, target_model)
         return True
 
+    import numpy as np
 
+    def calculate_classwise_accuracy(self, cm):
+        """
+        Calculate class-wise accuracy from a confusion matrix.
+        
+        Arguments:
+        - cm: Confusion matrix (2D numpy array or torch tensor).
+        
+        Returns:
+        - class_accuracies: A dictionary with the class-wise accuracy for each class.
+        """
+        # Ensure the confusion matrix is a numpy array
+        cm = cm.cpu().numpy() if isinstance(cm, torch.Tensor) else cm
+        
+        class_accuracies = {}
+        num_classes = cm.shape[0]  # Number of classes
+        
+        for i in range(num_classes):
+            true_positives = cm[i, i]  # Diagonal elements represent true positives for each class
+            false_positives = cm[:, i].sum() - true_positives  # Sum of column - true positives
+            false_negatives = cm[i, :].sum() - true_positives  # Sum of row - true positives
+            true_negatives = cm.sum() - (true_positives + false_positives + false_negatives)
+            
+            # Accuracy for class 'i' is true positives / (true positives + false positives + false negatives)
+            if true_positives + false_positives + false_negatives > 0:
+                class_accuracy = true_positives / (true_positives + false_positives + false_negatives)
+            else:
+                class_accuracy = 0.0  # Handle the case where the denominator is zero
+            
+            class_accuracies[f"Class {i}"] = class_accuracy
 
-    def new_updated_mkrum(self, target_model, updates, corrupted_count, users_count, distances=None, return_index=False):
-        current_weights = np.concatenate([i.data.cpu().numpy().flatten() for i in target_model.parameters()])
-        users_grads = np.empty((users_count, len(current_weights)), dtype=current_weights.dtype)
-        users_grads = Helper.collect_gradients(updates, users_grads)
+        return class_accuracies
 
-        if not return_index:
-            assert users_count >= 2 * corrupted_count + 1, (
-                'users_count>=2*corrupted_count + 3', users_count, corrupted_count)
-        non_malicious_count = users_count - corrupted_count
-        selection_set = []
-        krumscore = []
-        if distances is None:
-            distances = Helper.krum_create_distances(users_grads)
-        for user in distances.keys():
-            errors = sorted(distances[user].values())
-            current_error = sum(errors[:non_malicious_count])
-            krumscore.append(current_error)
-        aa = krumscore[0]
-        krumscore[0] = krumscore[1]
-        krumscore[1] = aa
-        result = map(krumscore.index, heapq.nsmallest(non_malicious_count, krumscore))
-        for i in result:
-            selection_set.append(users_grads[i])
-
-        current_grads = np.empty((users_grads.shape[1],), users_grads.dtype)
-        users_gradsss = np.array(selection_set)
-        for i, param_across_users in enumerate(users_gradsss.T):
-            current_grads[i] = np.mean(param_across_users)
-
-        current_weights = current_weights - self.params['lr'] * current_grads
-        Helper.row_into_parameters(current_weights, target_model)
-        return True
-    
 
     def enhanced_mkrum(self, target_model, updates, corrupted_count, users_count, validation_loader, validation_criterion,  threshold_ratio=0.15, small_weight=0.1, distances=None, return_index=False):
         
@@ -408,6 +404,11 @@ class Helper:
         cm_list = []  # List to store confusion matrices
         susp_pair_clients = defaultdict(int)
         suspicious_count = 0
+        logger.info(f"Confusion Matrix for target: \n{ground_metrics_cm}")
+
+            # Calculate class-wise accuracy for this confusion matrix
+        class_accuracies_g = self.calculate_classwise_accuracy(ground_metrics_cm)
+        logger.info(f"Class-wise accuracy for target: {class_accuracies_g}")
         
         # Step 9: Iterate through each selected user's gradient for validation
         for idx in range(users_count):
@@ -423,6 +424,13 @@ class Helper:
             # Perform validation
             validation_loss, cm = self.validate_on_validation_set(target_model, validation_loader, validation_criterion)
             logger.info(f"Validation completed for user {idx}, confusion matrix appended.")
+
+            # Log confusion matrix for each client
+            logger.info(f"Confusion Matrix for user {idx}: \n{cm}")
+
+            # Calculate class-wise accuracy for this confusion matrix
+            class_accuracies = self.calculate_classwise_accuracy(cm)
+            logger.info(f"Class-wise accuracy for user {idx}: {class_accuracies}")
 
             # cm_list.append(cm)  # Store confusion matrix for analysis
 
@@ -468,7 +476,7 @@ class Helper:
 
         # Step 10: Calculate and log adversarial client detection accuracy
         actual_adversaries = [0,1,2,3]
-        top_n = 3  # Top 'n' clients to consider for accuracy calculation
+        top_n = 4  # Top 'n' clients to consider for accuracy calculation
         
         # Step 10.2: Calculate accuracy of adversarial detection
         correctly_identified = set(identified_adversaries).intersection(set(actual_adversaries))
@@ -477,7 +485,7 @@ class Helper:
         logger.info(f"Identified adversaries: {identified_adversaries}")
         logger.info(f"Actual adversaries: {actual_adversaries}")
 
-        accuracy = num_correctly_identified / 3 if num_actual_adversaries > 0 else 0.0
+        accuracy = num_correctly_identified / 4 if num_actual_adversaries > 0 else 0.0
         logger.info(f"Accuracy of identifying adversarial clients: {accuracy:.2%} "
                     f"({num_correctly_identified}/{top_n} correctly identified).")
         
@@ -517,7 +525,7 @@ class Helper:
 
 
 
-    def assign_weights_based_on_misclassification(self, susp_pair_clients, update_weights, small_weight=0.1, top_n=3):
+    def assign_weights_based_on_misclassification(self, susp_pair_clients, update_weights, small_weight=0.1, top_n=4):
         # Confirm susp_pair_clients type at the start
         logger.info(f"susp_pair_clients type on entry to assign_weights_based_on_misclassification: {type(susp_pair_clients)}")
 
@@ -545,44 +553,33 @@ class Helper:
 
 
     def analyze_confusion_matrix(self, cm, ground_metrics_cm, susp_pair_clients, client_idx, non_suspicious_updates, suspicious_updates, update_weights):
-        threshold = 0.1  # Threshold for misclassification rate
-        target_class_tracker = defaultdict(int)
+        threshold = 0.15  # Threshold for misclassification rate
 
-        # Loop through each row (true class) in the confusion matrix
-        for row_idx in range(len(cm)):
-            max_idx = np.argmax(cm[row_idx])  # Find the class with the highest misclassification rate
-            max_rate = np.max(cm[row_idx]) / np.sum(cm[row_idx])  # Get the misclassification rate
+        # Calculate class-wise accuracy for the ground truth confusion matrix
+        target_accuracies = self.calculate_classwise_accuracy(ground_metrics_cm)
+        client_accuracies = self.calculate_classwise_accuracy(cm)
 
-            # If misclassification rate is above the threshold and it's misclassified to a wrong class
-            if max_rate > threshold and max_idx != row_idx:
-                target_class_tracker[max_idx] += 1  # Track how many times it's misclassified to the target class
+        score = 0
+        for class_id in target_accuracies.keys():
+            target_acc = target_accuracies[class_id]
+            client_acc = client_accuracies[class_id]
+            
+            # Calculate the absolute difference
+            diff = target_acc - client_acc
+            
+            # Assign score if the difference is greater than the threshold
+            if diff > threshold:
+                score = score + diff
+                logger.info(f"Class {class_id} has a difference of {diff:.2f} between target and client {client_idx}.")
+            
+        susp_pair_clients[client_idx] = score       
 
-        # If there are misclassifications, find the largest misclassified target class
-        if len(target_class_tracker) > 0:
-            # Find the target class with the highest misclassifications
-            largest_target_class, max_misclassifications = max(target_class_tracker.items(), key=lambda x: x[1])
-
-            # Assign a score based on the number of misclassifications to this target class
-            score = max_misclassifications
-
-            # Record the score for this client in susp_pair_clients
-            susp_pair_clients[client_idx] = score
-
-            logger.info(f"Client {client_idx} misclassified the most to class {largest_target_class} with {max_misclassifications} misclassifications.")
-
-            # Determine if the client should be considered suspicious based on the score
-            # Here, you can define a threshold or condition to mark suspicious behavior
-            if score > 1:  # For example, if more than one misclassification into the same target class
-                suspicious_updates.append(client_idx)
-                return True
-            else:
-                non_suspicious_updates.append(client_idx)
-                return False
-
-        logger.info(f"No suspicious behavior detected for client {client_idx}.")
-        return False
-
-
+        if score > 0:  # For example, if more than one misclassification into the same target class
+            suspicious_updates.append(client_idx)
+            return True
+        else:
+            non_suspicious_updates.append(client_idx)
+            return False
 
 
 
